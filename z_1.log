@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.16)  16 JUN 2021 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.16)  16 JUN 2021 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2013,10 +2013,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 335.
  ) 
 Here is how much of TeX's memory you used:
  16490 strings out of 481239
- 243318 string characters out of 5920377
- 557235 words of memory out of 5000000
+ 243321 string characters out of 5920377
+ 557263 words of memory out of 5000000
  31321 multiletter control sequences out of 15000+600000
- 581550 words of font info for 87 fonts, out of 8000000 for 9000
+ 581645 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,42p,848b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
@@ -2028,7 +2028,7 @@ nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on z_1.pdf (33 pages, 272315 bytes).
+Output written on z_1.pdf (33 pages, 272097 bytes).
 PDF statistics:
  401 PDF objects out of 1000 (max. 8388607)
  352 compressed objects within 4 object streams

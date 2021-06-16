@@ -15,7 +15,7 @@ Por extensión y comprensión
 ```{definition, proposicional, name="Función proposicional"}
 ```
 
-Es un enunciado $P(X)$ esl cual se convierte en una proposicion cuando el valor de $x$ es una constante.
+Sea $x$ una variable $P(x)$ un enunciado, $P(x)$ es una *función proposicional* si al sustituir la variable con una constante este se convierte en una proposición.
 
 Por ejemplo $P(x)$: $x$ es un numero par
 
@@ -23,8 +23,7 @@ Al conjunto de todos lo valores de $x$ se denomina *domino de la variable*
 
 ### Cuantificadores
 
-```{definition, existencial, name="existencial"}
-ES una coleccion de elementos con caractersiticas similares
+```{definition, existencial, name="Cuantificador existencial"}
 ```
 
 $$
@@ -33,8 +32,7 @@ $$
 
 Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de $x$ perteneciente al Dominio de $A$, es Verdadero. Se denota; $\exists x / P (x)$ Se lee: "Existe al menos un $x$", "Algunos $x$"," Hay $x$", "Existe un $x$", etc.
 
-```{definition, universal, name="Universal"}
-ES una coleccion de elementos con caractersiticas similares
+```{definition, universal, name="Cuantificador universal"}
 ```
 
 $$
