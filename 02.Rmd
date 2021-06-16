@@ -27,9 +27,9 @@ $$
 ### Función proposicional
 
 ```{definition, proposicional, name="Función proposicional"}
+Sea $x$ una variable $P(x)$ un *enunciado*, $P(x)$ es una ***función proposicional*** si al sustituir la variable con una constante este se convierte en una *proposición*.
 ```
 
-Sea $x$ una variable $P(x)$ un *enunciado*, $P(x)$ es una ***función proposicional*** si al sustituir la variable con una constante este se convierte en una *proposición*.
 
 Por ejemplo $P(x)$: $x$ es un numero par
 
@@ -38,22 +38,22 @@ Al conjunto de todos lo valores de $x$ se denomina *domino de la variable*
 ### Cuantificadores
 
 ```{definition, existencial, name="Cuantificador existencial"}
-```
 
 $$
 \exists
 $$
 
 Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de $x$ perteneciente al Dominio de $A$, es Verdadero. Se denota; $\exists x / P (x)$ Se lee: "Existe al menos un $x$", "Algunos $x$"," Hay $x$", "Existe un $x$", etc.
+```
 
 ```{definition, universal, name="Cuantificador universal"}
-```
 
 $$
 \forall
 $$
 
 Es una generalización de la *conjunción*. Debido a esto es verdadero cuando todos los valores de $x$ que pertenecen al Dominio de $A$ son Verdaderos. Se denota: $\forall x ; p(x)$ Se lee: "Para Todo $x$", "Para cada $x$", "Todos (as) las $x$", "Todo $x$".
+```
 
 Sea $A=\left\{1,2,3,4,5\right\}$ y la función proposicional $3x-2<12$ entonces las proposiciones
 
@@ -63,14 +63,14 @@ Sea $A=\left\{1,2,3,4,5\right\}$ y la función proposicional $3x-2<12$ entonces 
 son falsa y verdadera respectivamente
 
 ```{definition, universal2, name="Proposición universal"}
+Una *proposición universal* es aquella que está provista de un *cuantificador universal*, y tiene la forma: $$\forall x\in A:p(x)$$
 ```
 
-Una *proposición universal* es aquella que está provista de un *cuantificador universal*, y tiene la forma: $$\forall x\in A:p(x)$$
 
 ```{definition, existencial2, name="Proposición existencial"}
+Una *proposición existencial* es aquella que está provista de un *cuantificador existencial*, y tiene la forma: $$\exists x\in A:p(x)$$
 ```
 
-Una *proposición existencial* es aquella que está provista de un *cuantificador existencial*, y tiene la forma: $$\exists x\in A:p(x)$$
 
 ### Negación de las proposiciones universal y existencial
 
@@ -85,15 +85,14 @@ La negación del ***cuantificador universal*** es equivalente a la *afirmación 
 La negación de un ***cuantificador existencial*** es equivalente a la *afirmación de un cuantificador universal* respecto de la ***función proposicional negada***.
 
 ```{example}
-```
-
 Dada la proposición: "Si todos los números primos son impa­res, los números positivos son mayores que -1"
 
 -   Expresarla simbólicamente
 -   Negar oracionalmente la proposición
 
-```{solution}
 ```
+
+```{solution}
 
 Sea $p(x):$ números primos son impares y $q(x):$ números positivos mayores que -1
 
@@ -110,18 +109,18 @@ Sea $p(x):$ números primos son impares y $q(x):$ números positivos mayores que
     \end{aligned}
     $$
 
+```
     que se lee: "Todos los números primos son impares y algunos números no son mayores que -1"
 
-```{example}
-```
 
+```{example}
 Dado el conjunto $A=\left\{x\in\mathbb{N}:-14<x<27\right\}$. Hallar el valor de verdad de $$
 s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
 $$ si $p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]$, $q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]$ y $r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]$
-
-```{solution}
 ```
 
+
+```{solution}
 $A=\left\{1,2,3,\ldots,26\right\}$ luego el valor de $\text{V}(p)=F$, $\text{V}(q)=V$ y $\text{V}(r)=V$ pues
 
 -   Si $y=1$ entonces $x^2-z^2>y^2\equiv x^2>1+z^2$ lo cual no es valido $\forall x,z\in A$ entonces $\text{V}(p)=F$
@@ -138,21 +137,25 @@ $$
 &=V
 \end{aligned}
 $$
-
-```{exercise}
 ```
 
+
+```{exercise}
 Dada la proposición: "Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso"
 
 -   Expresarla simbólicamente
 -   Negar oracionalmente la proposición
 
-```{exercise}
 ```
 
+
+
+```{exercise}
 Dado el conjunto $G=\left\{x\in\mathbb{Z}^+:-14<2x<20\right\}$. Hallar el valor de verdad de $$
 s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)] 
 $$ si $p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]$, $q=(\forall z\in A, \exists x \in A)[x\neq y]$ y $r=(\forall z\in A, \forall y \in A)[yx^2>500]$
+
+```
 
 ## Operaciones entre conjuntos
 

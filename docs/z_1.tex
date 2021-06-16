@@ -236,10 +236,8 @@ A=\left\{a\right\}
 \subsection{Función proposicional}\label{funciuxf3n-proposicional}}
 
 \begin{definition}[Función proposicional]
-\protect\hypertarget{def:proposicional}{}{\label{def:proposicional} \iffalse (Función proposicional) \fi{} }
+\protect\hypertarget{def:proposicional}{}{\label{def:proposicional} \iffalse (Función proposicional) \fi{} }Sea \(x\) una variable \(P(x)\) un \emph{enunciado}, \(P(x)\) es una \textbf{\emph{función proposicional}} si al sustituir la variable con una constante este se convierte en una \emph{proposición}.
 \end{definition}
-
-Sea \(x\) una variable \(P(x)\) un \emph{enunciado}, \(P(x)\) es una \textbf{\emph{función proposicional}} si al sustituir la variable con una constante este se convierte en una \emph{proposición}.
 
 Por ejemplo \(P(x)\): \(x\) es un numero par
 
@@ -250,23 +248,21 @@ Al conjunto de todos lo valores de \(x\) se denomina \emph{domino de la variable
 
 \begin{definition}[Cuantificador existencial]
 \protect\hypertarget{def:existencial}{}{\label{def:existencial} \iffalse (Cuantificador existencial) \fi{} }
-\end{definition}
-
 \[
 \exists
 \]
 
 Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de \(x\) perteneciente al Dominio de \(A\), es Verdadero. Se denota; \(\exists x / P (x)\) Se lee: ``Existe al menos un \(x\)'', ``Algunos \(x\)''," Hay \(x\)``,''Existe un \(x\)", etc.
+\end{definition}
 
 \begin{definition}[Cuantificador universal]
 \protect\hypertarget{def:universal}{}{\label{def:universal} \iffalse (Cuantificador universal) \fi{} }
-\end{definition}
-
 \[
 \forall
 \]
 
 Es una generalización de la \emph{conjunción}. Debido a esto es verdadero cuando todos los valores de \(x\) que pertenecen al Dominio de \(A\) son Verdaderos. Se denota: \(\forall x ; p(x)\) Se lee: ``Para Todo \(x\)'', ``Para cada \(x\)'', ``Todos (as) las \(x\)'', ``Todo \(x\)''.
+\end{definition}
 
 Sea \(A=\left\{1,2,3,4,5\right\}\) y la función proposicional \(3x-2<12\) entonces las proposiciones
 
@@ -282,16 +278,12 @@ Sea \(A=\left\{1,2,3,4,5\right\}\) y la función proposicional \(3x-2<12\) enton
 son falsa y verdadera respectivamente
 
 \begin{definition}[Proposición universal]
-\protect\hypertarget{def:universal2}{}{\label{def:universal2} \iffalse (Proposición universal) \fi{} }
+\protect\hypertarget{def:universal2}{}{\label{def:universal2} \iffalse (Proposición universal) \fi{} }Una \emph{proposición universal} es aquella que está provista de un \emph{cuantificador universal}, y tiene la forma: \[\forall x\in A:p(x)\]
 \end{definition}
-
-Una \emph{proposición universal} es aquella que está provista de un \emph{cuantificador universal}, y tiene la forma: \[\forall x\in A:p(x)\]
 
 \begin{definition}[Proposición existencial]
-\protect\hypertarget{def:existencial2}{}{\label{def:existencial2} \iffalse (Proposición existencial) \fi{} }
+\protect\hypertarget{def:existencial2}{}{\label{def:existencial2} \iffalse (Proposición existencial) \fi{} }Una \emph{proposición existencial} es aquella que está provista de un \emph{cuantificador existencial}, y tiene la forma: \[\exists x\in A:p(x)\]
 \end{definition}
-
-Una \emph{proposición existencial} es aquella que está provista de un \emph{cuantificador existencial}, y tiene la forma: \[\exists x\in A:p(x)\]
 
 \hypertarget{negaciuxf3n-de-las-proposiciones-universal-y-existencial}{%
 \subsection{Negación de las proposiciones universal y existencial}\label{negaciuxf3n-de-las-proposiciones-universal-y-existencial}}
@@ -307,10 +299,7 @@ La negación del \textbf{\emph{cuantificador universal}} es equivalente a la \em
 La negación de un \textbf{\emph{cuantificador existencial}} es equivalente a la \emph{afirmación de un cuantificador universal} respecto de la \textbf{\emph{función proposicional negada}}.
 
 \begin{example}
-\protect\hypertarget{exm:unnamed-chunk-1}{}{\label{exm:unnamed-chunk-1} }
-\end{example}
-
-Dada la proposición: ``Si todos los números primos son impa­res, los números positivos son mayores que -1''
+\protect\hypertarget{exm:unnamed-chunk-1}{}{\label{exm:unnamed-chunk-1} }Dada la proposición: ``Si todos los números primos son impa­res, los números positivos son mayores que -1''
 
 \begin{itemize}
 \tightlist
@@ -319,11 +308,10 @@ Dada la proposición: ``Si todos los números primos son impa­res, los números
 \item
   Negar oracionalmente la proposición
 \end{itemize}
+\end{example}
 
 \begin{solution}
 \iffalse{} {Solución. } \fi{}
-\end{solution}
-
 Sea \(p(x):\) números primos son impares y \(q(x):\) números positivos mayores que -1
 
 \begin{itemize}
@@ -340,23 +328,19 @@ Sea \(p(x):\) números primos son impares y \(q(x):\) números positivos mayores
   &\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
   \end{aligned}
   \]
-
-  que se lee: ``Todos los números primos son impares y algunos números no son mayores que -1''
 \end{itemize}
-
-\begin{example}
-\protect\hypertarget{exm:unnamed-chunk-3}{}{\label{exm:unnamed-chunk-3} }
-\end{example}
-
-Dado el conjunto \(A=\left\{x\in\mathbb{N}:-14<x<27\right\}\). Hallar el valor de verdad de \[
-s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
-\] si \(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]\), \(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]\) y \(r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]\)
-
-\begin{solution}
-\iffalse{} {Solución. } \fi{}
 \end{solution}
 
-\(A=\left\{1,2,3,\ldots,26\right\}\) luego el valor de \(\text{V}(p)=F\), \(\text{V}(q)=V\) y \(\text{V}(r)=V\) pues
+que se lee: ``Todos los números primos son impares y algunos números no son mayores que -1''
+
+\begin{example}
+\protect\hypertarget{exm:unnamed-chunk-3}{}{\label{exm:unnamed-chunk-3} }Dado el conjunto \(A=\left\{x\in\mathbb{N}:-14<x<27\right\}\). Hallar el valor de verdad de \[
+s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
+\] si \(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]\), \(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]\) y \(r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]\)
+\end{example}
+
+\begin{solution}
+\iffalse{} {Solución. } \fi{}\(A=\left\{1,2,3,\ldots,26\right\}\) luego el valor de \(\text{V}(p)=F\), \(\text{V}(q)=V\) y \(\text{V}(r)=V\) pues
 
 \begin{itemize}
 \tightlist
@@ -378,12 +362,10 @@ por lo tanto
 &=V
 \end{aligned}
 \]
+\end{solution}
 
 \begin{exercise}
-\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }
-\end{exercise}
-
-Dada la proposición: ``Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso''
+\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }Dada la proposición: ``Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso''
 
 \begin{itemize}
 \tightlist
@@ -392,14 +374,13 @@ Dada la proposición: ``Obtendré un puntaje aprobatorio si y solo si estudio co
 \item
   Negar oracionalmente la proposición
 \end{itemize}
-
-\begin{exercise}
-\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }
 \end{exercise}
 
-Dado el conjunto \(G=\left\{x\in\mathbb{Z}^+:-14<2x<20\right\}\). Hallar el valor de verdad de \[
+\begin{exercise}
+\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }Dado el conjunto \(G=\left\{x\in\mathbb{Z}^+:-14<2x<20\right\}\). Hallar el valor de verdad de \[
 s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)] 
 \] si \(p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]\), \(q=(\forall z\in A, \exists x \in A)[x\neq y]\) y \(r=(\forall z\in A, \forall y \in A)[yx^2>500]\)
+\end{exercise}
 
 \hypertarget{operaciones-entre-conjuntos}{%
 \section{Operaciones entre conjuntos}\label{operaciones-entre-conjuntos}}
