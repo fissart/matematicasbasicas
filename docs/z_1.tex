@@ -296,9 +296,7 @@ Una proposición universal es aquella que está provista de un cuantificador exi
 \hypertarget{negaciuxf3n-de-las-proposiciones-universal-y-existencial}{%
 \subsection{Negación de las proposiciones universal y existencial}\label{negaciuxf3n-de-las-proposiciones-universal-y-existencial}}
 
-Cambiando el cuantificador universal por el cuantificador existencial, o viceversa
-
-es decir \[\sim[\exists x; P(x)]\equiv\forall x;\sim P(x)\]
+Cambiando el cuantificador universal por el cuantificador existencial, o viceversa, es decir \[\sim[\exists x; P(x)]\equiv\forall x;\sim P(x)\]
 
 \[
 \sim\left[\forall  x; P(x)\right]\equiv\exists\; x;\sim P(x)
@@ -326,13 +324,24 @@ Dada la proposición: ``Si todos los números primos son impa­res, los números
 \iffalse{} {Solución. } \fi{}
 \end{solution}
 
-Sea \(p(x):\) números primos impares y \(q(x):\) numeros positivos mayores que -1
+Sea \(p(x):\) números primos impares y \(q(x):\) números positivos mayores que -1
 
 \begin{itemize}
 \item
   \(\forall x:[p(x)\rightarrow q(x)]\)
 \item
-\item
+  Negando el item anterior
+
+  \[
+  \begin{aligned}
+  \sim\left\{\forall x:[p(x)\rightarrow q(x)]\right\}
+  &\equiv \sim\left\{\forall x:p(x)\rightarrow \forall x:q(x)\right\}\\
+  &=\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
+  &\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
+  \end{aligned}
+  \]
+
+  que se lee: ``Todos los números primos son impares y algunos números no son mayores que -1''
 \end{itemize}
 
 \begin{example}
@@ -341,13 +350,25 @@ Sea \(p(x):\) números primos impares y \(q(x):\) numeros positivos mayores que 
 
 Dado el conjunto \(A=\left\{x\in\mathbb{N}:-14<x<27\right\}\). Hallar el valor de verdad de \[
 s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
-\] si \(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]\), \(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]\) y \(q=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]\)
+\] si \(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]\), \(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]\) y \(r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]\)
 
 \begin{solution}
 \iffalse{} {Solución. } \fi{}
 \end{solution}
 
-\(A\left\{1,2,3,\ldots,26\right\}\) luego el valor de \(\text{V}(p)=F\), \(\text{V}(q)=F\) y \(\text{V}(r)=V\) por lo tanto
+\(A\left\{1,2,3,\ldots,26\right\}\) luego el valor de \(\text{V}(p)=F\), \(\text{V}(q)=F\) y \(\text{V}(r)=V\) pues
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(y=1\) entonces \(x^2-z^2>y^2\equiv x^2>1+z^2\) lo cual no es valido \(\forall x,z\in A\) entonces \(\text{V}(p)=F\)
+\item
+  Si \(y=25\in A\) y \(x=1\in A\) entonces \(2x-4y<-z\equiv 2+z<100\) lo cual es valido \(\forall z\in A\) entonces \(\text{V}(q)=V\)
+\item
+  Si \(x=26\in A\) entonces \(3x^2-z^2>y\equiv3(26)^2>z^2+y\) lo cual es valido \(\forall z,y\in A\) entonces \(\text{V}(r)=V\)
+\end{itemize}
+
+por lo tanto
 
 \[
 \begin{aligned}
@@ -357,6 +378,28 @@ s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\
 &=V
 \end{aligned}
 \]
+
+\begin{exercise}
+\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }
+\end{exercise}
+
+Dada la proposición: ``Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso''
+
+\begin{itemize}
+\tightlist
+\item
+  Expresarla simbólicamente
+\item
+  Negar oracianalmente la proposición
+\end{itemize}
+
+\begin{exercise}
+\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }
+\end{exercise}
+
+Dado el conjunto \(G=\left\{x\in\mathbb{Z}^+:-14<2x<20\right\}\). Hallar el valor de verdad de \[
+s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)] 
+\] si \(p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]\), \(q=(\forall z\in A, \exists x \in A)[x\neq y]\) y \(r=(\forall z\in A, \forall y \in A)[yx^2>500]\)
 
 \hypertarget{operaciones-entre-conjuntos}{%
 \section{Operaciones entre conjuntos}\label{operaciones-entre-conjuntos}}

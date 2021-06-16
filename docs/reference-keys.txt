@@ -7,6 +7,8 @@ def:universal2
 def:existencial2
 exm:unnamed-chunk-1
 exm:unnamed-chunk-3
+exr:unnamed-chunk-5
+exr:unnamed-chunk-6
 logica
 conjuntos
 función-proposicional-y-cuantificadores
