@@ -29,7 +29,7 @@ $$
 ```{definition, proposicional, name="Función proposicional"}
 ```
 
-Sea $x$ una variable $P(x)$ un enunciado, $P(x)$ es una ***función proposicional*** si al sustituir la variable con una constante este se convierte en una proposición.
+Sea $x$ una variable $P(x)$ un *enunciado*, $P(x)$ es una ***función proposicional*** si al sustituir la variable con una constante este se convierte en una *proposición*.
 
 Por ejemplo $P(x)$: $x$ es un numero par
 
@@ -57,27 +57,27 @@ Es una generalización de la *conjunción*. Debido a esto es verdadero cuando to
 
 Sea $A=\left\{1,2,3,4,5\right\}$ y la función proposicional $3x-2<12$ entonces las proposiciones
 
-1.  $\forall x\in A;3x-1<14$
-2.  $\exists\; x\in A|3x-2<12$
+1.  $\forall x\in A:3x-1<14$
+2.  $\exists\; x\in A:3x-2<12$
 
-son falsa y verdadera y se escribe
+son falsa y verdadera respectivamente
 
 ```{definition, universal2, name="Proposición universal"}
 ```
 
-Una proposición universal es aquella que está provista de un cuantificador universal, y tiene la forma: $$\forall x\in A:p(x)$$
+Una *proposición universal* es aquella que está provista de un *cuantificador universal*, y tiene la forma: $$\forall x\in A:p(x)$$
 
 ```{definition, existencial2, name="Proposición existencial"}
 ```
 
-Una proposición universal es aquella que está provista de un cuantificador existencial, y tiene la forma: $$\exists x\in A:p(x)$$
+Una *proposición existencial* es aquella que está provista de un *cuantificador existencial*, y tiene la forma: $$\exists x\in A:p(x)$$
 
 ### Negación de las proposiciones universal y existencial
 
-Cambiando el cuantificador universal por el cuantificador existencial, o viceversa, es decir $$\sim[\exists x; P(x)]\equiv\forall x;\sim P(x)$$
+Cambiando el cuantificador universal por el cuantificador existencial, o viceversa, es decir $$\sim[\exists x\in A; P(x)]\equiv\forall x\in A;\sim P(x)$$
 
 $$
-\sim\left[\forall  x; P(x)\right]\equiv\exists\; x;\sim P(x)
+\sim\left[\forall  x\in A; P(x)\right]\equiv\exists\; x\in A;\sim P(x)
 $$
 
 La negación del ***cuantificador universal*** es equivalente a la *afirmación de un cuantificador existencial* respecto de la ***función proposicional negada*****.**
@@ -90,12 +90,12 @@ La negación de un ***cuantificador existencial*** es equivalente a la *afirmaci
 Dada la proposición: "Si todos los números primos son impa­res, los números positivos son mayores que -1"
 
 -   Expresarla simbólicamente
--   Negar oracianalmente la proposición
+-   Negar oracionalmente la proposición
 
 ```{solution}
 ```
 
-Sea $p(x):$ números primos impares y $q(x):$ números positivos mayores que -1
+Sea $p(x):$ números primos son impares y $q(x):$ números positivos mayores que -1
 
 -   $\forall x:[p(x)\rightarrow q(x)]$
 
@@ -122,7 +122,7 @@ $$ si $p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]$, $q=(\ex
 ```{solution}
 ```
 
-$A\left\{1,2,3,\ldots,26\right\}$ luego el valor de $\text{V}(p)=F$, $\text{V}(q)=F$ y $\text{V}(r)=V$ pues
+$A=\left\{1,2,3,\ldots,26\right\}$ luego el valor de $\text{V}(p)=F$, $\text{V}(q)=V$ y $\text{V}(r)=V$ pues
 
 -   Si $y=1$ entonces $x^2-z^2>y^2\equiv x^2>1+z^2$ lo cual no es valido $\forall x,z\in A$ entonces $\text{V}(p)=F$
 -   Si $y=25\in A$ y $x=1\in A$ entonces $2x-4y<-z\equiv 2+z<100$ lo cual es valido $\forall z\in A$ entonces $\text{V}(q)=V$
@@ -132,7 +132,7 @@ por lo tanto
 
 $$
 \begin{aligned}
-\text{V}(s)&=[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
+\text{V}(s)&=\text{V}[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
 &=[(V\wedge F)\Longrightarrow(F\wedge F)]\Longleftrightarrow(V\vee V)\\
 &=[F\Longrightarrow F]\Longleftrightarrow V\\
 &=V
@@ -145,7 +145,7 @@ $$
 Dada la proposición: "Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso"
 
 -   Expresarla simbólicamente
--   Negar oracianalmente la proposición
+-   Negar oracionalmente la proposición
 
 ```{exercise}
 ```

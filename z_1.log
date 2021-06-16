@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.16)  16 JUN 2021 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.16)  16 JUN 2021 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1355,11 +1355,9 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-LaTeX Info: Redefining \. on input line 380.
-LaTeX Info: Redefining \% on input line 380.
+LaTeX Info: Redefining \. on input line 373.
+LaTeX Info: Redefining \% on input line 373.
 [5]
-Underfull \vbox (badness 2142) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 440.
 LaTeX Info: Redefining \% on input line 440.
 [6]
@@ -2042,11 +2040,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 473.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 473.
  ) 
 Here is how much of TeX's memory you used:
- 16536 strings out of 481239
- 243947 string characters out of 5920377
- 559502 words of memory out of 5000000
+ 16539 strings out of 481239
+ 243980 string characters out of 5920377
+ 558502 words of memory out of 5000000
  31335 multiletter control sequences out of 15000+600000
- 588285 words of font info for 100 fonts, out of 8000000 for 9000
+ 588510 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,42p,848b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist
@@ -2062,7 +2060,7 @@ ve/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on z_1.pdf (35 pages, 319180 bytes).
+Output written on z_1.pdf (35 pages, 319375 bytes).
 PDF statistics:
  443 PDF objects out of 1000 (max. 8388607)
  388 compressed objects within 4 object streams

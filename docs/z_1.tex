@@ -239,7 +239,7 @@ A=\left\{a\right\}
 \protect\hypertarget{def:proposicional}{}{\label{def:proposicional} \iffalse (Función proposicional) \fi{} }
 \end{definition}
 
-Sea \(x\) una variable \(P(x)\) un enunciado, \(P(x)\) es una \textbf{\emph{función proposicional}} si al sustituir la variable con una constante este se convierte en una proposición.
+Sea \(x\) una variable \(P(x)\) un \emph{enunciado}, \(P(x)\) es una \textbf{\emph{función proposicional}} si al sustituir la variable con una constante este se convierte en una \emph{proposición}.
 
 Por ejemplo \(P(x)\): \(x\) es un numero par
 
@@ -274,32 +274,32 @@ Sea \(A=\left\{1,2,3,4,5\right\}\) y la función proposicional \(3x-2<12\) enton
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \(\forall x\in A;3x-1<14\)
+  \(\forall x\in A:3x-1<14\)
 \item
-  \(\exists\; x\in A|3x-2<12\)
+  \(\exists\; x\in A:3x-2<12\)
 \end{enumerate}
 
-son falsa y verdadera y se escribe
+son falsa y verdadera respectivamente
 
 \begin{definition}[Proposición universal]
 \protect\hypertarget{def:universal2}{}{\label{def:universal2} \iffalse (Proposición universal) \fi{} }
 \end{definition}
 
-Una proposición universal es aquella que está provista de un cuantificador universal, y tiene la forma: \[\forall x\in A:p(x)\]
+Una \emph{proposición universal} es aquella que está provista de un \emph{cuantificador universal}, y tiene la forma: \[\forall x\in A:p(x)\]
 
 \begin{definition}[Proposición existencial]
 \protect\hypertarget{def:existencial2}{}{\label{def:existencial2} \iffalse (Proposición existencial) \fi{} }
 \end{definition}
 
-Una proposición universal es aquella que está provista de un cuantificador existencial, y tiene la forma: \[\exists x\in A:p(x)\]
+Una \emph{proposición existencial} es aquella que está provista de un \emph{cuantificador existencial}, y tiene la forma: \[\exists x\in A:p(x)\]
 
 \hypertarget{negaciuxf3n-de-las-proposiciones-universal-y-existencial}{%
 \subsection{Negación de las proposiciones universal y existencial}\label{negaciuxf3n-de-las-proposiciones-universal-y-existencial}}
 
-Cambiando el cuantificador universal por el cuantificador existencial, o viceversa, es decir \[\sim[\exists x; P(x)]\equiv\forall x;\sim P(x)\]
+Cambiando el cuantificador universal por el cuantificador existencial, o viceversa, es decir \[\sim[\exists x\in A; P(x)]\equiv\forall x\in A;\sim P(x)\]
 
 \[
-\sim\left[\forall  x; P(x)\right]\equiv\exists\; x;\sim P(x)
+\sim\left[\forall  x\in A; P(x)\right]\equiv\exists\; x\in A;\sim P(x)
 \]
 
 La negación del \textbf{\emph{cuantificador universal}} es equivalente a la \emph{afirmación de un cuantificador existencial} respecto de la \textbf{\emph{función proposicional negada}.}
@@ -317,14 +317,14 @@ Dada la proposición: ``Si todos los números primos son impa­res, los números
 \item
   Expresarla simbólicamente
 \item
-  Negar oracianalmente la proposición
+  Negar oracionalmente la proposición
 \end{itemize}
 
 \begin{solution}
 \iffalse{} {Solución. } \fi{}
 \end{solution}
 
-Sea \(p(x):\) números primos impares y \(q(x):\) números positivos mayores que -1
+Sea \(p(x):\) números primos son impares y \(q(x):\) números positivos mayores que -1
 
 \begin{itemize}
 \item
@@ -356,7 +356,7 @@ s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\
 \iffalse{} {Solución. } \fi{}
 \end{solution}
 
-\(A\left\{1,2,3,\ldots,26\right\}\) luego el valor de \(\text{V}(p)=F\), \(\text{V}(q)=F\) y \(\text{V}(r)=V\) pues
+\(A=\left\{1,2,3,\ldots,26\right\}\) luego el valor de \(\text{V}(p)=F\), \(\text{V}(q)=V\) y \(\text{V}(r)=V\) pues
 
 \begin{itemize}
 \tightlist
@@ -372,7 +372,7 @@ por lo tanto
 
 \[
 \begin{aligned}
-\text{V}(s)&=[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
+\text{V}(s)&=\text{V}[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
 &=[(V\wedge F)\Longrightarrow(F\wedge F)]\Longleftrightarrow(V\vee V)\\
 &=[F\Longrightarrow F]\Longleftrightarrow V\\
 &=V
@@ -390,7 +390,7 @@ Dada la proposición: ``Obtendré un puntaje aprobatorio si y solo si estudio co
 \item
   Expresarla simbólicamente
 \item
-  Negar oracianalmente la proposición
+  Negar oracionalmente la proposición
 \end{itemize}
 
 \begin{exercise}
