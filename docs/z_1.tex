@@ -208,15 +208,31 @@ www.
 \chapter{Conjuntos}\label{conjuntos}}
 
 \begin{definition}[Conjunto]
-\protect\hypertarget{def:conjunto}{}{\label{def:conjunto} \iffalse (Conjunto) \fi{} }ES una coleccion de elementos con caractersiticas similares
+\protect\hypertarget{def:conjunto}{}{\label{def:conjunto} \iffalse (Conjunto) \fi{} }Es una coleccion de elementos con caractersiticas similares
 \end{definition}
 
 \begin{definition}[Determinacion de conjuntos]
-\protect\hypertarget{def:conjunto2}{}{\label{def:conjunto2} \iffalse (Determinacion de conjuntos) \fi{} }Por extencion y comprension
+\protect\hypertarget{def:conjunto2}{}{\label{def:conjunto2} \iffalse (Determinacion de conjuntos) \fi{} }Por extensión y comprensión
 \end{definition}
 
 \hypertarget{funciuxf3n-proposicional-y-cuantificadores}{%
 \section{Función proposicional y cuantificadores}\label{funciuxf3n-proposicional-y-cuantificadores}}
+
+\hypertarget{funciuxf3n-proposicional}{%
+\subsection{Función proposicional}\label{funciuxf3n-proposicional}}
+
+\begin{definition}[Función proposicional]
+\protect\hypertarget{def:proposicional}{}{\label{def:proposicional} \iffalse (Función proposicional) \fi{} }
+\end{definition}
+
+Es un enunciado \(P(X)\) esl cual se convierte en una proposicion cuando el valor de \(x\) es una constante.
+
+Por ejemplo \(P(x)\): \(x\) es un numero par
+
+Al conjunto de todos lo valores de \(x\) se denomina \emph{domino de la variable}
+
+\hypertarget{cuantificadores}{%
+\subsection{Cuantificadores}\label{cuantificadores}}
 
 \begin{definition}[existencial]
 \protect\hypertarget{def:existencial}{}{\label{def:existencial} \iffalse (existencial) \fi{} }ES una coleccion de elementos con caractersiticas similares
@@ -226,6 +242,8 @@ www.
 \exists
 \]
 
+Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de \(x\) perteneciente al Dominio de \(A\), es Verdadero. Se denota; \(\exists x / P (x)\) Se lee: ``Existe al menos un \(x\)'', ``Algunos \(x\)''," Hay \(x\)``,''Existe un \(x\)", etc.
+
 \begin{definition}[Universal]
 \protect\hypertarget{def:universal}{}{\label{def:universal} \iffalse (Universal) \fi{} }ES una coleccion de elementos con caractersiticas similares
 \end{definition}
@@ -234,8 +252,18 @@ www.
 \forall
 \]
 
+Es una generalización de la \emph{conjunción}. Debido a esto es verdadero cuando todos los valores de \(x\) que pertenecen al Dominio de \(A\) son Verdaderos. Se denota: \(\forall x ; p(x)\) Se lee: ``Para Todo x'', ``Para cada x'', ``Todos (as) las x'', ``Todo x''; etc.
+
 \hypertarget{negaciuxf3n-de-los-cuantificadores}{%
 \subsection{Negación de los cuantificadores}\label{negaciuxf3n-de-los-cuantificadores}}
+
+cambiando el cuantificadoruniversal por el cuantificador existencial, o viceversa
+
+es decir \[\sim(\exists x; P(x))\equiv\forall x;P(x)\]
+
+\[
+\sim(\forall  x; P(x))\equiv\exists x;P(x)
+\]
 
 \hypertarget{operaciones-entre-conjuntos}{%
 \section{Operaciones entre conjuntos}\label{operaciones-entre-conjuntos}}

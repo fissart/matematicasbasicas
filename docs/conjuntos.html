@@ -75,7 +75,9 @@
 <ul>
 <li class="chapter" data-level="2.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional-y-cuantificadores"><i class="fa fa-check"></i><b>2.1</b> Función proposicional y cuantificadores</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="conjuntos.html"><a href="conjuntos.html#negación-de-los-cuantificadores"><i class="fa fa-check"></i><b>2.1.1</b> Negación de los cuantificadores</a></li>
+<li class="chapter" data-level="2.1.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional"><i class="fa fa-check"></i><b>2.1.1</b> Función proposicional</a></li>
+<li class="chapter" data-level="2.1.2" data-path="conjuntos.html"><a href="conjuntos.html#cuantificadores"><i class="fa fa-check"></i><b>2.1.2</b> Cuantificadores</a></li>
+<li class="chapter" data-level="2.1.3" data-path="conjuntos.html"><a href="conjuntos.html#negación-de-los-cuantificadores"><i class="fa fa-check"></i><b>2.1.3</b> Negación de los cuantificadores</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="conjuntos.html"><a href="conjuntos.html#operaciones-entre-conjuntos"><i class="fa fa-check"></i><b>2.2</b> Operaciones entre conjuntos</a></li>
 <li class="chapter" data-level="2.3" data-path="conjuntos.html"><a href="conjuntos.html#relaciones-entre-conjuntos-conjuntos-iguales.-conjuntos-equivalentes"><i class="fa fa-check"></i><b>2.3</b> Relaciones entre Conjuntos: Conjuntos Iguales. Conjuntos equivalentes</a></li>
@@ -120,30 +122,50 @@
 <h1><span class="header-section-number">Capítulo 2</span> Conjuntos</h1>
 
 <div class="definition">
-<span id="def:conjunto" class="definition"><strong>Definición 2.1  (Conjunto)  </strong></span>ES una coleccion de elementos con caractersiticas similares
+<span id="def:conjunto" class="definition"><strong>Definición 2.1  (Conjunto)  </strong></span>Es una coleccion de elementos con caractersiticas similares
 </div>
 
 <div class="definition">
-<span id="def:conjunto2" class="definition"><strong>Definición 2.2  (Determinacion de conjuntos)  </strong></span>Por extencion y comprension
+<span id="def:conjunto2" class="definition"><strong>Definición 2.2  (Determinacion de conjuntos)  </strong></span>Por extensión y comprensión
 </div>
 <div id="función-proposicional-y-cuantificadores" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Función proposicional y cuantificadores</h2>
+<div id="función-proposicional" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Función proposicional</h3>
 
 <div class="definition">
-<span id="def:existencial" class="definition"><strong>Definición 2.3  (existencial)  </strong></span>ES una coleccion de elementos con caractersiticas similares
+<span id="def:proposicional" class="definition"><strong>Definición 2.3  (Función proposicional)  </strong></span>
+</div>
+<p>Es un enunciado <span class="math inline">\(P(X)\)</span> esl cual se convierte en una proposicion cuando el valor de <span class="math inline">\(x\)</span> es una constante.</p>
+<p>Por ejemplo <span class="math inline">\(P(x)\)</span>: <span class="math inline">\(x\)</span> es un numero par</p>
+<p>Al conjunto de todos lo valores de <span class="math inline">\(x\)</span> se denomina <em>domino de la variable</em></p>
+</div>
+<div id="cuantificadores" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Cuantificadores</h3>
+
+<div class="definition">
+<span id="def:existencial" class="definition"><strong>Definición 2.4  (existencial)  </strong></span>ES una coleccion de elementos con caractersiticas similares
 </div>
 <p><span class="math display">\[
 \exists
 \]</span></p>
+<p>Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de <span class="math inline">\(x\)</span> perteneciente al Dominio de <span class="math inline">\(A\)</span>, es Verdadero. Se denota; <span class="math inline">\(\exists x / P (x)\)</span> Se lee: “Existe al menos un <span class="math inline">\(x\)</span>,” “Algunos <span class="math inline">\(x\)</span>,”" Hay <span class="math inline">\(x\)</span>“,”Existe un <span class="math inline">\(x\)</span>", etc.</p>
 
 <div class="definition">
-<span id="def:universal" class="definition"><strong>Definición 2.4  (Universal)  </strong></span>ES una coleccion de elementos con caractersiticas similares
+<span id="def:universal" class="definition"><strong>Definición 2.5  (Universal)  </strong></span>ES una coleccion de elementos con caractersiticas similares
 </div>
 <p><span class="math display">\[
 \forall
 \]</span></p>
-<div id="negación-de-los-cuantificadores" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Negación de los cuantificadores</h3>
+<p>Es una generalización de la <em>conjunción</em>. Debido a esto es verdadero cuando todos los valores de <span class="math inline">\(x\)</span> que pertenecen al Dominio de <span class="math inline">\(A\)</span> son Verdaderos. Se denota: <span class="math inline">\(\forall x ; p(x)\)</span> Se lee: “Para Todo x,” “Para cada x,” “Todos (as) las x,” “Todo x”; etc.</p>
+</div>
+<div id="negación-de-los-cuantificadores" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Negación de los cuantificadores</h3>
+<p>cambiando el cuantificadoruniversal por el cuantificador existencial, o viceversa</p>
+<p>es decir <span class="math display">\[\sim(\exists x; P(x))\equiv\forall x;P(x)\]</span></p>
+<p><span class="math display">\[
+\sim(\forall  x; P(x))\equiv\exists x;P(x)
+\]</span></p>
 </div>
 </div>
 <div id="operaciones-entre-conjuntos" class="section level2" number="2.2">

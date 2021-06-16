@@ -1,10 +1,13 @@
 def:conjunto
 def:conjunto2
+def:proposicional
 def:existencial
 def:universal
 logica
 conjuntos
 función-proposicional-y-cuantificadores
+función-proposicional
+cuantificadores
 negación-de-los-cuantificadores
 operaciones-entre-conjuntos
 relaciones-entre-conjuntos-conjuntos-iguales.-conjuntos-equivalentes
