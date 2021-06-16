@@ -8,6 +8,20 @@ Es una coleccion de elementos con caractersiticas similares
 Por extensión y comprensión
 ```
 
+Cornutos universal, vacio, unitario
+
+$$
+\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
+$$
+
+$$
+\phi=\left\{x/x\neq x\right\}
+$$
+
+$$
+A=\left\{a\right\}
+$$
+
 ## Función proposicional y cuantificadores
 
 ### Función proposicional
@@ -15,7 +29,7 @@ Por extensión y comprensión
 ```{definition, proposicional, name="Función proposicional"}
 ```
 
-Sea $x$ una variable $P(x)$ un enunciado, $P(x)$ es una *función proposicional* si al sustituir la variable con una constante este se convierte en una proposición.
+Sea $x$ una variable $P(x)$ un enunciado, $P(x)$ es una ***función proposicional*** si al sustituir la variable con una constante este se convierte en una proposición.
 
 Por ejemplo $P(x)$: $x$ es un numero par
 
@@ -39,16 +53,77 @@ $$
 \forall
 $$
 
-Es una generalización de la *conjunción*. Debido a esto es verdadero cuando todos los valores de $x$ que pertenecen al Dominio de $A$ son Verdaderos. Se denota: $\forall x ; p(x)$ Se lee: "Para Todo x", "Para cada x", "Todos (as) las x", "Todo x"; etc.
+Es una generalización de la *conjunción*. Debido a esto es verdadero cuando todos los valores de $x$ que pertenecen al Dominio de $A$ son Verdaderos. Se denota: $\forall x ; p(x)$ Se lee: "Para Todo $x$", "Para cada $x$", "Todos (as) las $x$", "Todo $x$".
 
-### Negación de los cuantificadores
+Sea $A=\left\{1,2,3,4,5\right\}$ y la función proposicional $3x-2<12$ entonces las proposiciones
 
-cambiando el cuantificadoruniversal por el cuantificador existencial, o viceversa
+1.  $\forall x\in A;3x-1<14$
+2.  $\exists\; x\in A|3x-2<12$
 
-es decir $$\sim(\exists x; P(x))\equiv\forall x;P(x)$$
+son falsa y verdadera y se escribe
+
+```{definition, universal2, name="Proposición universal"}
+```
+
+Una proposición universal es aquella que está provista de un cuantificador universal, y tiene la forma: $$\forall x\in A:p(x)$$
+
+```{definition, existencial2, name="Proposición existencial"}
+```
+
+Una proposición universal es aquella que está provista de un cuantificador existencial, y tiene la forma: $$\exists x\in A:p(x)$$
+
+### Negación de las proposiciones universal y existencial
+
+Cambiando el cuantificador universal por el cuantificador existencial, o viceversa
+
+es decir $$\sim[\exists x; P(x)]\equiv\forall x;\sim P(x)$$
 
 $$
-\sim(\forall  x; P(x))\equiv\exists x;P(x)
+\sim\left[\forall  x; P(x)\right]\equiv\exists\; x;\sim P(x)
+$$
+
+La negación del ***cuantificador universal*** es equivalente a la *afirmación de un cuantificador existencial* respecto de la ***función proposicional negada*****.**
+
+La negación de un ***cuantificador existencial*** es equivalente a la *afirmación de un cuantificador universal* respecto de la ***función proposicional negada***.
+
+```{example}
+```
+
+Dada la proposición: "Si todos los números primos son impa­res, los números positivos son mayores que -1"
+
+-   Expresarla simbólicamente
+-   Negar oracianalmente la proposición
+
+```{solution}
+```
+
+Sea $p(x):$ números primos impares y $q(x):$ numeros positivos mayores que -1
+
+-   $\forall x:[p(x)\rightarrow q(x)]$
+
+-   
+
+-   
+
+```{example}
+```
+
+Dado el conjunto $A=\left\{x\in\mathbb{N}:-14<x<27\right\}$. Hallar el valor de verdad de $$
+s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
+$$ si $p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]$, $q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]$ y $q=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]$
+
+```{solution}
+```
+
+$A\left\{1,2,3,\ldots,26\right\}$ luego el valor de $\text{V}(p)=F$, $\text{V}(q)=F$ y $\text{V}(r)=V$ por lo tanto
+
+$$
+\begin{aligned}
+\text{V}(s)&=[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
+&=[(V\wedge F)\Longrightarrow(F\wedge F)]\Longleftrightarrow(V\vee V)\\
+&=[F\Longrightarrow F]\Longleftrightarrow V\\
+&=V
+\end{aligned}
 $$
 
 ## Operaciones entre conjuntos
@@ -57,7 +132,9 @@ $$
 
 ## Representación Gráfica de los Conjuntos
 
-## Unión de Conjuntos.
+Diagrama de euler
+
+## Unión de Conjuntos
 
 ## Intersección de Conjuntos. Propiedades
 

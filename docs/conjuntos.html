@@ -77,12 +77,12 @@
 <ul>
 <li class="chapter" data-level="2.1.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional"><i class="fa fa-check"></i><b>2.1.1</b> Función proposicional</a></li>
 <li class="chapter" data-level="2.1.2" data-path="conjuntos.html"><a href="conjuntos.html#cuantificadores"><i class="fa fa-check"></i><b>2.1.2</b> Cuantificadores</a></li>
-<li class="chapter" data-level="2.1.3" data-path="conjuntos.html"><a href="conjuntos.html#negación-de-los-cuantificadores"><i class="fa fa-check"></i><b>2.1.3</b> Negación de los cuantificadores</a></li>
+<li class="chapter" data-level="2.1.3" data-path="conjuntos.html"><a href="conjuntos.html#negación-de-las-proposiciones-universal-y-existencial"><i class="fa fa-check"></i><b>2.1.3</b> Negación de las proposiciones universal y existencial</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="conjuntos.html"><a href="conjuntos.html#operaciones-entre-conjuntos"><i class="fa fa-check"></i><b>2.2</b> Operaciones entre conjuntos</a></li>
 <li class="chapter" data-level="2.3" data-path="conjuntos.html"><a href="conjuntos.html#relaciones-entre-conjuntos-conjuntos-iguales.-conjuntos-equivalentes"><i class="fa fa-check"></i><b>2.3</b> Relaciones entre Conjuntos: Conjuntos Iguales. Conjuntos equivalentes</a></li>
 <li class="chapter" data-level="2.4" data-path="conjuntos.html"><a href="conjuntos.html#representación-gráfica-de-los-conjuntos"><i class="fa fa-check"></i><b>2.4</b> Representación Gráfica de los Conjuntos</a></li>
-<li class="chapter" data-level="2.5" data-path="conjuntos.html"><a href="conjuntos.html#unión-de-conjuntos."><i class="fa fa-check"></i><b>2.5</b> Unión de Conjuntos.</a></li>
+<li class="chapter" data-level="2.5" data-path="conjuntos.html"><a href="conjuntos.html#unión-de-conjuntos"><i class="fa fa-check"></i><b>2.5</b> Unión de Conjuntos</a></li>
 <li class="chapter" data-level="2.6" data-path="conjuntos.html"><a href="conjuntos.html#intersección-de-conjuntos.-propiedades"><i class="fa fa-check"></i><b>2.6</b> Intersección de Conjuntos. Propiedades</a></li>
 <li class="chapter" data-level="2.7" data-path="conjuntos.html"><a href="conjuntos.html#distributivas-de-la-unión-e-intersección"><i class="fa fa-check"></i><b>2.7</b> Distributivas de la Unión e Intersección</a></li>
 <li class="chapter" data-level="2.8" data-path="conjuntos.html"><a href="conjuntos.html#leyes-de-absorción"><i class="fa fa-check"></i><b>2.8</b> Leyes de Absorción</a></li>
@@ -128,6 +128,16 @@
 <div class="definition">
 <span id="def:conjunto2" class="definition"><strong>Definición 2.2  (Determinacion de conjuntos)  </strong></span>Por extensión y comprensión
 </div>
+<p>Cornutos universal, vacio, unitario</p>
+<p><span class="math display">\[
+\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
+\]</span></p>
+<p><span class="math display">\[
+\phi=\left\{x/x\neq x\right\}
+\]</span></p>
+<p><span class="math display">\[
+A=\left\{a\right\}
+\]</span></p>
 <div id="función-proposicional-y-cuantificadores" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Función proposicional y cuantificadores</h2>
 <div id="función-proposicional" class="section level3" number="2.1.1">
@@ -136,7 +146,7 @@
 <div class="definition">
 <span id="def:proposicional" class="definition"><strong>Definición 2.3  (Función proposicional)  </strong></span>
 </div>
-<p>Sea <span class="math inline">\(x\)</span> una variable <span class="math inline">\(P(x)\)</span> un enunciado, <span class="math inline">\(P(x)\)</span> es una <em>función proposicional</em> si al sustituir la variable con una constante este se convierte en una proposición.</p>
+<p>Sea <span class="math inline">\(x\)</span> una variable <span class="math inline">\(P(x)\)</span> un enunciado, <span class="math inline">\(P(x)\)</span> es una <strong><em>función proposicional</em></strong> si al sustituir la variable con una constante este se convierte en una proposición.</p>
 <p>Por ejemplo <span class="math inline">\(P(x)\)</span>: <span class="math inline">\(x\)</span> es un numero par</p>
 <p>Al conjunto de todos lo valores de <span class="math inline">\(x\)</span> se denomina <em>domino de la variable</em></p>
 </div>
@@ -157,14 +167,71 @@
 <p><span class="math display">\[
 \forall
 \]</span></p>
-<p>Es una generalización de la <em>conjunción</em>. Debido a esto es verdadero cuando todos los valores de <span class="math inline">\(x\)</span> que pertenecen al Dominio de <span class="math inline">\(A\)</span> son Verdaderos. Se denota: <span class="math inline">\(\forall x ; p(x)\)</span> Se lee: “Para Todo x,” “Para cada x,” “Todos (as) las x,” “Todo x”; etc.</p>
+<p>Es una generalización de la <em>conjunción</em>. Debido a esto es verdadero cuando todos los valores de <span class="math inline">\(x\)</span> que pertenecen al Dominio de <span class="math inline">\(A\)</span> son Verdaderos. Se denota: <span class="math inline">\(\forall x ; p(x)\)</span> Se lee: “Para Todo <span class="math inline">\(x\)</span>,” “Para cada <span class="math inline">\(x\)</span>,” “Todos (as) las <span class="math inline">\(x\)</span>,” “Todo <span class="math inline">\(x\)</span>.”</p>
+<p>Sea <span class="math inline">\(A=\left\{1,2,3,4,5\right\}\)</span> y la función proposicional <span class="math inline">\(3x-2&lt;12\)</span> entonces las proposiciones</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\forall x\in A;3x-1&lt;14\)</span></li>
+<li><span class="math inline">\(\exists\; x\in A|3x-2&lt;12\)</span></li>
+</ol>
+<p>son falsa y verdadera y se escribe</p>
+
+<div class="definition">
+<span id="def:universal2" class="definition"><strong>Definición 2.6  (Proposición universal)  </strong></span>
 </div>
-<div id="negación-de-los-cuantificadores" class="section level3" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> Negación de los cuantificadores</h3>
-<p>cambiando el cuantificadoruniversal por el cuantificador existencial, o viceversa</p>
-<p>es decir <span class="math display">\[\sim(\exists x; P(x))\equiv\forall x;P(x)\]</span></p>
+<p>Una proposición universal es aquella que está provista de un cuantificador universal, y tiene la forma: <span class="math display">\[\forall x\in A:p(x)\]</span></p>
+
+<div class="definition">
+<span id="def:existencial2" class="definition"><strong>Definición 2.7  (Proposición existencial)  </strong></span>
+</div>
+<p>Una proposición universal es aquella que está provista de un cuantificador existencial, y tiene la forma: <span class="math display">\[\exists x\in A:p(x)\]</span></p>
+</div>
+<div id="negación-de-las-proposiciones-universal-y-existencial" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Negación de las proposiciones universal y existencial</h3>
+<p>Cambiando el cuantificador universal por el cuantificador existencial, o viceversa</p>
+<p>es decir <span class="math display">\[\sim[\exists x; P(x)]\equiv\forall x;\sim P(x)\]</span></p>
 <p><span class="math display">\[
-\sim(\forall  x; P(x))\equiv\exists x;P(x)
+\sim\left[\forall  x; P(x)\right]\equiv\exists\; x;\sim P(x)
+\]</span></p>
+<p>La negación del <strong><em>cuantificador universal</em></strong> es equivalente a la <em>afirmación de un cuantificador existencial</em> respecto de la <strong><em>función proposicional negada</em>.</strong></p>
+<p>La negación de un <strong><em>cuantificador existencial</em></strong> es equivalente a la <em>afirmación de un cuantificador universal</em> respecto de la <strong><em>función proposicional negada</em></strong>.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-1" class="example"><strong>Ejemplo 2.1  </strong></span>
+</div>
+<p>Dada la proposición: “Si todos los números primos son impa­res, los números positivos son mayores que -1”</p>
+<ul>
+<li>Expresarla simbólicamente</li>
+<li>Negar oracianalmente la proposición</li>
+</ul>
+
+<div class="solution">
+ <span class="solution"><em>Solución. </em></span> 
+</div>
+<p>Sea <span class="math inline">\(p(x):\)</span> números primos impares y <span class="math inline">\(q(x):\)</span> numeros positivos mayores que -1</p>
+<ul>
+<li><p><span class="math inline">\(\forall x:[p(x)\rightarrow q(x)]\)</span></p></li>
+<li></li>
+<li></li>
+</ul>
+
+<div class="example">
+<span id="exm:unnamed-chunk-3" class="example"><strong>Ejemplo 2.2  </strong></span>
+</div>
+<p>Dado el conjunto <span class="math inline">\(A=\left\{x\in\mathbb{N}:-14&lt;x&lt;27\right\}\)</span>. Hallar el valor de verdad de <span class="math display">\[
+s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
+\]</span> si <span class="math inline">\(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2&gt;y^2]\)</span>, <span class="math inline">\(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y&lt;-z]\)</span> y <span class="math inline">\(q=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2&gt;y]\)</span></p>
+
+<div class="solution">
+ <span class="solution"><em>Solución. </em></span> 
+</div>
+<p><span class="math inline">\(A\left\{1,2,3,\ldots,26\right\}\)</span> luego el valor de <span class="math inline">\(\text{V}(p)=F\)</span>, <span class="math inline">\(\text{V}(q)=F\)</span> y <span class="math inline">\(\text{V}(r)=V\)</span> por lo tanto</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{V}(s)&amp;=[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
+&amp;=[(V\wedge F)\Longrightarrow(F\wedge F)]\Longleftrightarrow(V\vee V)\\
+&amp;=[F\Longrightarrow F]\Longleftrightarrow V\\
+&amp;=V
+\end{aligned}
 \]</span></p>
 </div>
 </div>
@@ -176,9 +243,10 @@
 </div>
 <div id="representación-gráfica-de-los-conjuntos" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Representación Gráfica de los Conjuntos</h2>
+<p>Diagrama de euler</p>
 </div>
-<div id="unión-de-conjuntos." class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Unión de Conjuntos.</h2>
+<div id="unión-de-conjuntos" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Unión de Conjuntos</h2>
 </div>
 <div id="intersección-de-conjuntos.-propiedades" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> Intersección de Conjuntos. Propiedades</h2>
