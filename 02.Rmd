@@ -4,6 +4,10 @@
 ES una coleccion de elementos con caractersiticas similares
 ```
 
+```{definition, conjunto2, name="Determinacion de conjuntos"}
+Por extencion y comprension
+```
+
 ## Función proposicional y cuantificadores
 
 ```{definition, existencial, name="existencial"}
@@ -21,3 +25,27 @@ ES una coleccion de elementos con caractersiticas similares
 $$
 \forall
 $$
+
+### Negación de los cuantificadores
+
+## Operaciones entre conjuntos
+
+## Relaciones entre Conjuntos: Conjuntos Iguales. Conjuntos equivalentes
+
+## Representación Gráfica de los Conjuntos
+
+## Unión de Conjuntos.
+
+## Intersección de Conjuntos. Propiedades
+
+## Distributivas de la Unión e Intersección
+
+## Leyes de Absorción
+
+## Diferencia de Conjuntos.
+
+## Complemento de un Conjunto. Propiedades
+
+## Diferencia Simétrica.
+
+## Número de elementos de un Conjunto. Propiedades
