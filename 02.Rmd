@@ -1,33 +1,23 @@
-# Formas tridimensionales
+# Conjuntos
 
-wwwwwwwwwwwwwwwww
-
-```{r pressure1, echo=FALSE, fig.cap="Elipse", fig.pos ="!ht", fig.align="center"}
-knitr::include_graphics("puntolinea.svg")
+```{definition, conjunto, name="Conjunto"}
+ES una coleccion de elementos con caractersiticas similares
 ```
 
-## Superficies poliedricas
+## Función proposicional y cuantificadores
 
-www
+```{definition, existencial, name="existencial"}
+ES una coleccion de elementos con caractersiticas similares
+```
 
-### Solidos platónicos
+$$
+\exists
+$$
 
-### Los prismas
+```{definition, universal, name="Universal"}
+ES una coleccion de elementos con caractersiticas similares
+```
 
-## Superficies de revolucion y regladas
-
-## Superficies curvas
-
-### Cerradas
-
-Esfera Elipsoide
-
-### Abiertas
-
-### Orientables
-
-### No orientables
-
-## Fractales 3D
-
-## Desarrollo de forma tridimensionales
+$$
+\forall
+$$

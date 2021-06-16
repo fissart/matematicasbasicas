@@ -1,11 +1,1 @@
-# Formas naturales
-
-## Geometrizacion
-
-## Redes
-
-## Geomorfologia
-
-## Fitomorfologia
-
-## Zoomorfologia
+# Funciones exponenciales logarítmicas

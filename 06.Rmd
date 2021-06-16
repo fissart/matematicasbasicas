@@ -1,14 +1,7 @@
-# Formas Matematicas
-```{r nice-tab, message=TRUE, paged.print=TRUE, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
-wwwwwwwwwwwwwwwwwwwwwwwwwww
+# Inducción matemática
 
-## Funciones
+# Suceciones
 
-wwwwwwwwww\index{wwwwwwww} [@vincze2014college]
+# Números complejos
 
-## Ejercicios
+# Polinomios

@@ -3,36 +3,3 @@
 Temas de reforzamiento o conocimientos preliminares que son necesarias para entender el contenido.
 
 # Trasformaciones
-
-Se refiere a las transformaciones o modificaciones que pueden sufrir las formas, es decir los achatamientos, las elongaciones los cambios de posición etc., mediante la manipulación de los puntos pertenecientes a la forma.
-
-```{definition, transformacion, name="Transformación"}
-Una transformacion es el proceso de modificar una forma covirtiendola en otra
-```
-
-## Trasformaciones elementales
-
-En esta sección se trata sobre la trasformaciones básicas que son la traslación, la rotación, la reflexión y la homotescia o escala
-
-
-# Centro de masa
-
-## Centro de masa de objetos 2D
-
-### Metodos matematicos
-
-### Metodos tecnicos
-
-#### Método del borde de la mesa
-
-#### Método de la plomada
-
-## Centro de masa de objetos 3D
-
-### Metodos matematicos
-
-### Metodos tecnicos
-
-#### Método de las secciones
-
-#### Método de la plomada
