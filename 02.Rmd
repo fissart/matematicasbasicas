@@ -199,13 +199,13 @@ P(A)=\left\{X\;|\;X\subset A\right\}
 $$
 
 ```{remark, potencia}
+* $P(A)$ tiene $2^n$ elementos
+* $\emptyset\in P(A)$
+* $A\in P(A)$
+
 ```
 
--   $P(A)$ tiene $2^n$ elementos
--   $\emptyset\in P(A)$
--   $A\in P(A)$
-
-### Propiedades
+Propiedades
 
 -   $P(\emptyset)=\left\{\emptyset\right\}$
 -   $A\subset B\leftrightarrow P(A)\subset P(B)$
@@ -227,7 +227,7 @@ $$
 x\in A\cup B\leftrightarrow x\in A\vee x\in B
 $$
 
-#### Propiedades
+Propiedades
 
 -   $A\cup A=A$
 -   $A\cup \emptyset=A$
@@ -245,7 +245,7 @@ $$
 x\in A\cap B\leftrightarrow x\in A\wedge x\in B
 $$
 
-#### Propiedades
+Propiedades
 
 -   $A\cap A=A$
 -   $A\cap \emptyset=\emptyset$
@@ -263,7 +263,7 @@ $$
 x\in A- B\leftrightarrow x\in A\wedge x\notin B
 $$
 
-#### Propiedades
+Propiedades
 
 -   $A- A=\emptyset$
 -   $A- \emptyset=A$
@@ -283,7 +283,7 @@ $$
 
 Si $B=U$ entonces $\mathcal{C}_BA=A'=A^C=\overline{A}$
 
-#### Propiedades
+Propiedades
 
 -   $\mathcal{C}_BA\subset B$ y $\mathcal{C}_AB\subset A$
 -   $A'\cup A=U$ o $A\cup \mathcal{C}_AB=A$
@@ -303,7 +303,7 @@ $$
 x\in A\Delta B\leftrightarrow (x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)
 $$
 
-#### Propiedades
+Propiedades
 
 -   $A\Delta B=\emptyset$
 -   $A\Delta \emptyset=A$
