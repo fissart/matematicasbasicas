@@ -118,7 +118,7 @@
 
 \title{Matemáticas básicas}
 \author{Ricardo Michel MALLQUI BAÑOS}
-\date{2021-06-16}
+\date{2021-06-23}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Teorema}[chapter]
@@ -382,37 +382,255 @@ s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)
 \] si \(p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]\), \(q=(\forall z\in A, \exists x \in A)[x\neq y]\) y \(r=(\forall z\in A, \forall y \in A)[yx^2>500]\)
 \end{exercise}
 
-\hypertarget{operaciones-entre-conjuntos}{%
-\section{Operaciones entre conjuntos}\label{operaciones-entre-conjuntos}}
+\hypertarget{conjuntos-iguales}{%
+\section{Conjuntos Iguales}\label{conjuntos-iguales}}
 
-\hypertarget{relaciones-entre-conjuntos-conjuntos-iguales.-conjuntos-equivalentes}{%
-\section{Relaciones entre Conjuntos: Conjuntos Iguales. Conjuntos equivalentes}\label{relaciones-entre-conjuntos-conjuntos-iguales.-conjuntos-equivalentes}}
+\[\begin{aligned}A=B&\Longleftrightarrow \left\{(x\in A\rightarrow x\in B)\wedge(x\in B\rightarrow x\in A)\right\}\\
+&\Longleftrightarrow x\in A \leftrightarrow x\in B 
+\end{aligned}\]
+
+\[\begin{aligned}A\neq B&\Longleftrightarrow \left\{(\exists x\in A; x\notin B)\vee(\exists x\in B; x\notin A)\right\}\\
+&\Longleftrightarrow x\in A \leftrightarrow x\in B 
+\end{aligned}\]
+
+\hypertarget{propiedades}{%
+\subsection{Propiedades}\label{propiedades}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A=A\)
+\item
+  \(A=B\rightarrow B=A\)
+\item
+  \(A=B\) y \(B=C\) entonces \(A=C\)
+\end{itemize}
+
+\hypertarget{inclusiuxf3n-y-subconjuntos}{%
+\section{Inclusión y subconjuntos}\label{inclusiuxf3n-y-subconjuntos}}
+
+\[
+\begin{aligned}
+A\subset B&\leftrightarrow\left\{x\in A\rightarrow x\in B\right\}\\
+&\leftrightarrow\left\{\forall x\in A, x\in B\right\}
+\end{aligned}
+\]
+
+\[
+A\not\subset B\leftrightarrow\exists x\in A\;|\; x\notin B
+\]
+
+\hypertarget{propiedades-1}{%
+\subsection{Propiedades}\label{propiedades-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\subset A\)
+\item
+  \(A\subset B\wedge B\subset A\rightarrow A\subset B\)
+\item
+  \(A\subset B\wedge B\subset C\rightarrow A\subset C\)
+\item
+  \(\forall A\) \(\emptyset\subset A\)
+\end{itemize}
+
+\hypertarget{conjuntos-disjuntos}{%
+\section{Conjuntos disjuntos}\label{conjuntos-disjuntos}}
+
+\[
+A\text{ disjunto de } B\leftrightarrow\nexists x\;|\; x\in A\wedge x\in B  
+\]
+
+\hypertarget{conjunto-potencia}{%
+\section{Conjunto potencia}\label{conjunto-potencia}}
+
+\[
+P(A)=\left\{X\;|\;X\subset A\right\}
+\]
+
+\begin{remark}
+\iffalse{} {Observación. } \fi{}
+\end{remark}
+
+\begin{itemize}
+\tightlist
+\item
+  \(P(A)\) tiene \(2^n\) elementos
+\item
+  \(\emptyset\in P(A)\)
+\item
+  \(A\in P(A)\)
+\end{itemize}
+
+\hypertarget{propiedades-2}{%
+\subsection{Propiedades}\label{propiedades-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(P(\emptyset)=\left\{\emptyset\right\}\)
+\item
+  \(A\subset B\leftrightarrow P(A)\subset P(B)\)
+\item
+  \(A= B\leftrightarrow P(A)= P(B)\)
+\end{itemize}
 
 \hypertarget{representaciuxf3n-gruxe1fica-de-los-conjuntos}{%
 \section{Representación Gráfica de los Conjuntos}\label{representaciuxf3n-gruxe1fica-de-los-conjuntos}}
 
 Diagrama de euler
 
-\hypertarget{uniuxf3n-de-conjuntos}{%
-\section{Unión de Conjuntos}\label{uniuxf3n-de-conjuntos}}
+\hypertarget{operaciones-entre-conjuntos}{%
+\section{Operaciones entre conjuntos}\label{operaciones-entre-conjuntos}}
 
-\hypertarget{intersecciuxf3n-de-conjuntos.-propiedades}{%
-\section{Intersección de Conjuntos. Propiedades}\label{intersecciuxf3n-de-conjuntos.-propiedades}}
+\hypertarget{uniuxf3n}{%
+\subsection{Unión}\label{uniuxf3n}}
 
-\hypertarget{distributivas-de-la-uniuxf3n-e-intersecciuxf3n}{%
-\section{Distributivas de la Unión e Intersección}\label{distributivas-de-la-uniuxf3n-e-intersecciuxf3n}}
+\[
+A\cup B=\left\{x/x\in A\vee x\in B\right\}
+\]
 
-\hypertarget{leyes-de-absorciuxf3n}{%
-\section{Leyes de Absorción}\label{leyes-de-absorciuxf3n}}
+\[
+x\in A\cup B\leftrightarrow x\in A\vee x\in B
+\]
 
-\hypertarget{diferencia-de-conjuntos.}{%
-\section{Diferencia de Conjuntos.}\label{diferencia-de-conjuntos.}}
+\hypertarget{propiedades-3}{%
+\subsubsection{Propiedades}\label{propiedades-3}}
 
-\hypertarget{complemento-de-un-conjunto.-propiedades}{%
-\section{Complemento de un Conjunto. Propiedades}\label{complemento-de-un-conjunto.-propiedades}}
+\begin{itemize}
+\tightlist
+\item
+  \(A\cup A=A\)
+\item
+  \(A\cup \emptyset=A\)
+\item
+  \(A\cup U=U\)
+\item
+  \(A\cup B=B\cup A\)
+\item
+  \((A\cup B)\cup C=A\cup(B\cup C)\)
+\end{itemize}
 
-\hypertarget{diferencia-simuxe9trica.}{%
-\section{Diferencia Simétrica.}\label{diferencia-simuxe9trica.}}
+\hypertarget{intersecciuxf3n}{%
+\subsection{Intersección}\label{intersecciuxf3n}}
+
+\[
+A\cap B=\left\{x/x\in A\wedge x\in B\right\}
+\]
+
+\[
+x\in A\cap B\leftrightarrow x\in A\wedge x\in B
+\]
+
+\hypertarget{propiedades-4}{%
+\subsubsection{Propiedades}\label{propiedades-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\cap A=A\)
+\item
+  \(A\cap \emptyset=\emptyset\)
+\item
+  \(A\cap U=A\)
+\item
+  \(A\cap B=B\cap A\)
+\item
+  \((A\cap B)\cap C=A\cap(B\cap C)\)
+\end{itemize}
+
+\hypertarget{diferencia}{%
+\subsection{Diferencia}\label{diferencia}}
+
+\[
+A- B=\left\{x/x\in A\wedge x\notin B\right\}
+\]
+
+\[
+x\in A- B\leftrightarrow x\in A\wedge x\notin B
+\]
+
+\hypertarget{propiedades-5}{%
+\subsubsection{Propiedades}\label{propiedades-5}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A- A=\emptyset\)
+\item
+  \(A- \emptyset=A\)
+\item
+  \(\emptyset-A=\emptyset\)
+\item
+  \(A- B\subset A\)
+\item
+  \((A-B)=(A\cup B)-B)=A-(A\cap B)\)
+\end{itemize}
+
+\hypertarget{complemento}{%
+\subsection{Complemento}\label{complemento}}
+
+\[
+\mathcal{C}_BA=B-A=\left\{x/x\in B\wedge x\notin A\right\}
+\]
+
+\[
+x\in \mathcal{C}_BA\leftrightarrow x\in B\vee x\notin A
+\]
+
+Si \(B=U\) entonces \(\mathcal{C}_BA=A'=A^C=\overline{A}\)
+
+\hypertarget{propiedades-6}{%
+\subsubsection{Propiedades}\label{propiedades-6}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathcal{C}_BA\subset B\) y \(\mathcal{C}_AB\subset A\)
+\item
+  \(A'\cup A=U\) o \(A\cup \mathcal{C}_AB=A\)
+\item
+  \(A\cap A'=\emptyset\) o \(A\cap \mathcal{C}_AB=\emptyset\)
+\item
+  \(U'=\emptyset\) o \(\mathcal{C}_AA=\emptyset\)
+\item
+  \(\emptyset'=U\) o \(\mathcal{C}_A\emptyset=A\)
+\item
+  \((A')'=A\) o \(\mathcal{C}_B(\mathcal{C}_BA)=A\)
+\item
+  \(A-B=A\cap B'\) o \(A-B=A\cap \mathcal{C}_AB\)
+\end{itemize}
+
+\hypertarget{diferencia-simuxe9trica}{%
+\subsection{Diferencia simétrica}\label{diferencia-simuxe9trica}}
+
+\[
+A\Delta B=\left\{x/(x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)\right\}
+\]
+
+\[
+x\in A\Delta B\leftrightarrow (x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)
+\]
+
+\hypertarget{propiedades-7}{%
+\subsubsection{Propiedades}\label{propiedades-7}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\Delta B=\emptyset\)
+\item
+  \(A\Delta \emptyset=A\)
+\item
+  \(A\Delta B=B\Delta A\)
+\item
+  \((A\Delta B)\Delta C=A\Delta(B\Delta C)\)
+\item
+  \((A\Delta B)\cap C=(A\Delta C)\Delta(B\Delta C)\)
+\item
+  \((A\Delta B)\cup(B\Delta C)=(A\cup B\cup C)-(A\cap B\cap C)\)
+\end{itemize}
 
 \hypertarget{nuxfamero-de-elementos-de-un-conjunto.-propiedades}{%
 \section{Número de elementos de un Conjunto. Propiedades}\label{nuxfamero-de-elementos-de-un-conjunto.-propiedades}}

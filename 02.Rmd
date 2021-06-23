@@ -30,7 +30,6 @@ $$
 Sea $x$ una variable $P(x)$ un *enunciado*, $P(x)$ es una ***función proposicional*** si al sustituir la variable con una constante este se convierte en una *proposición*.
 ```
 
-
 Por ejemplo $P(x)$: $x$ es un numero par
 
 Al conjunto de todos lo valores de $x$ se denomina *domino de la variable*
@@ -66,11 +65,9 @@ son falsa y verdadera respectivamente
 Una *proposición universal* es aquella que está provista de un *cuantificador universal*, y tiene la forma: $$\forall x\in A:p(x)$$
 ```
 
-
 ```{definition, existencial2, name="Proposición existencial"}
 Una *proposición existencial* es aquella que está provista de un *cuantificador existencial*, y tiene la forma: $$\exists x\in A:p(x)$$
 ```
-
 
 ### Negación de las proposiciones universal y existencial
 
@@ -113,13 +110,11 @@ Sea $p(x):$ números primos son impares y $q(x):$ números positivos mayores que
 
 ```
 
-
 ```{example}
 Dado el conjunto $A=\left\{x\in\mathbb{N}:-14<x<27\right\}$. Hallar el valor de verdad de $$
 s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
 $$ si $p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]$, $q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]$ y $r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]$
 ```
-
 
 ```{solution}
 $A=\left\{1,2,3,\ldots,26\right\}$ luego el valor de $\text{V}(p)=F$, $\text{V}(q)=V$ y $\text{V}(r)=V$ pues
@@ -140,7 +135,6 @@ $$
 $$
 ```
 
-
 ```{exercise}
 Dada la proposición: "Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso"
 
@@ -149,8 +143,6 @@ Dada la proposición: "Obtendré un puntaje aprobatorio si y solo si estudio con
 
 ```
 
-
-
 ```{exercise}
 Dado el conjunto $G=\left\{x\in\mathbb{Z}^+:-14<2x<20\right\}$. Hallar el valor de verdad de $$
 s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)] 
@@ -158,26 +150,166 @@ $$ si $p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]$, $q=(\forall z\i
 
 ```
 
-## Operaciones entre conjuntos
+## Conjuntos Iguales
 
-## Relaciones entre Conjuntos: Conjuntos Iguales. Conjuntos equivalentes
+$$\begin{aligned}A=B&\Longleftrightarrow \left\{(x\in A\rightarrow x\in B)\wedge(x\in B\rightarrow x\in A)\right\}\\
+&\Longleftrightarrow x\in A \leftrightarrow x\in B 
+\end{aligned}$$
+
+$$\begin{aligned}A\neq B&\Longleftrightarrow \left\{(\exists x\in A; x\notin B)\vee(\exists x\in B; x\notin A)\right\}\\
+&\Longleftrightarrow x\in A \leftrightarrow x\in B 
+\end{aligned}$$
+
+### Propiedades
+
+-   $A=A$
+-   $A=B\rightarrow B=A$
+-   $A=B$ y $B=C$ entonces $A=C$
+
+## Inclusión y subconjuntos
+
+$$
+\begin{aligned}
+A\subset B&\leftrightarrow\left\{x\in A\rightarrow x\in B\right\}\\
+&\leftrightarrow\left\{\forall x\in A, x\in B\right\}
+\end{aligned}
+$$
+
+$$
+A\not\subset B\leftrightarrow\exists x\in A\;|\; x\notin B
+$$
+
+### Propiedades
+
+-   $A\subset A$
+-   $A\subset B\wedge B\subset A\rightarrow A\subset B$
+-   $A\subset B\wedge B\subset C\rightarrow A\subset C$
+-   $\forall A$ $\emptyset\subset A$
+
+## Conjuntos disjuntos
+
+$$
+A\text{ disjunto de } B\leftrightarrow\nexists x\;|\; x\in A\wedge x\in B  
+$$
+
+## Conjunto potencia
+
+$$
+P(A)=\left\{X\;|\;X\subset A\right\}
+$$
+
+```{remark, potencia}
+```
+
+-   $P(A)$ tiene $2^n$ elementos
+-   $\emptyset\in P(A)$
+-   $A\in P(A)$
+
+### Propiedades
+
+-   $P(\emptyset)=\left\{\emptyset\right\}$
+-   $A\subset B\leftrightarrow P(A)\subset P(B)$
+-   $A= B\leftrightarrow P(A)= P(B)$
 
 ## Representación Gráfica de los Conjuntos
 
 Diagrama de euler
 
-## Unión de Conjuntos
+## Operaciones entre conjuntos
 
-## Intersección de Conjuntos. Propiedades
+### Unión
 
-## Distributivas de la Unión e Intersección
+$$
+A\cup B=\left\{x/x\in A\vee x\in B\right\}
+$$
 
-## Leyes de Absorción
+$$
+x\in A\cup B\leftrightarrow x\in A\vee x\in B
+$$
 
-## Diferencia de Conjuntos.
+#### Propiedades
 
-## Complemento de un Conjunto. Propiedades
+-   $A\cup A=A$
+-   $A\cup \emptyset=A$
+-   $A\cup U=U$
+-   $A\cup B=B\cup A$
+-   $(A\cup B)\cup C=A\cup(B\cup C)$
 
-## Diferencia Simétrica.
+### Intersección
+
+$$
+A\cap B=\left\{x/x\in A\wedge x\in B\right\}
+$$
+
+$$
+x\in A\cap B\leftrightarrow x\in A\wedge x\in B
+$$
+
+#### Propiedades
+
+-   $A\cap A=A$
+-   $A\cap \emptyset=\emptyset$
+-   $A\cap U=A$
+-   $A\cap B=B\cap A$
+-   $(A\cap B)\cap C=A\cap(B\cap C)$
+
+### Diferencia
+
+$$
+A- B=\left\{x/x\in A\wedge x\notin B\right\}
+$$
+
+$$
+x\in A- B\leftrightarrow x\in A\wedge x\notin B
+$$
+
+#### Propiedades
+
+-   $A- A=\emptyset$
+-   $A- \emptyset=A$
+-   $\emptyset-A=\emptyset$
+-   $A- B\subset A$
+-   $(A-B)=(A\cup B)-B)=A-(A\cap B)$
+
+### Complemento
+
+$$
+\mathcal{C}_BA=B-A=\left\{x/x\in B\wedge x\notin A\right\}
+$$
+
+$$
+x\in \mathcal{C}_BA\leftrightarrow x\in B\vee x\notin A
+$$
+
+Si $B=U$ entonces $\mathcal{C}_BA=A'=A^C=\overline{A}$
+
+#### Propiedades
+
+-   $\mathcal{C}_BA\subset B$ y $\mathcal{C}_AB\subset A$
+-   $A'\cup A=U$ o $A\cup \mathcal{C}_AB=A$
+-   $A\cap A'=\emptyset$ o $A\cap \mathcal{C}_AB=\emptyset$
+-   $U'=\emptyset$ o $\mathcal{C}_AA=\emptyset$
+-   $\emptyset'=U$ o $\mathcal{C}_A\emptyset=A$
+-   $(A')'=A$ o $\mathcal{C}_B(\mathcal{C}_BA)=A$
+-   $A-B=A\cap B'$ o $A-B=A\cap \mathcal{C}_AB$
+
+### Diferencia simétrica
+
+$$
+A\Delta B=\left\{x/(x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)\right\}
+$$
+
+$$
+x\in A\Delta B\leftrightarrow (x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)
+$$
+
+#### Propiedades
+
+-   $A\Delta B=\emptyset$
+-   $A\Delta \emptyset=A$
+-   $A\Delta B=B\Delta A$
+-   $(A\Delta B)\Delta C=A\Delta(B\Delta C)$
+-   $(A\Delta B)\cap C=(A\Delta C)\Delta(B\Delta C)$
+-   $(A\Delta B)\cup(B\Delta C)=(A\cup B\cup C)-(A\cap B\cap C)$
 
 ## Número de elementos de un Conjunto. Propiedades
