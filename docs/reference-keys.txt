@@ -34,6 +34,7 @@ complemento
 propiedades-6
 diferencia-simétrica
 propiedades-7
+ejercicios
 número-de-elementos-de-un-conjunto.-propiedades
 funciones-y-relaciones
 numeros-reales

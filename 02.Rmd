@@ -312,4 +312,15 @@ $$
 -   $(A\Delta B)\cap C=(A\Delta C)\Delta(B\Delta C)$
 -   $(A\Delta B)\cup(B\Delta C)=(A\cup B\cup C)-(A\cap B\cap C)$
 
+### Ejercicios
+
+1.  Sea $U=\left\{x\in\mathbb{N}|0<x\leq 10\right\}$ y los subconjuntos: $A=\left\{x\in\mathbb{N}|\text{$x$ es primo}\right\}$, $B=\left\{x\in\mathbb{N}|\text{$x$ es es un cuadrado perfecto}\right\}$ y $C=\left\{x\in\mathbb{N}|\text{$x$ es impar}\right\}$. Hallar
+
+    -   $(A\cup B)'-C$
+    -   $(A-C)'\cap B$
+    -   $(A\Delta B)-(A\Delta C)$
+    -   $(A\cap C)'-(B\cup C)'$
+
+2.  Dados los conjuntos $A=\left\{x\in\mathbb{Z}|\sim[0\leq -2\vee x>3]\right\}$, $B=\left\{x\in\mathbb{N}|\sim[-1<x\leq 3\rightarrow x=5]\right\}$ y $C=\left\{x\in\mathbb{Z}|(x< -2\vee x\geq 2)\rightarrow x>1\right\}$ Hallar el resultado de $(B\cap C)\Delta(A\cap B)$
+
 ## Número de elementos de un Conjunto. Propiedades
