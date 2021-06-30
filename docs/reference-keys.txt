@@ -5,6 +5,7 @@ def:existencial
 def:universal
 def:universal2
 def:existencial2
+def:float
 exm:unnamed-chunk-1
 exm:unnamed-chunk-3
 exr:unnamed-chunk-5
@@ -14,7 +15,6 @@ conjuntos
 función-proposicional-y-cuantificadores
 función-proposicional
 cuantificadores
-negación-de-las-proposiciones-universal-y-existencial
 conjuntos-iguales
 propiedades
 inclusión-y-subconjuntos

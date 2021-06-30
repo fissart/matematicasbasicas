@@ -1,0 +1,18 @@
+{
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "markdown-preview-enhanced.enableScriptExecution": true,
+    "markdown-preview-enhanced.enableTypographer": true,
+    "markdown-preview-enhanced.mathBlockDelimiters": [
+
+        [
+            "$$",
+            "$$"
+        ],
+        [
+            "\\[",
+            "\\]"
+        ]
+    ],
+    "markdown-preview-enhanced.revealjsTheme": "serif.css",
+    "markdown-preview-enhanced.mermaidTheme": "dark"
+}
