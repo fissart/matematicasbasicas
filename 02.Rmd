@@ -314,7 +314,7 @@ $$
 $$
 
 $$
-x\in \mathcal{C}_BA\leftrightarrow x\in B\vee x\notin A
+x\in \mathcal{C}_BA\leftrightarrow x\in B\vee x\notin W
 $$
 
 Si $B=U$ entonces $\mathcal{C}_BA=A'=A^C=\overline{A}$
