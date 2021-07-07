@@ -1,0 +1,753 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[16pt,]{krantz}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+    \setmonofont[Mapping=tex-ansi,Scale=0.7]{Source Code Pro}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Matemáticas básicas},
+            pdfauthor={Ricardo Michel MALLQUI BAÑOS},
+            colorlinks=true,
+            linkcolor=Maroon,
+            filecolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{makeidx}
+\makeindex
+%\usepackage{showframe}
+%\usepackage[a4paper]{geometry}
+%\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3.5cm,rmargin=3cm}
+\setlength\parindent{23pt}
+\usepackage[singlelinecheck=off]{caption}
+
+\usepackage{times}
+\renewcommand{\rmdefault}{ptm}
+%\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
+
+\usepackage{graphicx}
+
+% Determine if the image is too wide for the page.
+\makeatletter
+\def\ScaleIfNeeded{%
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+% Resize figures that are too wide for the page.
+%\let\oldincludegraphics\includegraphics
+%\renewcommand\includegraphics[2][]{%
+%  \oldincludegraphics[scale=0.85]{#2}
+%}
+
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\flushbottom 
+
+\frontmatter
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Matemáticas básicas}
+\author{Ricardo Michel MALLQUI BAÑOS}
+\providecommand{\institute}[1]{}
+\institute{Universidad Nacional San Cristóbal De Huamanga}
+\date{2021-07-07}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{proposition}{Proposición}[chapter]
+\newtheorem{conjecture}{Conjectura}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Ejemplo}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Ejercicio}[chapter]
+\theoremstyle{definition}
+\newtheorem{hypothesis}{Hypothesis}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Observación}
+\newtheorem*{solution}{Solución}
+\begin{document}
+\maketitle
+
+%\cleardoublepage\newpage\thispagestyle{empty}\null
+%\cleardoublepage\newpage\thispagestyle{empty}\null
+%\cleardoublepage\newpage
+\thispagestyle{empty}
+\begin{flushright}
+Universidad Nacional San Cristobal de Huamanga
+
+Fisart.cf
+
+Agradecimento a los estudiantes de la ESFAPA FGPA
+
+A la UNSCH
+
+\includegraphics[height=3cm]{U.pdf}
+\end{flushright}
+%\setlength{\abovedisplayskip}{-5pt}
+%\setlength{\abovedisplayshortskip}{-5pt}
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\listoftables
+\listoffigures
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\f}{\mathbb{f}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\seq}[1]{\left<#1\right>}
+\newcommand{\co}[1]{\left[#1\right]}
+\newcommand{\cc}[1]{\left(#1\right)}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\F}{\mathcal{F}}
+
+\hypertarget{resumen}{%
+\chapter*{Resumen}\label{resumen}}
+
+
+www.
+
+\hypertarget{introducciuxf3n}{%
+\chapter*{Introducción}\label{introducciuxf3n}}
+
+
+www.
+
+\mainmatter
+
+\hypertarget{logica}{%
+\chapter{Logica}\label{logica}}
+
+\begin{longtable}[]{@{}cccl@{}}
+\caption{\label{tab:ww} Sed.}\tabularnewline
+\toprule
+\(p\) & \(q\) & \(w \rightarrow \left( \sim p \vee q\right)\) & \(w\)\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\(p\) & \(q\) & \(w \rightarrow \left( \sim p \vee q\right)\) & \(w\)\tabularnewline
+\midrule
+\endhead
+V & V & w & w\tabularnewline
+V & F & w & w\tabularnewline
+F & V & w & w\tabularnewline
+F & F & w & w\tabularnewline
+\bottomrule
+\end{longtable}
+
+\[ \Longrightarrow \Longleftrightarrow  \]
+
+\[ \Longleftrightarrow  \]
+\[ \Longleftrightarrow  \]
+\[ \Longleftrightarrow \vee \wedge \rightarrow \left( \int_{2}^{2} \right) \left[ \int_{3}^{2} \right]  \left\{ w,w,w,w,w,w,w/x \in W \right\}  \]
+
+Refiérase al cuadro \ref{tab:regulares} \ref{tab:ww}
+
+\begin{longtable}[]{@{}cccc@{}}
+\caption{\label{tab:regulares} Polígonos cerrados regulares.}\tabularnewline
+\toprule
+Tipo & Número de lados & Número de diagonales & Apotemas\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Tipo & Número de lados & Número de diagonales & Apotemas\tabularnewline
+\midrule
+\endhead
+Triángulo equilátero & 3 & 0 & 3\tabularnewline
+Cuadrado & 4 & 2 & 4\tabularnewline
+Pentágono & 5 & 5 & 5\tabularnewline
+Exagono & 6 & 6 & 6\tabularnewline
+Heptagono & 7 & 7 & 7\tabularnewline
+\ldots{} & \ldots{} & \ldots{} & \ldots{}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{conjuntos}{%
+\chapter{Conjuntos}\label{conjuntos}}
+
+\[ p \wedge q \equiv q \wedge p  \equiv \sim(\sim p \vee \sim q )\equiv \sim (p\rightarrow \sim q)\]
+
+\[ p \vee q \equiv \sim p\rightarrow q\]
+
+\[ [(A\cap B)\Delta C]-D \]
+
+\begin{definition}[Conjunto]
+\protect\hypertarget{def:conjunto}{}{\label{def:conjunto} \iffalse (Conjunto) \fi{} }Es una coleccion de elementos con caractersiticas similares
+\end{definition}
+\#\#\# Determincación de un conjunto
+
+\begin{definition}[Determinacion de conjuntos]
+\protect\hypertarget{def:conjunto2}{}{\label{def:conjunto2} \iffalse (Determinacion de conjuntos) \fi{} }Por extensión y comprensión
+\end{definition}
+* \textbf{Extensión}
+\[A=\left\{ 1,2,3,4,5,6,7 \right\} \]
+* \textbf{Comprensión}
+\[A=\left\{ x \in \mathbb{N};0<x<5 \right\}  \]
+Conjuntos universal, vacio, unitario
+
+\[
+\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
+\]
+
+\[
+\phi=\left\{x/x\neq x\right\}
+\]
+
+\[
+A=\left\{a\right\}
+\]
+
+\hypertarget{funciuxf3n-proposicional-y-cuantificadores}{%
+\section{Función proposicional y cuantificadores}\label{funciuxf3n-proposicional-y-cuantificadores}}
+
+\hypertarget{funciuxf3n-proposicional}{%
+\subsection{Función proposicional}\label{funciuxf3n-proposicional}}
+
+\begin{definition}[Función proposicional]
+\protect\hypertarget{def:proposicional}{}{\label{def:proposicional} \iffalse (Función proposicional) \fi{} }Sea \(x\) una variable \(P(x)\) un \emph{enunciado}, \(P(x)\) es una \textbf{\emph{función proposicional}} si al sustituir la variable con una constante este se convierte en una \emph{proposición}.
+\end{definition}
+Sea \(x\) una variable \(P(x)\) un \emph{enunciado}, \(P(x)\) es una \textbf{\emph{función proposicional}} si al sustituir la variable con una constante este se convierte en una \emph{proposición}.
+
+Por ejemplo \(P(x)\): \(x\) es un numero par
+
+Al conjunto de todos lo valores de \(x\) se denomina \emph{domino de la variable}
+
+\hypertarget{cuantificadores}{%
+\subsection{Cuantificadores}\label{cuantificadores}}
+
+\begin{definition}[Cuantificador existencial]
+\protect\hypertarget{def:existencial}{}{\label{def:existencial} \iffalse (Cuantificador existencial) \fi{} }\[\exists\] Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de \(x\) perteneciente al Dominio de \(A\), es Verdadero. Se denota; \(\exists x / P (x)\) Se lee: ``Existe al menos un \(x\)'', ``Algunos \(x\)''," Hay \(x\)``,''Existe un \(x\)``, etc.
+\end{definition}
+\[\exists\] Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de \(x\) perteneciente al Dominio de \(A\), es Verdadero. Se denota; \(\exists x / P (x)\) Se lee:''Existe al menos un \(x\)``,''Algunos \(x\)``,'' Hay \(x\)``,''Existe un \(x\)", etc.
+
+\begin{definition}[Cuantificador universal]
+\protect\hypertarget{def:universal}{}{\label{def:universal} \iffalse (Cuantificador universal) \fi{} }\[\forall\] Es una generalización de la \emph{conjunción}. Debido a esto es verdadero cuando todos los valores de \(x\) que pertenecen al Dominio de \(A\) son Verdaderos. Se denota: \(\forall x ; p(x)\) Se lee: ``Para Todo \(x\)'', ``Para cada \(x\)'', ``Todos (as) las \(x\)'', ``Todo \(x\)''.
+\end{definition}
+\[\forall\] Es una generalización de la \emph{conjunción}. Debido a esto es verdadero cuando todos los valores de \(x\) que pertenecen al Dominio de \(A\) son Verdaderos. Se denota: \(\forall x ; p(x)\) Se lee: ``Para Todo \(x\)'', ``Para cada \(x\)'', ``Todos (as) las \(x\)'', ``Todo \(x\)''.
+
+Sea \(A=\left\{1,2,3,4,5\right\}\) y la función proposicional \(3x-2<12\) entonces las proposiciones
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\forall x\in A:3x-1<14\)
+\item
+  \(\exists\; x\in A:3x-2<12\)
+\end{enumerate}
+
+son falsa y verdadera respectivamente
+
+\begin{definition}[Proposición universal]
+\protect\hypertarget{def:universal2}{}{\label{def:universal2} \iffalse (Proposición universal) \fi{} }Una \emph{proposición universal} es aquella que está provista de un \emph{cuantificador universal}, y tiene la forma: \[\forall x\in A:p(x)\]
+\end{definition}
+
+Una \emph{proposición universal} es aquella que está provista de un \emph{cuantificador universal}, y tiene la forma: \[\forall x\in A:p(x)
+\]
+
+\begin{definition}[Proposición existencial]
+\protect\hypertarget{def:existencial2}{}{\label{def:existencial2} \iffalse (Proposición existencial) \fi{} }Una \emph{proposición existencial} es aquella que está provista de un \emph{cuantificador existencial}, y tiene la forma: \[\exists x\in A:p(x)\]
+\end{definition}
+\begin{definition}[www]
+\protect\hypertarget{def:float}{}{\label{def:float} \iffalse (www) \fi{} }wwwwwwwwwwwwwwwwwwww
+\end{definition}
+Una \emph{proposición existencial} es aquella que está provista de un \emph{cuantificador existencial}, y tiene la forma: \[\exists x\in A:p(x)\]
+\#\#\# Negación de las proposiciones universal y existencial
+
+Cambiando el cuantificador universal por el cuantificador existencial, o viceversa, es decir \[\sim[\exists x\in A; P(x)]\equiv\forall x\in A;\sim P(x)\]
+
+\[
+\sim\left[\forall  x\in A; P(x)\right]\equiv\exists\; x\in A;\sim P(x)
+\]
+
+La negación del \textbf{\emph{cuantificador universal}} es equivalente a la \emph{afirmación de un cuantificador existencial} respecto de la \textbf{\emph{función proposicional negada}.}
+
+La negación de un \textbf{\emph{cuantificador existencial}} es equivalente a la \emph{afirmación de un cuantificador universal} respecto de la \textbf{\emph{función proposicional negada}}.
+
+\begin{example}
+\protect\hypertarget{exm:unnamed-chunk-1}{}{\label{exm:unnamed-chunk-1} }Dada la proposición: ``Si todos los números primos son impa­res, los números positivos son mayores que -1''
+
+\begin{itemize}
+\tightlist
+\item
+  Expresarla simbólicamente
+\item
+  Negar oracionalmente la proposición
+\end{itemize}
+\end{example}
+
+\begin{solution}
+\iffalse{} {Solución. } \fi{}
+Sea \(p(x):\) números primos son impares y \(q(x):\) números positivos mayores que -1
+
+\begin{itemize}
+\item
+  \(\forall x:[p(x)\rightarrow q(x)]\)
+\item
+  Negando el item anterior
+
+  \[
+  \begin{aligned}
+  \sim\left\{\forall x:[p(x)\rightarrow q(x)]\right\}
+  &\equiv \sim\left\{\forall x:p(x)\rightarrow \forall x:q(x)\right\}\\
+  &=\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
+  &\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
+  \end{aligned}
+  \]
+
+  que se lee: ``Todos los números primos son impares y algunos números no son mayores que -1''
+\end{itemize}
+\end{solution}
+
+Sea \(p(x):\) números primos son impares y \(q(x):\) números positivos mayores que -1
+
+\begin{itemize}
+\item
+  \(\forall x:[p(x)\rightarrow q(x)]\)
+\item
+  Negando el item anterior
+
+  \[
+  \begin{aligned}
+  \sim\left\{\forall x:[p(x)\rightarrow q(x)]\right\}
+  &\equiv \sim\left\{\forall x:p(x)\rightarrow \forall x:q(x)\right\}\\
+  &=\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
+  &\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
+  \end{aligned}
+  \]
+
+  que se lee: ``Todos los números primos son impares y algunos números no son mayores que -1''
+  \BeginKnitrBlock{example}
+  \protect\hypertarget{exm:unnamed-chunk-3}{}{\label{exm:unnamed-chunk-3} }Dado el conjunto \(A=\left\{x\in\mathbb{N}:-14<x<27\right\}\). Hallar el valor de verdad de \[
+  s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
+  \] si \(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]\), \(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]\) y \(r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]\)
+  \end{example}
+\end{itemize}
+
+\begin{solution}
+\iffalse{} {Solución. } \fi{}\(A=\left\{1,2,3,\ldots,26\right\}\) luego el valor de \(\text{V}(p)=F\), \(\text{V}(q)=V\) y \(\text{V}(r)=V\) pues
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(y=1\) entonces \(x^2-z^2>y^2\equiv x^2>1+z^2\) lo cual no es valido \(\forall x,z\in A\) entonces \(\text{V}(p)=F\)
+\item
+  Si \(y=25\in A\) y \(x=1\in A\) entonces \(2x-4y<-z\equiv 2+z<100\) lo cual es valido \(\forall z\in A\) entonces \(\text{V}(q)=V\)
+\item
+  Si \(x=26\in A\) entonces \(3x^2-z^2>y\equiv3(26)^2>z^2+y\) lo cual es valido \(\forall z,y\in A\) entonces \(\text{V}(r)=V\)
+\end{itemize}
+
+por lo tanto
+
+\[
+\begin{aligned}
+\text{V}(s)&=\text{V}[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
+&=[(V\wedge F)\Longrightarrow(F\wedge F)]\Longleftrightarrow(V\vee V)\\
+&=[F\Longrightarrow F]\Longleftrightarrow V\\
+&=V
+\end{aligned}
+\]
+\end{solution}
+
+\begin{exercise}
+\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }Dada la proposición: ``Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso''
+
+\begin{itemize}
+\tightlist
+\item
+  Expresarla simbólicamente
+\item
+  Negar oracionalmente la proposición
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }Dado el conjunto \(G=\left\{x\in\mathbb{Z}^+:-14<2x<20\right\}\). Hallar el valor de verdad de \[
+s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)] 
+\] si \(p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]\), \(q=(\forall z\in A, \exists x \in A)[x\neq y]\) y \(r=(\forall z\in A, \forall y \in A)[yx^2>500]\)
+\end{exercise}
+
+\hypertarget{conjuntos-iguales}{%
+\section{Conjuntos Iguales}\label{conjuntos-iguales}}
+
+\[\begin{aligned}A=B&\Longleftrightarrow \left\{(x\in A\rightarrow x\in B)\wedge(x\in B\rightarrow x\in A)\right\}\\
+&\Longleftrightarrow x\in A \leftrightarrow x\in B 
+\end{aligned}\]
+
+\[\begin{aligned}A\neq B&\Longleftrightarrow \left\{(\exists x\in A; x\notin B)\vee(\exists x\in B; x\notin A)\right\}\\
+&\Longleftrightarrow x\in A \leftrightarrow x\in B 
+\end{aligned}\]
+
+\hypertarget{propiedades}{%
+\subsection{Propiedades}\label{propiedades}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A=A\)
+\item
+  wwwwwwwwwwwww
+\item
+  \(A=B\rightarrow B=A\)
+\item
+  \(A=B\) y \(B=C\) entonces \(A=C\)
+\end{itemize}
+
+\hypertarget{inclusiuxf3n-y-subconjuntos}{%
+\section{Inclusión y subconjuntos}\label{inclusiuxf3n-y-subconjuntos}}
+
+\[
+\begin{aligned}
+A\subset B&\leftrightarrow\left\{x\in A\rightarrow x\in B\right\}\\
+&\leftrightarrow\left\{\forall x\in A, x\in B\right\}
+\end{aligned}
+\]
+
+\[
+A\not\subset B\leftrightarrow\exists x\in A\;|\; x\notin B
+\]
+
+\hypertarget{propiedades-1}{%
+\subsection{Propiedades}\label{propiedades-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\subset A\)
+\item
+  \(A\subset B\wedge B\subset A\rightarrow A\subset B\)
+\item
+  \(A\subset B\wedge B\subset C\rightarrow A\subset C\)
+\item
+  \(\forall A\) \(\emptyset\subset A\)
+\end{itemize}
+
+\hypertarget{conjuntos-disjuntos}{%
+\section{Conjuntos disjuntos}\label{conjuntos-disjuntos}}
+
+\[
+A\text{ disjunto de } B\leftrightarrow\nexists x\;|\; x\in A\wedge x\in B  
+\]
+esto es \(\epsilon_1\) \[ \begin{aligned}
+    w &=w\\
+     &=wwwwwwwwwwwwwwwwwwwww_1\\
+\end{aligned}  \]
+
+\hypertarget{conjunto-potencia}{%
+\section{Conjunto potencia}\label{conjunto-potencia}}
+
+\[
+P(A)=\left\{X\;|\;X\subset A\right\}
+\]
+
+\begin{remark}
+\iffalse{} {Observación. } \fi{}
+* \(P(A)\) tiene \(2^n\) elementos
+* \(\emptyset\in P(A)\)
+* \(A\in P(A)\)
+\end{remark}
+
+Propiedades
+
+\begin{itemize}
+\tightlist
+\item
+  \(P(\emptyset)=\left\{\emptyset\right\}\)
+\item
+  \(A\subset B\leftrightarrow P(A)\subset P(B)\)
+\item
+  \(A= B\leftrightarrow P(A)= P(B)\)
+\end{itemize}
+
+\hypertarget{representaciuxf3n-gruxe1fica-de-los-conjuntos}{%
+\section{Representación Gráfica de los Conjuntos}\label{representaciuxf3n-gruxe1fica-de-los-conjuntos}}
+
+Diagrama de euler
+
+\hypertarget{operaciones-entre-conjuntos}{%
+\section{Operaciones entre conjuntos}\label{operaciones-entre-conjuntos}}
+
+\hypertarget{uniuxf3n}{%
+\subsection{Unión}\label{uniuxf3n}}
+
+\[
+A\cup B
+=\left\{x/x\in A\vee x\in B\right\}
+\]
+
+\[
+x\in A\cup B\leftrightarrow x\in A\vee x\in B
+\]
+\[ \sum_{n=i}^{3}\int_{1}^{3} x_2y_2z_3 r \sum_{w}^{w} \]
+
+Propiedades
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\cup A=A\)
+\item
+  \(A\cup \emptyset=A\)
+\item
+  \(A\cup U=U\)
+\item
+  \(A\cup B=B\cup A\)
+\item
+  \((A\cup B)\cup C=A\cup(B\cup C)\)
+\end{itemize}
+
+\hypertarget{intersecciuxf3n}{%
+\subsection{Intersección}\label{intersecciuxf3n}}
+
+\[
+A\cap B=\left\{x/x\in A\wedge x\in B\right\}
+\]
+
+\[
+x\in A\cap B\leftrightarrow x\in A\wedge x\in B
+\]
+
+Propiedades
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\cap A=A\)
+\item
+  \(A\cap \emptyset=\emptyset\)
+\item
+  \(A\cap U=A\)
+\item
+  \(A\cap B=B\cap A\)
+\item
+  \((A\cap B)\cap C=A\cap(B\cap C)\)
+\end{itemize}
+
+\hypertarget{diferencia}{%
+\subsection{Diferencia}\label{diferencia}}
+
+\[
+A- B=\left\{x/x\in A\wedge x\notin B\right\}
+\]
+
+\[
+x\in A- B\leftrightarrow x\in A\wedge x\notin B
+\]
+
+Propiedades
+
+\begin{itemize}
+\tightlist
+\item
+  \(A- A=\emptyset\)
+\item
+  \(A- \emptyset=A\)
+\item
+  \(\emptyset-A=\emptyset\)
+\item
+  \(A- B\subset A\)
+\item
+  \((A-B)=(A\cup B)-B)=A-(A\cap B)\)
+\end{itemize}
+
+\hypertarget{complemento}{%
+\subsection{Complemento}\label{complemento}}
+
+\[
+\mathcal{C}_BA=B-A=\left\{x/x\in B\wedge x\notin A\right\}
+\]
+
+\[
+x\in \mathcal{C}_BA\leftrightarrow x\in B\vee x\notin W
+\]
+
+Si \(B=U\) entonces \(\mathcal{C}_BA=A'=A^C=\overline{A}\)
+
+Propiedades
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathcal{C}_BA\subset B\) y \(\mathcal{C}_AB\subset A\)
+\item
+  \(A'\cup A=U\) o \(A\cup \mathcal{C}_AB=A\)
+\item
+  \(A\cap A'=\emptyset\) o \(A\cap \mathcal{C}_AB=\emptyset\)
+\item
+  \(U'=\emptyset\) o \(\mathcal{C}_AA=\emptyset\)
+\item
+  \(\emptyset'=U\) o \(\mathcal{C}_A\emptyset=A\)
+\item
+  \((A')'=A\) o \(\mathcal{C}_B(\mathcal{C}_BA)=A\)
+\item
+  \(A-B=A\cap B'\) o \(A-B=A\cap \mathcal{C}_AB\)
+\end{itemize}
+
+\hypertarget{diferencia-simuxe9trica}{%
+\subsection{Diferencia simétrica}\label{diferencia-simuxe9trica}}
+
+\[
+A\Delta B=\left\{x/(x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)\right\}
+\]
+
+\[
+x\in A\Delta B\leftrightarrow (x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)
+\]
+
+Propiedades
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\Delta B=\emptyset\)
+\item
+  \(A\Delta \emptyset=A\)
+\item
+  \(A\Delta B=B\Delta A\)
+\item
+  \((A\Delta B)\Delta C=A\Delta(B\Delta C)\)
+\item
+  \((A\Delta B)\cap C=(A\Delta C)\Delta(B\Delta C)\)
+\item
+  \((A\Delta B)\cup(B\Delta C)=(A\cup B\cup C)-(A\cap B\cap C)\)
+\end{itemize}
+
+\hypertarget{ejercicios}{%
+\subsection{Ejercicios}\label{ejercicios}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sea \(U=\left\{x\in\mathbb{N}|0<x\leq 10\right\}\) y los subconjuntos: \(A=\left\{x\in\mathbb{N}|x \text{ es primo}\right\}\), \(B=\left\{x\in\mathbb{N}| x\text{ es es un cuadrado perfecto}\right\}\) y \(C=\left\{x\in\mathbb{N}|x\text{ es impar}\right\}\). Hallar
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \((A\cup B)'-C\)
+  \item
+    \((A-C)'\cap B\)
+  \item
+    \((A\Delta B)-(A\Delta C)\)
+  \item
+    \((A\cap C)'-(B\cup C)'\)
+  \end{itemize}
+\item
+  Dados los conjuntos \(A=\left\{x\in\mathbb{Z}|\sim[x\leq -2\vee x>3]\right\}\), \(B=\left\{x\in\mathbb{N}|\sim[-1<x\leq 3 \rightarrow x=5]\right\}\) y \(C=\left\{x\in\mathbb{Z}|(x< -2\vee x\geq 2)\rightarrow x>1\right\}\) Hallar el resultado de \((B\cap C)\Delta(A\cap B)\)
+\end{enumerate}
+
+\hypertarget{nuxfamero-de-elementos-de-un-conjunto.-propiedades}{%
+\section{Número de elementos de un Conjunto. Propiedades}\label{nuxfamero-de-elementos-de-un-conjunto.-propiedades}}
+
+\[
+n(A)
+\]
+
+\hypertarget{funciones-y-relaciones}{%
+\chapter{Funciones y relaciones}\label{funciones-y-relaciones}}
+
+\hypertarget{numeros-reales}{%
+\chapter{Numeros reales}\label{numeros-reales}}
+
+\hypertarget{funciones-exponenciales-logaruxedtmicas}{%
+\chapter{Funciones exponenciales logarítmicas}\label{funciones-exponenciales-logaruxedtmicas}}
+
+\hypertarget{inducciuxf3n-matemuxe1tica}{%
+\chapter{Inducción matemática}\label{inducciuxf3n-matemuxe1tica}}
+
+\hypertarget{suceciones}{%
+\chapter{Suceciones}\label{suceciones}}
+
+\hypertarget{nuxfameros-complejos}{%
+\chapter{Números complejos}\label{nuxfameros-complejos}}
+
+\hypertarget{polinomios}{%
+\chapter{Polinomios}\label{polinomios}}
+
+\hypertarget{appendix-apendice}{%
+\appendix \addcontentsline{toc}{chapter}{\appendixname}}
+
+
+Temas de reforzamiento o conocimientos preliminares que son necesarias para entender el contenido.
+
+\hypertarget{trasformaciones}{%
+\chapter{Trasformaciones}\label{trasformaciones}}
+
+\bibliography{book.bib,packages.bib}
+
+\printindex
+
+\end{document}

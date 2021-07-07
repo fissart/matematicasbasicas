@@ -71,6 +71,7 @@
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a></li>
 <li class="chapter" data-level="1" data-path="logica.html"><a href="logica.html"><i class="fa fa-check"></i><b>1</b> Logica</a></li>
 <li class="chapter" data-level="2" data-path="conjuntos.html"><a href="conjuntos.html"><i class="fa fa-check"></i><b>2</b> Conjuntos</a><ul>
+<li class="chapter" data-level="2.0.1" data-path="conjuntos.html"><a href="conjuntos.html#determincación-de-un-conjunto"><i class="fa fa-check"></i><b>2.0.1</b> Determincación de un conjunto</a></li>
 <li class="chapter" data-level="2.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional-y-cuantificadores"><i class="fa fa-check"></i><b>2.1</b> Función proposicional y cuantificadores</a><ul>
 <li class="chapter" data-level="2.1.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional"><i class="fa fa-check"></i><b>2.1.1</b> Función proposicional</a></li>
 <li class="chapter" data-level="2.1.2" data-path="conjuntos.html"><a href="conjuntos.html#cuantificadores"><i class="fa fa-check"></i><b>2.1.2</b> Cuantificadores</a></li>
@@ -131,12 +132,20 @@
 <span id="def:conjunto" class="definition"><strong>Definición 2.1  (Conjunto)  </strong></span>Es una coleccion de elementos con caractersiticas similares
 </div>
 
+<div id="determincación-de-un-conjunto" class="section level3">
+<h3><span class="header-section-number">2.0.1</span> Determincación de un conjunto</h3>
 
 <div class="definition">
 <span id="def:conjunto2" class="definition"><strong>Definición 2.2  (Determinacion de conjuntos)  </strong></span>Por extensión y comprensión
 </div>
 
-<p>Cornutos universal, vacio, unitario</p>
+<ul>
+<li><strong>Extensión</strong>
+<span class="math display">\[A=\left\{ 1,2,3,4,5,6,7 \right\} \]</span></li>
+<li><strong>Comprensión</strong>
+<span class="math display">\[A=\left\{ x \in \mathbb{N};0&lt;x&lt;5 \right\}  \]</span>
+Conjuntos universal, vacio, unitario</li>
+</ul>
 <p><span class="math display">\[
 \mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
 \]</span></p>
@@ -146,6 +155,7 @@
 <p><span class="math display">\[
 A=\left\{a\right\}
 \]</span></p>
+</div>
 <div id="función-proposicional-y-cuantificadores" class="section level2">
 <h2><span class="header-section-number">2.1</span> Función proposicional y cuantificadores</h2>
 <div id="función-proposicional" class="section level3">
@@ -243,20 +253,15 @@ que se lee: “Todos los números primos son impares y algunos números no son m
 &amp;=\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
 &amp;\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
 \end{aligned}
-\]</span></p></li>
-</ul>
-<p><span class="math display">\[ \begin{aligned}
-    w &amp;=\int_{1}^{3}\\
-     &amp;=\sum_{1}^{3}\lim_{x \to \infty} \prod_{n=1}^{\infty }\sum_{1}^{3}\sum_{n=1}^{\infty }\\
-\end{aligned}  \]</span></p>
-<pre><code>que se lee: &quot;Todos los números primos son impares y algunos números no son mayores que -1&quot;</code></pre>
+\]</span></p>
+que se lee: “Todos los números primos son impares y algunos números no son mayores que -1”
 
 <div class="example">
 <span id="exm:unnamed-chunk-3" class="example"><strong>Ejemplo 2.2  </strong></span>Dado el conjunto <span class="math inline">\(A=\left\{x\in\mathbb{N}:-14&lt;x&lt;27\right\}\)</span>. Hallar el valor de verdad de <span class="math display">\[
 s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
 \]</span> si <span class="math inline">\(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2&gt;y^2]\)</span>, <span class="math inline">\(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y&lt;-z]\)</span> y <span class="math inline">\(r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2&gt;y]\)</span>
-</div>
-
+</div></li>
+</ul>
 
 <div class="solution">
 <p> <span class="solution"><em>Solución. </em></span> <span class="math inline">\(A=\left\{1,2,3,\ldots,26\right\}\)</span> luego el valor de <span class="math inline">\(\text{V}(p)=F\)</span>, <span class="math inline">\(\text{V}(q)=V\)</span> y <span class="math inline">\(\text{V}(r)=V\)</span> pues</p>

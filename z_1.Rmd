@@ -1,0 +1,493 @@
+---
+title: "Matemáticas básicas"
+author: "Ricardo Michel MALLQUI BAÑOS"
+institute: "Universidad Nacional San Cristóbal De Huamanga"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: krantz
+link-citations: yes
+subparagraph: yes
+colorlinks: yes
+fontsize: 16pt
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+lot: yes
+lof: yes
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.7"
+toc_appendix: yes
+description: ""
+---
+
+```{=tex}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\f}{\mathbb{f}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\seq}[1]{\left<#1\right>}
+\newcommand{\co}[1]{\left[#1\right]}
+\newcommand{\cc}[1]{\left(#1\right)}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\F}{\mathcal{F}}
+```
+# Resumen {.unnumbered}
+
+www.
+
+# Introducción {.unnumbered}
+
+www.
+
+<!--chapter:end:index.Rmd-->
+
+\mainmatter
+
+# Logica
+
+
+
+|  $p$  |  $q$  | $w \rightarrow \left( \sim p \vee q\right)$ | $w$ |
+| :---: | :---: | :------------------------------------: | --- |
+|   V   |   V   |                   w                    | w   |
+|   V   |   F   |                   w                    | w   |
+|   F   |   V   |                   w                    | w   |
+|   F   |   F   |                   w                     | w   |
+
+: (\#tab:ww) Sed.
+
+
+$$ \Longrightarrow \Longleftrightarrow  $$
+
+$$ \Longleftrightarrow  $$
+$$ \Longleftrightarrow  $$
+$$ \Longleftrightarrow \vee \wedge \rightarrow \left( \int_{2}^{2} \right) \left[ \int_{3}^{2} \right]  \left\{ w,w,w,w,w,w,w/x \in W \right\}  $$
+
+Refiérase al cuadro \@ref(tab:regulares) \@ref(tab:ww)
+
+|         Tipo         | Número de lados | Número de diagonales | Apotemas |
+|:--------------------:|:---------------:|:--------------------:|:--------:|
+| Triángulo equilátero |        3        |          0           |    3     |
+|       Cuadrado       |        4        |          2           |    4     |
+|      Pentágono       |        5        |          5           |    5     |
+|       Exagono        |        6        |          6           |    6     |
+|      Heptagono       |        7        |          7           |    7     |
+|         ...          |       ...       |         ...          |   ...    |
+
+: (\#tab:regulares) Polígonos cerrados regulares.
+
+<!--chapter:end:01.Rmd-->
+
+# Conjuntos
+
+
+$$ p \wedge q \equiv q \wedge p  \equiv \sim(\sim p \vee \sim q )\equiv \sim (p\rightarrow \sim q)$$
+
+$$ p \vee q \equiv \sim p\rightarrow q$$
+
+$$ [(A\cap B)\Delta C]-D $$
+
+```{definition, conjunto, name="Conjunto"}
+Es una coleccion de elementos con caractersiticas similares
+```
+### Determincación de un conjunto
+
+```{definition, conjunto2, name="Determinacion de conjuntos"}
+Por extensión y comprensión
+```
+* **Extensión**
+$$A=\left\{ 1,2,3,4,5,6,7 \right\} $$
+* **Comprensión**
+$$A=\left\{ x \in \mathbb{N};0<x<5 \right\}  $$
+Conjuntos universal, vacio, unitario
+
+$$
+\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
+$$
+
+$$
+\phi=\left\{x/x\neq x\right\}
+$$
+
+$$
+A=\left\{a\right\}
+$$
+
+## Función proposicional y cuantificadores
+
+### Función proposicional
+
+```{definition, proposicional, name="Función proposicional"}
+Sea $x$ una variable $P(x)$ un *enunciado*, $P(x)$ es una ***función proposicional*** si al sustituir la variable con una constante este se convierte en una *proposición*.
+```
+Sea $x$ una variable $P(x)$ un *enunciado*, $P(x)$ es una ***función proposicional*** si al sustituir la variable con una constante este se convierte en una *proposición*.
+
+Por ejemplo $P(x)$: $x$ es un numero par
+
+Al conjunto de todos lo valores de $x$ se denomina *domino de la variable*
+
+### Cuantificadores
+
+```{definition, existencial, name="Cuantificador existencial"}
+$$\exists$$ Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de $x$ perteneciente al Dominio de $A$, es Verdadero. Se denota; $\exists x / P (x)$ Se lee: "Existe al menos un $x$", "Algunos $x$"," Hay $x$", "Existe un $x$", etc. 
+```
+$$\exists$$ Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de $x$ perteneciente al Dominio de $A$, es Verdadero. Se denota; $\exists x / P (x)$ Se lee: "Existe al menos un $x$", "Algunos $x$"," Hay $x$", "Existe un $x$", etc. 
+
+```{definition, universal, name="Cuantificador universal"}
+$$\forall$$ Es una generalización de la *conjunción*. Debido a esto es verdadero cuando todos los valores de $x$ que pertenecen al Dominio de $A$ son Verdaderos. Se denota: $\forall x ; p(x)$ Se lee: "Para Todo $x$", "Para cada $x$", "Todos (as) las $x$", "Todo $x$".
+```
+$$\forall$$ Es una generalización de la *conjunción*. Debido a esto es verdadero cuando todos los valores de $x$ que pertenecen al Dominio de $A$ son Verdaderos. Se denota: $\forall x ; p(x)$ Se lee: "Para Todo $x$", "Para cada $x$", "Todos (as) las $x$", "Todo $x$".
+
+
+Sea $A=\left\{1,2,3,4,5\right\}$ y la función proposicional $3x-2<12$ entonces las proposiciones
+
+1.  $\forall x\in A:3x-1<14$
+2.  $\exists\; x\in A:3x-2<12$
+
+son falsa y verdadera respectivamente
+
+```{definition, universal2, name="Proposición universal"}
+Una *proposición universal* es aquella que está provista de un *cuantificador universal*, y tiene la forma: $$\forall x\in A:p(x)$$
+
+```
+Una *proposición universal* es aquella que está provista de un *cuantificador universal*, y tiene la forma: $$\forall x\in A:p(x)
+$$
+
+```{definition, existencial2, name="Proposición existencial"}
+Una *proposición existencial* es aquella que está provista de un *cuantificador existencial*, y tiene la forma: $$\exists x\in A:p(x)$$
+```
+```{definition, float, name="www"}
+wwwwwwwwwwwwwwwwwwww
+```
+Una *proposición existencial* es aquella que está provista de un *cuantificador existencial*, y tiene la forma: $$\exists x\in A:p(x)$$
+### Negación de las proposiciones universal y existencial
+
+Cambiando el cuantificador universal por el cuantificador existencial, o viceversa, es decir $$\sim[\exists x\in A; P(x)]\equiv\forall x\in A;\sim P(x)$$
+
+$$
+\sim\left[\forall  x\in A; P(x)\right]\equiv\exists\; x\in A;\sim P(x)
+$$
+
+La negación del ***cuantificador universal*** es equivalente a la *afirmación de un cuantificador existencial* respecto de la ***función proposicional negada*****.**
+
+La negación de un ***cuantificador existencial*** es equivalente a la *afirmación de un cuantificador universal* respecto de la ***función proposicional negada***.
+
+```{example}
+Dada la proposición: "Si todos los números primos son impa­res, los números positivos son mayores que -1"
+
+-   Expresarla simbólicamente
+-   Negar oracionalmente la proposición
+
+```
+
+```{solution}
+
+Sea $p(x):$ números primos son impares y $q(x):$ números positivos mayores que -1
+
+-   $\forall x:[p(x)\rightarrow q(x)]$
+
+-   Negando el item anterior
+
+    $$
+    \begin{aligned}
+    \sim\left\{\forall x:[p(x)\rightarrow q(x)]\right\}
+    &\equiv \sim\left\{\forall x:p(x)\rightarrow \forall x:q(x)\right\}\\
+    &=\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
+    &\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
+    \end{aligned}
+    $$
+
+    que se lee: "Todos los números primos son impares y algunos números no son mayores que -1"
+
+```
+
+Sea $p(x):$ números primos son impares y $q(x):$ números positivos mayores que -1
+
+-   $\forall x:[p(x)\rightarrow q(x)]$
+
+-   Negando el item anterior
+
+    $$
+    \begin{aligned}
+    \sim\left\{\forall x:[p(x)\rightarrow q(x)]\right\}
+    &\equiv \sim\left\{\forall x:p(x)\rightarrow \forall x:q(x)\right\}\\
+    &=\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
+    &\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
+    \end{aligned}
+    $$
+
+    que se lee: "Todos los números primos son impares y algunos números no son mayores que -1"
+```{example}
+Dado el conjunto $A=\left\{x\in\mathbb{N}:-14<x<27\right\}$. Hallar el valor de verdad de $$
+s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
+$$ si $p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]$, $q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]$ y $r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]$
+```
+
+```{solution}
+$A=\left\{1,2,3,\ldots,26\right\}$ luego el valor de $\text{V}(p)=F$, $\text{V}(q)=V$ y $\text{V}(r)=V$ pues
+
+-   Si $y=1$ entonces $x^2-z^2>y^2\equiv x^2>1+z^2$ lo cual no es valido $\forall x,z\in A$ entonces $\text{V}(p)=F$
+-   Si $y=25\in A$ y $x=1\in A$ entonces $2x-4y<-z\equiv 2+z<100$ lo cual es valido $\forall z\in A$ entonces $\text{V}(q)=V$
+-   Si $x=26\in A$ entonces $3x^2-z^2>y\equiv3(26)^2>z^2+y$ lo cual es valido $\forall z,y\in A$ entonces $\text{V}(r)=V$
+
+por lo tanto
+
+$$
+\begin{aligned}
+\text{V}(s)&=\text{V}[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
+&=[(V\wedge F)\Longrightarrow(F\wedge F)]\Longleftrightarrow(V\vee V)\\
+&=[F\Longrightarrow F]\Longleftrightarrow V\\
+&=V
+\end{aligned}
+$$
+```
+
+```{exercise}
+Dada la proposición: "Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso"
+
+-   Expresarla simbólicamente
+-   Negar oracionalmente la proposición
+
+```
+
+```{exercise}
+Dado el conjunto $G=\left\{x\in\mathbb{Z}^+:-14<2x<20\right\}$. Hallar el valor de verdad de $$
+s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)] 
+$$ si $p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]$, $q=(\forall z\in A, \exists x \in A)[x\neq y]$ y $r=(\forall z\in A, \forall y \in A)[yx^2>500]$
+
+```
+
+## Conjuntos Iguales
+
+$$\begin{aligned}A=B&\Longleftrightarrow \left\{(x\in A\rightarrow x\in B)\wedge(x\in B\rightarrow x\in A)\right\}\\
+&\Longleftrightarrow x\in A \leftrightarrow x\in B 
+\end{aligned}$$
+
+$$\begin{aligned}A\neq B&\Longleftrightarrow \left\{(\exists x\in A; x\notin B)\vee(\exists x\in B; x\notin A)\right\}\\
+&\Longleftrightarrow x\in A \leftrightarrow x\in B 
+\end{aligned}$$
+
+### Propiedades
+
+-   $A=A$
+- wwwwwwwwwwwww
+-   $A=B\rightarrow B=A$
+-   $A=B$ y $B=C$ entonces $A=C$
+
+## Inclusión y subconjuntos
+
+$$
+\begin{aligned}
+A\subset B&\leftrightarrow\left\{x\in A\rightarrow x\in B\right\}\\
+&\leftrightarrow\left\{\forall x\in A, x\in B\right\}
+\end{aligned}
+$$
+
+$$
+A\not\subset B\leftrightarrow\exists x\in A\;|\; x\notin B
+$$
+
+### Propiedades
+
+-   $A\subset A$
+-   $A\subset B\wedge B\subset A\rightarrow A\subset B$
+-   $A\subset B\wedge B\subset C\rightarrow A\subset C$
+-   $\forall A$ $\emptyset\subset A$
+
+## Conjuntos disjuntos
+
+$$
+A\text{ disjunto de } B\leftrightarrow\nexists x\;|\; x\in A\wedge x\in B  
+$$
+esto es $\epsilon_1$ $$ \begin{aligned}
+    w &=w\\
+     &=wwwwwwwwwwwwwwwwwwwww_1\\
+\end{aligned}  $$ 
+
+## Conjunto potencia
+
+$$
+P(A)=\left\{X\;|\;X\subset A\right\}
+$$
+
+```{remark, potencia}
+
+* $P(A)$ tiene $2^n$ elementos
+* $\emptyset\in P(A)$
+* $A\in P(A)$
+
+```
+
+Propiedades
+
+-   $P(\emptyset)=\left\{\emptyset\right\}$
+-   $A\subset B\leftrightarrow P(A)\subset P(B)$
+-   $A= B\leftrightarrow P(A)= P(B)$
+
+## Representación Gráfica de los Conjuntos
+
+Diagrama de euler
+
+## Operaciones entre conjuntos
+
+### Unión
+
+$$
+A\cup B
+=\left\{x/x\in A\vee x\in B\right\}
+$$
+
+$$
+x\in A\cup B\leftrightarrow x\in A\vee x\in B
+$$
+$$ \sum_{n=i}^{3}\int_{1}^{3} x_2y_2z_3 r \sum_{w}^{w} $$
+
+Propiedades
+
+-   $A\cup A=A$
+-   $A\cup \emptyset=A$
+-   $A\cup U=U$
+-   $A\cup B=B\cup A$
+-   $(A\cup B)\cup C=A\cup(B\cup C)$
+
+### Intersección
+
+$$
+A\cap B=\left\{x/x\in A\wedge x\in B\right\}
+$$
+
+$$
+x\in A\cap B\leftrightarrow x\in A\wedge x\in B
+$$
+
+Propiedades
+
+-   $A\cap A=A$
+-   $A\cap \emptyset=\emptyset$
+-   $A\cap U=A$
+-   $A\cap B=B\cap A$
+-   $(A\cap B)\cap C=A\cap(B\cap C)$
+
+### Diferencia
+
+$$
+A- B=\left\{x/x\in A\wedge x\notin B\right\}
+$$
+
+$$
+x\in A- B\leftrightarrow x\in A\wedge x\notin B
+$$
+
+Propiedades
+
+-   $A- A=\emptyset$
+-   $A- \emptyset=A$
+-   $\emptyset-A=\emptyset$
+-   $A- B\subset A$
+-   $(A-B)=(A\cup B)-B)=A-(A\cap B)$
+
+### Complemento
+
+$$
+\mathcal{C}_BA=B-A=\left\{x/x\in B\wedge x\notin A\right\}
+$$
+
+$$
+x\in \mathcal{C}_BA\leftrightarrow x\in B\vee x\notin W
+$$
+
+Si $B=U$ entonces $\mathcal{C}_BA=A'=A^C=\overline{A}$
+
+Propiedades
+
+-   $\mathcal{C}_BA\subset B$ y $\mathcal{C}_AB\subset A$
+-   $A'\cup A=U$ o $A\cup \mathcal{C}_AB=A$
+-   $A\cap A'=\emptyset$ o $A\cap \mathcal{C}_AB=\emptyset$
+-   $U'=\emptyset$ o $\mathcal{C}_AA=\emptyset$
+-   $\emptyset'=U$ o $\mathcal{C}_A\emptyset=A$
+-   $(A')'=A$ o $\mathcal{C}_B(\mathcal{C}_BA)=A$
+-   $A-B=A\cap B'$ o $A-B=A\cap \mathcal{C}_AB$
+
+### Diferencia simétrica
+
+$$
+A\Delta B=\left\{x/(x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)\right\}
+$$
+
+$$
+x\in A\Delta B\leftrightarrow (x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)
+$$
+
+Propiedades
+
+-   $A\Delta B=\emptyset$
+-   $A\Delta \emptyset=A$
+-   $A\Delta B=B\Delta A$
+-   $(A\Delta B)\Delta C=A\Delta(B\Delta C)$
+-   $(A\Delta B)\cap C=(A\Delta C)\Delta(B\Delta C)$
+-   $(A\Delta B)\cup(B\Delta C)=(A\cup B\cup C)-(A\cap B\cap C)$
+
+### Ejercicios
+
+1.  Sea $U=\left\{x\in\mathbb{N}|0<x\leq 10\right\}$ y los subconjuntos: $A=\left\{x\in\mathbb{N}|x \text{ es primo}\right\}$, $B=\left\{x\in\mathbb{N}| x\text{ es es un cuadrado perfecto}\right\}$ y $C=\left\{x\in\mathbb{N}|x\text{ es impar}\right\}$. Hallar
+
+
+    -   $(A\cup B)'-C$
+    -   $(A-C)'\cap B$
+    -   $(A\Delta B)-(A\Delta C)$
+    -   $(A\cap C)'-(B\cup C)'$
+
+2.  Dados los conjuntos $A=\left\{x\in\mathbb{Z}|\sim[x\leq -2\vee x>3]\right\}$, $B=\left\{x\in\mathbb{N}|\sim[-1<x\leq 3 \rightarrow x=5]\right\}$ y $C=\left\{x\in\mathbb{Z}|(x< -2\vee x\geq 2)\rightarrow x>1\right\}$ Hallar el resultado de $(B\cap C)\Delta(A\cap B)$
+
+## Número de elementos de un Conjunto. Propiedades
+$$
+n(A)
+$$
+
+<!--chapter:end:02.Rmd-->
+
+# Funciones y relaciones
+
+<!--chapter:end:03.Rmd-->
+
+# Numeros reales
+
+<!--chapter:end:04.Rmd-->
+
+# Funciones exponenciales logarítmicas
+
+<!--chapter:end:05.Rmd-->
+
+# Inducción matemática
+
+# Suceciones
+
+# Números complejos
+
+# Polinomios
+
+<!--chapter:end:06.Rmd-->
+
+# (APPENDIX) Apendice {.unnumbered}
+
+Temas de reforzamiento o conocimientos preliminares que son necesarias para entender el contenido.
+
+# Trasformaciones
+
+<!--chapter:end:07.Rmd-->
+
+`r if (knitr::is_html_output()) '
+# Referencias {-}
+'`
+
+<!--chapter:end:08.Rmd-->
+
