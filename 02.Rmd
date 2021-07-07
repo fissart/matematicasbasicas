@@ -10,12 +10,16 @@ $$ [(A\cap B)\Delta C]-D $$
 ```{definition, conjunto, name="Conjunto"}
 Es una coleccion de elementos con caractersiticas similares
 ```
+### Determincación de un conjunto
 
 ```{definition, conjunto2, name="Determinacion de conjuntos"}
 Por extensión y comprensión
 ```
-
-Cornutos universal, vacio, unitario
+* **Extensión**
+$$A=\left\{ 1,2,3,4,5,6,7 \right\} $$
+* **Comprensión**
+$$A=\left\{ x \in \mathbb{N};0<x<5 \right\}  $$
+Conjuntos universal, vacio, unitario
 
 $$
 \mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
@@ -131,11 +135,6 @@ Sea $p(x):$ números primos son impares y $q(x):$ números positivos mayores que
     &\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
     \end{aligned}
     $$
-
-$$ \begin{aligned}
-    w &=\int_{1}^{3}\\
-     &=\sum_{1}^{3}\lim_{x \to \infty} \prod_{n=1}^{\infty }\sum_{1}^{3}\sum_{n=1}^{\infty }\\
-\end{aligned}  $$
 
     que se lee: "Todos los números primos son impares y algunos números no son mayores que -1"
 ```{example}
