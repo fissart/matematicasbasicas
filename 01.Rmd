@@ -4,12 +4,12 @@
 
 
 
-|  $p$  |  $q$  | $w \rightarrow \left( \sim p \right) $ | $w$ |
+|  $p$  |  $q$  | $w \rightarrow \left( \sim p \vee q\right) $ | $w$ |
 | :---: | :---: | :------------------------------------: | --- |
 |   V   |   V   |                   w                    | w   |
 |   V   |   F   |                   w                    | w   |
 |   F   |   V   |                   w                    | w   |
-|   F   |   F   |                                        | w   |
+|   F   |   F   |                   w                     | w   |
 
 : (\#tab:ww) Sed.
 
