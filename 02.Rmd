@@ -1,5 +1,12 @@
 # Conjuntos
 
+
+$$ p \wedge q \equiv q \wedge p  \equiv \sim(\sim p \vee \sim q )\equiv \sim (p\rightarrow \sim q)$$
+
+$$ p \vee q \equiv \sim p\rightarrow q$$
+
+$$ [(A\cap B)\Delta C]-D $$
+
 ```{definition, conjunto, name="Conjunto"}
 Es una coleccion de elementos con caractersiticas similares
 ```
@@ -355,9 +362,5 @@ Propiedades
 
 ## Número de elementos de un Conjunto. Propiedades
 $$
-\begin{aligned}
-    w &=w\\
-     &=w\\
-     &=w\\
-\end{aligned} 
+n(A)
 $$
