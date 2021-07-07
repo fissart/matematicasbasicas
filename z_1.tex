@@ -239,12 +239,6 @@ Heptagono & 7 & 7 & 7\tabularnewline
 \hypertarget{conjuntos}{%
 \chapter{Conjuntos}\label{conjuntos}}
 
-\[ p \wedge q \equiv q \wedge p  \equiv \sim(\sim p \vee \sim q )\equiv \sim (p\rightarrow \sim q)\]
-
-\[ p \vee q \equiv \sim p\rightarrow q\]
-
-\[ [(A\cap B)\Delta C]-D \]
-
 \begin{definition}[Conjunto]
 \protect\hypertarget{def:conjunto}{}{\label{def:conjunto} \iffalse (Conjunto) \fi{} }Es una coleccion de elementos con caractersiticas similares
 \end{definition}
@@ -257,16 +251,20 @@ Heptagono & 7 & 7 & 7\tabularnewline
 \[A=\left\{ 1,2,3,4,5,6,7 \right\} \]
 * \textbf{Comprensión}
 \[A=\left\{ x \in \mathbb{N};0<x<5 \right\}  \]
-Conjuntos universal, vacio, unitario
 
+\hypertarget{conjuntos-buxe1sicos}{%
+\subsection{Conjuntos básicos}\label{conjuntos-buxe1sicos}}
+
+Conjuntos universal, vacio, unitario
+* \textbf{Conjunto de los sitemas numericos}
 \[
 \mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
 \]
-
+* \textbf{Cojunto vacio}
 \[
 \phi=\left\{x/x\neq x\right\}
 \]
-
+* \textbf{Conjunto unitario}
 \[
 A=\left\{a\right\}
 \]
@@ -322,9 +320,7 @@ Una \emph{proposición universal} es aquella que está provista de un \emph{cuan
 \begin{definition}[Proposición existencial]
 \protect\hypertarget{def:existencial2}{}{\label{def:existencial2} \iffalse (Proposición existencial) \fi{} }Una \emph{proposición existencial} es aquella que está provista de un \emph{cuantificador existencial}, y tiene la forma: \[\exists x\in A:p(x)\]
 \end{definition}
-\begin{definition}[www]
-\protect\hypertarget{def:float}{}{\label{def:float} \iffalse (www) \fi{} }wwwwwwwwwwwwwwwwwwww
-\end{definition}
+
 Una \emph{proposición existencial} es aquella que está provista de un \emph{cuantificador existencial}, y tiene la forma: \[\exists x\in A:p(x)\]
 \#\#\# Negación de las proposiciones universal y existencial
 
@@ -460,8 +456,6 @@ s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)
 \item
   \(A=A\)
 \item
-  wwwwwwwwwwwww
-\item
   \(A=B\rightarrow B=A\)
 \item
   \(A=B\) y \(B=C\) entonces \(A=C\)
@@ -502,10 +496,6 @@ A\not\subset B\leftrightarrow\exists x\in A\;|\; x\notin B
 \[
 A\text{ disjunto de } B\leftrightarrow\nexists x\;|\; x\in A\wedge x\in B  
 \]
-esto es \(\epsilon_1\) \[ \begin{aligned}
-    w &=w\\
-     &=wwwwwwwwwwwwwwwwwwwww_1\\
-\end{aligned}  \]
 
 \hypertarget{conjunto-potencia}{%
 \section{Conjunto potencia}\label{conjunto-potencia}}
@@ -548,11 +538,6 @@ Diagrama de euler
 A\cup B
 =\left\{x/x\in A\vee x\in B\right\}
 \]
-
-\[
-x\in A\cup B\leftrightarrow x\in A\vee x\in B
-\]
-\[ \sum_{n=i}^{3}\int_{1}^{3} x_2y_2z_3 r \sum_{w}^{w} \]
 
 Propiedades
 
@@ -708,6 +693,30 @@ Propiedades
 \item
   Dados los conjuntos \(A=\left\{x\in\mathbb{Z}|\sim[x\leq -2\vee x>3]\right\}\), \(B=\left\{x\in\mathbb{N}|\sim[-1<x\leq 3 \rightarrow x=5]\right\}\) y \(C=\left\{x\in\mathbb{Z}|(x< -2\vee x\geq 2)\rightarrow x>1\right\}\) Hallar el resultado de \((B\cap C)\Delta(A\cap B)\)
 \end{enumerate}
+
+\hypertarget{ejercicios-1}{%
+\subsection{Ejercicios}\label{ejercicios-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Sombree las regiones correspondientes a los conjuntos
+\end{enumerate}
+
+\begin{itemize}
+\item
+  \$\left\{ \left[ \left( A\cup B \right)'\cap \left( C \Delta D \right) \right] \cap B \right\} \Delta C \$
+\item
+  \$\left[ \left( A\cup B \right)'\cap \left( C \Delta D \right) \right]-\left( B\cap C \right) \$
+\item
+  \$\left\{ \left[ \left( A\cup B \right)'\cap  C \right]  \Delta D \right\} -\left( A\cup B \right) \$
+\end{itemize}
+
+\hypertarget{ejemplo}{%
+\paragraph{Ejemplo}\label{ejemplo}}
+
+\[ \left\{  \left[ \left( A\cup B \right)'\cap  C \right] \cap B \right\} \Delta C \]
 
 \hypertarget{nuxfamero-de-elementos-de-un-conjunto.-propiedades}{%
 \section{Número de elementos de un Conjunto. Propiedades}\label{nuxfamero-de-elementos-de-un-conjunto.-propiedades}}

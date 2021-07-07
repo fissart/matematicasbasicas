@@ -72,6 +72,7 @@
 <li class="chapter" data-level="1" data-path="logica.html"><a href="logica.html"><i class="fa fa-check"></i><b>1</b> Logica</a></li>
 <li class="chapter" data-level="2" data-path="conjuntos.html"><a href="conjuntos.html"><i class="fa fa-check"></i><b>2</b> Conjuntos</a><ul>
 <li class="chapter" data-level="2.0.1" data-path="conjuntos.html"><a href="conjuntos.html#determincación-de-un-conjunto"><i class="fa fa-check"></i><b>2.0.1</b> Determincación de un conjunto</a></li>
+<li class="chapter" data-level="2.0.2" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-básicos"><i class="fa fa-check"></i><b>2.0.2</b> Conjuntos básicos</a></li>
 <li class="chapter" data-level="2.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional-y-cuantificadores"><i class="fa fa-check"></i><b>2.1</b> Función proposicional y cuantificadores</a><ul>
 <li class="chapter" data-level="2.1.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional"><i class="fa fa-check"></i><b>2.1.1</b> Función proposicional</a></li>
 <li class="chapter" data-level="2.1.2" data-path="conjuntos.html"><a href="conjuntos.html#cuantificadores"><i class="fa fa-check"></i><b>2.1.2</b> Cuantificadores</a></li>
@@ -92,6 +93,7 @@
 <li class="chapter" data-level="2.7.4" data-path="conjuntos.html"><a href="conjuntos.html#complemento"><i class="fa fa-check"></i><b>2.7.4</b> Complemento</a></li>
 <li class="chapter" data-level="2.7.5" data-path="conjuntos.html"><a href="conjuntos.html#diferencia-simétrica"><i class="fa fa-check"></i><b>2.7.5</b> Diferencia simétrica</a></li>
 <li class="chapter" data-level="2.7.6" data-path="conjuntos.html"><a href="conjuntos.html#ejercicios"><i class="fa fa-check"></i><b>2.7.6</b> Ejercicios</a></li>
+<li class="chapter" data-level="2.7.7" data-path="conjuntos.html"><a href="conjuntos.html#ejercicios-1"><i class="fa fa-check"></i><b>2.7.7</b> Ejercicios</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="conjuntos.html"><a href="conjuntos.html#número-de-elementos-de-un-conjunto.-propiedades"><i class="fa fa-check"></i><b>2.8</b> Número de elementos de un Conjunto. Propiedades</a></li>
 </ul></li>
@@ -124,9 +126,6 @@
             <section class="normal" id="section-">
 <div id="conjuntos" class="section level1">
 <h1><span class="header-section-number">Capítulo 2</span> Conjuntos</h1>
-<p><span class="math display">\[ p \wedge q \equiv q \wedge p  \equiv \sim(\sim p \vee \sim q )\equiv \sim (p\rightarrow \sim q)\]</span></p>
-<p><span class="math display">\[ p \vee q \equiv \sim p\rightarrow q\]</span></p>
-<p><span class="math display">\[ [(A\cap B)\Delta C]-D \]</span></p>
 
 <div class="definition">
 <span id="def:conjunto" class="definition"><strong>Definición 2.1  (Conjunto)  </strong></span>Es una coleccion de elementos con caractersiticas similares
@@ -143,16 +142,22 @@
 <li><strong>Extensión</strong>
 <span class="math display">\[A=\left\{ 1,2,3,4,5,6,7 \right\} \]</span></li>
 <li><strong>Comprensión</strong>
-<span class="math display">\[A=\left\{ x \in \mathbb{N};0&lt;x&lt;5 \right\}  \]</span>
-Conjuntos universal, vacio, unitario</li>
+<span class="math display">\[A=\left\{ x \in \mathbb{N};0&lt;x&lt;5 \right\}  \]</span></li>
 </ul>
-<p><span class="math display">\[
+</div>
+<div id="conjuntos-básicos" class="section level3">
+<h3><span class="header-section-number">2.0.2</span> Conjuntos básicos</h3>
+<p>Conjuntos universal, vacio, unitario
+* <strong>Conjunto de los sitemas numericos</strong>
+<span class="math display">\[
 \mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
-\]</span></p>
-<p><span class="math display">\[
+\]</span>
+* <strong>Cojunto vacio</strong>
+<span class="math display">\[
 \phi=\left\{x/x\neq x\right\}
-\]</span></p>
-<p><span class="math display">\[
+\]</span>
+* <strong>Conjunto unitario</strong>
+<span class="math display">\[
 A=\left\{a\right\}
 \]</span></p>
 </div>
@@ -199,11 +204,6 @@ A=\left\{a\right\}
 
 <div class="definition">
 <span id="def:existencial2" class="definition"><strong>Definición 2.7  (Proposición existencial)  </strong></span>Una <em>proposición existencial</em> es aquella que está provista de un <em>cuantificador existencial</em>, y tiene la forma: <span class="math display">\[\exists x\in A:p(x)\]</span>
-</div>
-
-
-<div class="definition">
-<span id="def:float" class="definition"><strong>Definición 2.8  (www)  </strong></span>wwwwwwwwwwwwwwwwwwww
 </div>
 
 <p>Una <em>proposición existencial</em> es aquella que está provista de un <em>cuantificador existencial</em>, y tiene la forma: <span class="math display">\[\exists x\in A:p(x)\]</span>
@@ -311,7 +311,6 @@ s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)
 <h3><span class="header-section-number">2.2.1</span> Propiedades</h3>
 <ul>
 <li><span class="math inline">\(A=A\)</span></li>
-<li>wwwwwwwwwwwww</li>
 <li><span class="math inline">\(A=B\rightarrow B=A\)</span></li>
 <li><span class="math inline">\(A=B\)</span> y <span class="math inline">\(B=C\)</span> entonces <span class="math inline">\(A=C\)</span></li>
 </ul>
@@ -342,11 +341,7 @@ A\not\subset B\leftrightarrow\exists x\in A\;|\; x\notin B
 <h2><span class="header-section-number">2.4</span> Conjuntos disjuntos</h2>
 <p><span class="math display">\[
 A\text{ disjunto de } B\leftrightarrow\nexists x\;|\; x\in A\wedge x\in B  
-\]</span>
-esto es <span class="math inline">\(\epsilon_1\)</span> <span class="math display">\[ \begin{aligned}
-    w &amp;=w\\
-     &amp;=wwwwwwwwwwwwwwwwwwwww_1\\
-\end{aligned}  \]</span></p>
+\]</span></p>
 </div>
 <div id="conjunto-potencia" class="section level2">
 <h2><span class="header-section-number">2.5</span> Conjunto potencia</h2>
@@ -380,10 +375,6 @@ P(A)=\left\{X\;|\;X\subset A\right\}
 A\cup B
 =\left\{x/x\in A\vee x\in B\right\}
 \]</span></p>
-<p><span class="math display">\[
-x\in A\cup B\leftrightarrow x\in A\vee x\in B
-\]</span>
-<span class="math display">\[ \sum_{n=i}^{3}\int_{1}^{3} x_2y_2z_3 r \sum_{w}^{w} \]</span></p>
 <p>Propiedades</p>
 <ul>
 <li><span class="math inline">\(A\cup A=A\)</span></li>
@@ -477,6 +468,21 @@ x\in A\Delta B\leftrightarrow (x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)
 </ul></li>
 <li><p>Dados los conjuntos <span class="math inline">\(A=\left\{x\in\mathbb{Z}|\sim[x\leq -2\vee x&gt;3]\right\}\)</span>, <span class="math inline">\(B=\left\{x\in\mathbb{N}|\sim[-1&lt;x\leq 3 \rightarrow x=5]\right\}\)</span> y <span class="math inline">\(C=\left\{x\in\mathbb{Z}|(x&lt; -2\vee x\geq 2)\rightarrow x&gt;1\right\}\)</span> Hallar el resultado de <span class="math inline">\((B\cap C)\Delta(A\cap B)\)</span></p></li>
 </ol>
+</div>
+<div id="ejercicios-1" class="section level3">
+<h3><span class="header-section-number">2.7.7</span> Ejercicios</h3>
+<ol style="list-style-type: decimal">
+<li>Sombree las regiones correspondientes a los conjuntos</li>
+</ol>
+<ul>
+<li><p>${ B } C $</p></li>
+<li><p>$-( BC ) $</p></li>
+<li><p>${ D } -( AB ) $</p></li>
+</ul>
+<div id="ejemplo" class="section level5">
+<h5><span class="header-section-number">2.7.7.0.1</span> Ejemplo</h5>
+<p><span class="math display">\[ \left\{  \left[ \left( A\cup B \right)&#39;\cap  C \right] \cap B \right\} \Delta C \]</span></p>
+</div>
 </div>
 </div>
 <div id="número-de-elementos-de-un-conjunto.-propiedades" class="section level2">
