@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.7)  7 JUL 2021 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.7)  7 JUL 2021 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1263,7 +1263,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <inserted text> 
                 $
 l.198 \(p\) & \(q\) & \$w \rightarrow
-                                      \left( \sim p \right) \$ & \(w\)\tabul...
+                                      \left( \sim p \vee q\right) \$ & \(w\)...
  
 Here is how much of TeX's memory you used:
  15972 strings out of 481239

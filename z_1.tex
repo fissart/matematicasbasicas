@@ -195,17 +195,17 @@ www.
 \begin{longtable}[]{@{}cccl@{}}
 \caption{\label{tab:ww} Sed.}\tabularnewline
 \toprule
-\(p\) & \(q\) & \$w \rightarrow \left( \sim p \right) \$ & \(w\)\tabularnewline
+\(p\) & \(q\) & \$w \rightarrow \left( \sim p \vee q\right) \$ & \(w\)\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-\(p\) & \(q\) & \$w \rightarrow \left( \sim p \right) \$ & \(w\)\tabularnewline
+\(p\) & \(q\) & \$w \rightarrow \left( \sim p \vee q\right) \$ & \(w\)\tabularnewline
 \midrule
 \endhead
 V & V & w & w\tabularnewline
 V & F & w & w\tabularnewline
 F & V & w & w\tabularnewline
-F & F & & w\tabularnewline
+F & F & w & w\tabularnewline
 \bottomrule
 \end{longtable}
 
