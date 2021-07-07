@@ -58,14 +58,14 @@ www.
 
 |  $p$  |  $q$  | $w \rightarrow \left( \sim p \right) $ | $w$ |
 | :---: | :---: | :------------------------------------: | --- |
-|   V   |   V   |                   w                     | w   |
-|   V   |   F   |                     w                   | w   |
-|   F   |   V   |                    w                    | w   |
+|   V   |   V   |                   w                    | w   |
+|   V   |   F   |                   w                    | w   |
+|   F   |   V   |                   w                    | w   |
 |   F   |   F   |                                        | w   |
 
 : (\#tab:ww) Sed.
 
- \Longleftrightarrow  \right)
+
 $$ \Longrightarrow \Longleftrightarrow  $$
 
 $$ \Longleftrightarrow  $$
