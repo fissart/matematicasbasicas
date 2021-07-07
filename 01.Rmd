@@ -2,5 +2,32 @@
 
 # Logica
 
-$$ \int_{2}^{3} $$
-$$ wwwwwww {a}^{3} -{b}^{3}-{c}^{3}-{g}^{g} $$
+
+
+| $p$ | $q$ | $w \rightarrow \left( \sim p \right) $ | $w$ |
+| --- | --- | -------------------------------------- | --- |
+| V   | V   |                                        |     |
+| V   | F   |                                        |     |
+| F   | V   |                                        |     |
+| F   | F   |                                        |     |
+
+
+ \Longleftrightarrow  \right)   $$
+$$ \Longrightarrow \Longleftrightarrow  $$
+
+$$ \Longleftrightarrow  $$
+$$ \Longleftrightarrow  $$
+$$ \Longleftrightarrow \vee \wedge \rightarrow \left( \int_{2}^{2} \right) \left[ \int_{3}^{2} \right]  \left\{ w,w,w,w,w,w,w/x \in W \right\}  $$
+
+Refiérase al cuadro \@ref(tab:regulares)
+
+|         Tipo         | Número de lados | Número de diagonales | Apotemas |
+|:--------------------:|:---------------:|:--------------------:|:--------:|
+| Triángulo equilátero |        3        |          0           |    3     |
+|       Cuadrado       |        4        |          2           |    4     |
+|      Pentágono       |        5        |          5           |    5     |
+|       Exagono        |        6        |          6           |    6     |
+|      Heptagono       |        7        |          7           |    7     |
+|         ...          |       ...       |         ...          |   ...    |
+
+: (\#tab:regulares) Polígonos cerrados regulares.
