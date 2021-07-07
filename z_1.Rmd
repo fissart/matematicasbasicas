@@ -56,22 +56,23 @@ www.
 
 
 
-| $p$ | $q$ | $w \rightarrow \left( \sim p \right) $ | $w$ |
-| --- | --- | -------------------------------------- | --- |
-| V   | V   |                                        |     |
-| V   | F   |                                        |     |
-| F   | V   |                                        |     |
-| F   | F   |                                        |     |
+|  $p$  |  $q$  | $w \rightarrow \left( \sim p \right) $ | $w$ |
+| :---: | :---: | :------------------------------------: | --- |
+|   V   |   V   |                   w                     | w   |
+|   V   |   F   |                     w                   | w   |
+|   F   |   V   |                    w                    | w   |
+|   F   |   F   |                                        | w   |
 
+: (\#tab:ww) Sed.
 
- \Longleftrightarrow  \right)   $$
+ \Longleftrightarrow  \right)
 $$ \Longrightarrow \Longleftrightarrow  $$
 
 $$ \Longleftrightarrow  $$
 $$ \Longleftrightarrow  $$
 $$ \Longleftrightarrow \vee \wedge \rightarrow \left( \int_{2}^{2} \right) \left[ \int_{3}^{2} \right]  \left\{ w,w,w,w,w,w,w/x \in W \right\}  $$
 
-Refiérase al cuadro \@ref(tab:regulares)
+Refiérase al cuadro \@ref(tab:regulares) \@ref(tab:ww)
 
 |         Tipo         | Número de lados | Número de diagonales | Apotemas |
 |:--------------------:|:---------------:|:--------------------:|:--------:|
