@@ -437,11 +437,11 @@ Propiedades
 
 1. Sombree las regiones correspondientes a los conjuntos
 
-* $\left\{ \left[ \left( A\cup B \right)'\cap \left( C \Delta D \right) \right] \cap B \right\} \Delta C $  
+* $\left\{ \left[ \left( A\cup B \right)'\cap \left( C \Delta D \right) \right] \cap B \right\} \Delta C$  
 
-* $\left[ \left( A\cup B \right)'\cap \left( C \Delta D \right) \right]-\left( B\cap C \right)   $  
+* $\left[ \left( A\cup B \right)'\cap \left( C \Delta D \right) \right]-\left( B\cap C \right)$  
 
-* $\left\{ \left[ \left( A\cup B \right)'\cap  C \right]  \Delta D \right\} -\left( A\cup B \right)  $  
+* $\left\{ \left[ \left( A\cup B \right)'\cap  C \right]  \Delta D \right\} -\left( A\cup B \right)$  
 
 ##### Ejemplo 
 
