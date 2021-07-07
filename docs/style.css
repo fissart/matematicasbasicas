@@ -1,0 +1,103 @@
+.rmdcaution, .rmdimportant, .rmdnote, .rmdtip, .rmdwarning {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #f5f5f5 5px center/3em no-repeat;
+}
+.rmdcaution {
+  background-image: url("../images/caution.png");
+}
+.rmdimportant {
+  background-image: url("../images/important.png");
+}
+.rmdnote {
+  background-image: url("../images/note.png");
+}
+.rmdtip {
+  background-image: url("../images/tip.png");
+}
+.rmdwarning {
+  background-image: url("../images/warning.png");
+}
+/*
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+pre code {
+  white-space: inherit;
+}
+p.flushright {
+  text-align: right;
+}
+blockquote > p:last-child {
+  text-align: right;
+}
+blockquote > p:first-child {
+  text-align: inherit;
+}
+*/
+h1 {
+  border-top-style: 2px solid;
+}
+.header-section-number {
+  padding-right: .2em;
+  font-weight: 500;
+}
+.level1 .header-section-number {
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+
+.level2 .header-section-number {
+  border-bottom: none;
+}
+.level1 h1 {
+  border-bottom: 3px solid;
+}
+.level1 h2 {
+  border-bottom: 2px solid;
+}
+.level1 h3 {
+  border-bottom: 1px solid;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal black;
+}
+h1.title {
+  font-weight: 500;
+}
+.smallcaps {
+  font-variant: small-caps;
+}
+.book .book-body .page-wrapper .page-inner section.normal strong {
+  font-weight: 600;
+}
+  iframe {
+  border: none;
+}
+
+/* If you like the first line of your paragraphs to be indented, you can add the option to make them so in Bookdown */
+/* Just add the below code to your Bookdown style.css file */
+/*
+p {
+  text-indent: 3em;
+}
+*/
+.book .book-body .page-wrapper .page-inner section.normal p{
+  margin-top:  0.85em
+}
+/* You can change the extent of the indentation by changing the amount. 3em is provided as an example */
+
+/* If you don't wish to indent the 1st paragraph of each section, but only the 2nd, 3rd, 4th etc.  */
+/* To do this, you can use teh below code instead */
+
+p:not(:first-of-type) {
+  text-indent: 3em;
+}
