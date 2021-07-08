@@ -85,7 +85,7 @@ La negación del ***cuantificador universal*** es equivalente a la *afirmación 
 
 La negación de un ***cuantificador existencial*** es equivalente a la *afirmación de un cuantificador universal* respecto de la ***función proposicional negada***.
 
-```{example}
+```{example, wwwwwwww}
 Dada la proposición: "Si todos los números primos son impa­res, los números positivos son mayores que -1"
 
 -   Expresarla simbólicamente
@@ -130,7 +130,10 @@ Sea $p(x):$ números primos son impares y $q(x):$ números positivos mayores que
     $$
 
     que se lee: "Todos los números primos son impares y algunos números no son mayores que -1"
-```{example}
+    
+
+    
+```{example, wwwwwwwu}
 Dado el conjunto $A=\left\{x\in\mathbb{N}:-14<x<27\right\}$. Hallar el valor de verdad de $$
 s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
 $$ si $p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2>y^2]$, $q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y<-z]$ y $r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2>y]$
