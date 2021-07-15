@@ -37,6 +37,13 @@ ejemplo
 número-de-elementos-de-un-conjunto.-propiedades
 funciones-y-relaciones
 numeros-reales
+axiomas-de-la-adición
+axiomas-de-la-multiplicación
+axiomas-distributivas
+axiomas-de-orden
+axioma-del-supremo
+ejercicios-2
+potenciación
 funciones-exponenciales-logarítmicas
 inducción-matemática
 suceciones
