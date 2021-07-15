@@ -1,1 +1,65 @@
 # Numeros reales
+
+$$(\mathbb{R}, *, +)$$
+
+#### Axiomas de la adición
+- Cerrada (clausura)
+- Asociativa y commutativa
+- Elemento inverso y neutro aditivo
+
+#### Axiomas de la Multiplicación
+- Cerrada (clausura)
+- Asociativa $(ab)c=a(bc)$ y commutativa
+$$5\cdot7$$
+$$ab$$
+- Elemento inverso y neutro multiplicativo
+
+#### Axiomas distributivas
+
+$$w(a+b)=wa+wb$$
+$$(a+b)w=aw+bw$$
+$$(a+b)(w+z)=a(w+z)+b(w+z)=aw+az+bw+bz$$
+
+
+#### Axiomas de orden
+
+Dados $a$ y $b$ solo ocurre que $a=b$, $a>b$ o $a<b$ 
+
+
+#### Axioma del supremo
+
+Si S es un conjunto no vacío de elementos de R superiormente acotado,
+entonces S tiene un supremo en R.
+
+### Ejercicios
+Hallar el valor de $x$
+
+* $5x-[3x-7-(\frac{3x-1}{3})]=10$
+
+$$
+\begin{align*}
+5x-[3x-7-(\frac{3x-1}{3})]&=10\\
+5x-[\frac{9x-21-(3x-1)}{3}]&=10\\5x-[\frac{6x-20}{3}]&=10\\
+[\frac{15x-(6x-20)}{3}]&=10\\
+\\
+	[\frac{9x+20}{3}]&=10\\	{9x+20}&=30\\
+	\\	x&=\frac{10}{9}\\
+\end{align*}
+$$
+
+*  $a-\frac{m+n}{x}=b-\frac{m-n}{x}$
+*  $m\frac{(m+x)}{n}=\frac{n(n+x)}{m}$
+
+### Potenciación 
+
+Teorema 
+
+* $$a^na^m=a^{n+m}$$
+* $$(a^n)^m=a^{nm}$$
+* $$(ab)^m=a^mb^m$$
+* $$\frac{a^n}{a^m}=a^{n-m}$$
+* $$(\frac{a}{a})^n=\frac{a^n}{a^n}$$
+
+1. $$\frac{(x^2-\frac{1}{y^2})^x(x^2-\frac{1}{y^2})^x}{}$$
+
+
