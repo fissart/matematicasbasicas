@@ -2,33 +2,64 @@
 
 # Logica
 
+::: {.theorem #pyth name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
 
+$$a^2 + b^2 = c^2$$
+:::
 
-|  $p$  |  $q$  | $w \rightarrow \left( \sim p \vee q\right)$ | $w$ |
-| :---: | :---: | :------------------------------------: | --- |
-|   V   |   V   |                   w                    | w   |
-|   V   |   F   |                   w                    | w   |
-|   F   |   V   |                   w                    | w   |
-|   F   |   F   |                   w                     | w   |
+\@ref(thm:pyth)
+
+## Conjunción
+
+|  $p$  |  $q$  | $p\wedge q$ |
+| :---: | :---: | :---: |
+|   V   |   V   | V|
+|   V   |   F   | F|
+|   V   |   V   | F|
+|   V   |   F   | F|
+
+: (\#tab:ww) Conjunción.
+
+## Disyunción
+
+|  $p$  |  $q$  | $p\wedge q$ |
+| :---: | :---: | :---: |
+|   V   |   V   | V|
+|   V   |   F   | F|
+|   V   |   V   | F|
+|   V   |   F   | F|
 
 : (\#tab:ww) Sed.
 
+## Implicación
 
-$$ \Longrightarrow \Longleftrightarrow  $$
+|  $p$  |  $q$  | $p\rightarrow q$ |
+| :---: | :---: | :---: |
+|   V   |   V   | V |
+|   V   |   F   | F|
+|   V   |   V   | F|
+|   V   |   F   | F|
 
-$$ \Longleftrightarrow  $$
-$$ \Longleftrightarrow  $$
-$$ \Longleftrightarrow \vee \wedge \rightarrow \left( \int_{2}^{2} \right) \left[ \int_{3}^{2} \right]  \left\{ w,w,w,w,w,w,w/x \in W \right\}  $$
+: (\#tab:ww) Sed.
+
+```{r ww1, echo=FALSE, fig.align="center", fig.cap="wwwwwwwwww"}
+knitr::include_graphics('aureo.svg')
+```
+$\frac{\sqrt{5}-1}{2}AB$
+$$\frac{\sqrt{5}-1}{2}AB$$
+
+
+```{r, echo=FALSE, engine='tikz', out.width='90%', fig.ext='pdf', fig.cap='Some caption.'}
+egin{tikzpicture}[scale=.7]
+draw [fill=gray!30,very thick] (0,-1) rectangle (5,1);
+draw [very thick] (5, 0) -- (13,0);
+
+ode [below] at (2,-1) {large Hello};
+
+ode [below, align=center] at (0,-1) {large Two\ lines};
+end{tikzpicture}
+```
 
 Refiérase al cuadro \@ref(tab:regulares) \@ref(tab:ww)
-
-|         Tipo         | Número de lados | Número de diagonales | Apotemas |
-|:--------------------:|:---------------:|:--------------------:|:--------:|
-| Triángulo equilátero |        3        |          0           |    3     |
-|       Cuadrado       |        4        |          2           |    4     |
-|      Pentágono       |        5        |          5           |    5     |
-|       Exagono        |        6        |          6           |    6     |
-|      Heptagono       |        7        |          7           |    7     |
-|         ...          |       ...       |         ...          |   ...    |
-
-: (\#tab:regulares) Polígonos cerrados regulares.

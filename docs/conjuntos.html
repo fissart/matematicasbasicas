@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 2 Conjuntos | Matemáticas básicas</title>
   <meta name="description" content="Capítulo 2 Conjuntos | Matemáticas básicas" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 2 Conjuntos | Matemáticas básicas" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Ricardo Michel MALLQUI BAÑOS" />
 
 
-<meta name="date" content="2021-07-14" />
+<meta name="date" content="2022-05-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,8 @@
   
 <link rel="prev" href="logica.html"/>
 <link rel="next" href="funciones-y-relaciones.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +41,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -69,37 +68,47 @@
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a></li>
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a></li>
-<li class="chapter" data-level="1" data-path="logica.html"><a href="logica.html"><i class="fa fa-check"></i><b>1</b> Logica</a></li>
-<li class="chapter" data-level="2" data-path="conjuntos.html"><a href="conjuntos.html"><i class="fa fa-check"></i><b>2</b> Conjuntos</a><ul>
-<li class="chapter" data-level="2.0.1" data-path="conjuntos.html"><a href="conjuntos.html#determincación-de-un-conjunto"><i class="fa fa-check"></i><b>2.0.1</b> Determincación de un conjunto</a></li>
-<li class="chapter" data-level="2.0.2" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-básicos"><i class="fa fa-check"></i><b>2.0.2</b> Conjuntos básicos</a></li>
-<li class="chapter" data-level="2.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional-y-cuantificadores"><i class="fa fa-check"></i><b>2.1</b> Función proposicional y cuantificadores</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional"><i class="fa fa-check"></i><b>2.1.1</b> Función proposicional</a></li>
-<li class="chapter" data-level="2.1.2" data-path="conjuntos.html"><a href="conjuntos.html#cuantificadores"><i class="fa fa-check"></i><b>2.1.2</b> Cuantificadores</a></li>
+<li class="chapter" data-level="1" data-path="logica.html"><a href="logica.html"><i class="fa fa-check"></i><b>1</b> Logica</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="logica.html"><a href="logica.html#conjunción"><i class="fa fa-check"></i><b>1.1</b> Conjunción</a></li>
+<li class="chapter" data-level="1.2" data-path="logica.html"><a href="logica.html#disyunción"><i class="fa fa-check"></i><b>1.2</b> Disyunción</a></li>
+<li class="chapter" data-level="1.3" data-path="logica.html"><a href="logica.html#implicación"><i class="fa fa-check"></i><b>1.3</b> Implicación</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-iguales"><i class="fa fa-check"></i><b>2.2</b> Conjuntos Iguales</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="conjuntos.html"><a href="conjuntos.html#propiedades"><i class="fa fa-check"></i><b>2.2.1</b> Propiedades</a></li>
+<li class="chapter" data-level="2" data-path="conjuntos.html"><a href="conjuntos.html"><i class="fa fa-check"></i><b>2</b> Conjuntos</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="conjuntos.html"><a href="conjuntos.html#determinación-de-un-conjunto"><i class="fa fa-check"></i><b>2.1</b> Determinación de un conjunto</a></li>
+<li class="chapter" data-level="2.2" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-básicos"><i class="fa fa-check"></i><b>2.2</b> Conjuntos básicos</a></li>
+<li class="chapter" data-level="2.3" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional-y-cuantificadores"><i class="fa fa-check"></i><b>2.3</b> Función proposicional y cuantificadores</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional"><i class="fa fa-check"></i><b>2.3.1</b> Función proposicional</a></li>
+<li class="chapter" data-level="2.3.2" data-path="conjuntos.html"><a href="conjuntos.html#cuantificadores"><i class="fa fa-check"></i><b>2.3.2</b> Cuantificadores</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="conjuntos.html"><a href="conjuntos.html#inclusión-y-subconjuntos"><i class="fa fa-check"></i><b>2.3</b> Inclusión y subconjuntos</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="conjuntos.html"><a href="conjuntos.html#propiedades-1"><i class="fa fa-check"></i><b>2.3.1</b> Propiedades</a></li>
+<li class="chapter" data-level="2.4" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-iguales"><i class="fa fa-check"></i><b>2.4</b> Conjuntos Iguales</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="conjuntos.html"><a href="conjuntos.html#propiedades"><i class="fa fa-check"></i><b>2.4.1</b> Propiedades</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-disjuntos"><i class="fa fa-check"></i><b>2.4</b> Conjuntos disjuntos</a></li>
-<li class="chapter" data-level="2.5" data-path="conjuntos.html"><a href="conjuntos.html#conjunto-potencia"><i class="fa fa-check"></i><b>2.5</b> Conjunto potencia</a></li>
-<li class="chapter" data-level="2.6" data-path="conjuntos.html"><a href="conjuntos.html#representación-gráfica-de-los-conjuntos"><i class="fa fa-check"></i><b>2.6</b> Representación Gráfica de los Conjuntos</a></li>
-<li class="chapter" data-level="2.7" data-path="conjuntos.html"><a href="conjuntos.html#operaciones-entre-conjuntos"><i class="fa fa-check"></i><b>2.7</b> Operaciones entre conjuntos</a><ul>
-<li class="chapter" data-level="2.7.1" data-path="conjuntos.html"><a href="conjuntos.html#unión"><i class="fa fa-check"></i><b>2.7.1</b> Unión</a></li>
-<li class="chapter" data-level="2.7.2" data-path="conjuntos.html"><a href="conjuntos.html#intersección"><i class="fa fa-check"></i><b>2.7.2</b> Intersección</a></li>
-<li class="chapter" data-level="2.7.3" data-path="conjuntos.html"><a href="conjuntos.html#diferencia"><i class="fa fa-check"></i><b>2.7.3</b> Diferencia</a></li>
-<li class="chapter" data-level="2.7.4" data-path="conjuntos.html"><a href="conjuntos.html#complemento"><i class="fa fa-check"></i><b>2.7.4</b> Complemento</a></li>
-<li class="chapter" data-level="2.7.5" data-path="conjuntos.html"><a href="conjuntos.html#diferencia-simétrica"><i class="fa fa-check"></i><b>2.7.5</b> Diferencia simétrica</a></li>
-<li class="chapter" data-level="2.7.6" data-path="conjuntos.html"><a href="conjuntos.html#ejercicios"><i class="fa fa-check"></i><b>2.7.6</b> Ejercicios</a></li>
-<li class="chapter" data-level="2.7.7" data-path="conjuntos.html"><a href="conjuntos.html#ejercicios-1"><i class="fa fa-check"></i><b>2.7.7</b> Ejercicios</a></li>
+<li class="chapter" data-level="2.5" data-path="conjuntos.html"><a href="conjuntos.html#inclusión-y-subconjuntos"><i class="fa fa-check"></i><b>2.5</b> Inclusión y subconjuntos</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="conjuntos.html"><a href="conjuntos.html#propiedades-1"><i class="fa fa-check"></i><b>2.5.1</b> Propiedades</a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="conjuntos.html"><a href="conjuntos.html#número-de-elementos-de-un-conjunto.-propiedades"><i class="fa fa-check"></i><b>2.8</b> Número de elementos de un Conjunto. Propiedades</a></li>
+<li class="chapter" data-level="2.6" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-disjuntos"><i class="fa fa-check"></i><b>2.6</b> Conjuntos disjuntos</a></li>
+<li class="chapter" data-level="2.7" data-path="conjuntos.html"><a href="conjuntos.html#conjunto-potencia"><i class="fa fa-check"></i><b>2.7</b> Conjunto potencia</a></li>
+<li class="chapter" data-level="2.8" data-path="conjuntos.html"><a href="conjuntos.html#representación-gráfica-de-los-conjuntos"><i class="fa fa-check"></i><b>2.8</b> Representación Gráfica de los Conjuntos</a></li>
+<li class="chapter" data-level="2.9" data-path="conjuntos.html"><a href="conjuntos.html#operaciones-entre-conjuntos"><i class="fa fa-check"></i><b>2.9</b> Operaciones entre conjuntos</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="conjuntos.html"><a href="conjuntos.html#unión"><i class="fa fa-check"></i><b>2.9.1</b> Unión</a></li>
+<li class="chapter" data-level="2.9.2" data-path="conjuntos.html"><a href="conjuntos.html#intersección"><i class="fa fa-check"></i><b>2.9.2</b> Intersección</a></li>
+<li class="chapter" data-level="2.9.3" data-path="conjuntos.html"><a href="conjuntos.html#diferencia"><i class="fa fa-check"></i><b>2.9.3</b> Diferencia</a></li>
+<li class="chapter" data-level="2.9.4" data-path="conjuntos.html"><a href="conjuntos.html#complemento"><i class="fa fa-check"></i><b>2.9.4</b> Complemento</a></li>
+<li class="chapter" data-level="2.9.5" data-path="conjuntos.html"><a href="conjuntos.html#diferencia-simétrica"><i class="fa fa-check"></i><b>2.9.5</b> Diferencia simétrica</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="conjuntos.html"><a href="conjuntos.html#ejercicios"><i class="fa fa-check"></i><b>2.10</b> Ejercicios</a></li>
+<li class="chapter" data-level="2.11" data-path="conjuntos.html"><a href="conjuntos.html#número-de-elementos-de-un-conjunto.-propiedades"><i class="fa fa-check"></i><b>2.11</b> Número de elementos de un Conjunto. Propiedades</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="funciones-y-relaciones.html"><a href="funciones-y-relaciones.html"><i class="fa fa-check"></i><b>3</b> Funciones y relaciones</a></li>
-<li class="chapter" data-level="4" data-path="numeros-reales.html"><a href="numeros-reales.html"><i class="fa fa-check"></i><b>4</b> Numeros reales</a><ul>
-<li class="chapter" data-level="4.0.1" data-path="numeros-reales.html"><a href="numeros-reales.html#ejercicios-2"><i class="fa fa-check"></i><b>4.0.1</b> Ejercicios</a></li>
+<li class="chapter" data-level="4" data-path="numeros-reales.html"><a href="numeros-reales.html"><i class="fa fa-check"></i><b>4</b> Numeros reales</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="numeros-reales.html"><a href="numeros-reales.html#ejercicios-1"><i class="fa fa-check"></i><b>4.0.1</b> Ejercicios</a></li>
 <li class="chapter" data-level="4.0.2" data-path="numeros-reales.html"><a href="numeros-reales.html#potenciación"><i class="fa fa-check"></i><b>4.0.2</b> Potenciación</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="funciones-exponenciales-logarítmicas.html"><a href="funciones-exponenciales-logarítmicas.html"><i class="fa fa-check"></i><b>5</b> Funciones exponenciales logarítmicas</a></li>
@@ -127,97 +136,79 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="conjuntos" class="section level1">
+<div id="conjuntos" class="section level1" number="2">
 <h1><span class="header-section-number">Capítulo 2</span> Conjuntos</h1>
-
 <div class="definition">
-<span id="def:conjunto" class="definition"><strong>Definición 2.1  (Conjunto)  </strong></span>Es una coleccion de elementos con caractersiticas similares
+<p><span id="def:conjunto" class="definition"><strong>Definición 2.1  (Conjunto) </strong></span>Es una coleccion de elementos con características similares</p>
 </div>
-
-<div id="determincación-de-un-conjunto" class="section level3">
-<h3><span class="header-section-number">2.0.1</span> Determincación de un conjunto</h3>
-
+<div id="determinación-de-un-conjunto" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Determinación de un conjunto</h2>
 <div class="definition">
-<span id="def:conjunto2" class="definition"><strong>Definición 2.2  (Determinacion de conjuntos)  </strong></span>Por extensión y comprensión
+<p><span id="def:conjunto2" class="definition"><strong>Definición 2.2  (Determinacion de conjuntos) </strong></span>Por extensión y comprensión.
+<strong>Extensión</strong>
+<span class="math display">\[A=\left\{ 1,2,3,4,5,6,7 \right\} \]</span></p>
+<p><strong>Comprensión</strong>
+<span class="math display">\[A=\left\{ x \in \mathbb{N};0&lt;x&lt;5 \right\}  \]</span></p>
 </div>
-
+</div>
+<div id="conjuntos-básicos" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Conjuntos básicos</h2>
 <ul>
-<li><strong>Extensión</strong>
-<span class="math display">\[A=\left\{ 1,2,3,4,5,6,7 \right\} \]</span></li>
-<li><strong>Comprensión</strong>
-<span class="math display">\[A=\left\{ x \in \mathbb{N};0&lt;x&lt;5 \right\}  \]</span></li>
-</ul>
-</div>
-<div id="conjuntos-básicos" class="section level3">
-<h3><span class="header-section-number">2.0.2</span> Conjuntos básicos</h3>
-<p>Conjuntos universal, vacio, unitario
-* <strong>Conjunto de los sitemas numericos</strong>
+<li><p>Conjuntos universal</p></li>
+<li><p>Conjunto de los sitemas numéricos
 <span class="math display">\[
 \mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{I}, \mathbb{R}, \mathbb{C}
-\]</span>
-* <strong>Cojunto vacio</strong>
+\]</span></p></li>
+<li><p>Cojunto vacio
 <span class="math display">\[
 \phi=\left\{x/x\neq x\right\}
-\]</span>
-* <strong>Conjunto unitario</strong>
+\]</span></p></li>
+<li><p>Conjunto unitario
 <span class="math display">\[
 A=\left\{a\right\}
-\]</span></p>
+\]</span></p></li>
+</ul>
 </div>
-<div id="función-proposicional-y-cuantificadores" class="section level2">
-<h2><span class="header-section-number">2.1</span> Función proposicional y cuantificadores</h2>
-<div id="función-proposicional" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Función proposicional</h3>
-
+<div id="función-proposicional-y-cuantificadores" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Función proposicional y cuantificadores</h2>
+<div id="función-proposicional" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Función proposicional</h3>
 <div class="definition">
-<span id="def:proposicional" class="definition"><strong>Definición 2.3  (Función proposicional)  </strong></span>Sea <span class="math inline">\(x\)</span> una variable <span class="math inline">\(P(x)\)</span> un <em>enunciado</em>, <span class="math inline">\(P(x)\)</span> es una <strong><em>función proposicional</em></strong> si al sustituir la variable con una constante este se convierte en una <em>proposición</em>.
+<p><span id="def:proposicional" class="definition"><strong>Definición 2.3  (Función proposicional) </strong></span>Sea <span class="math inline">\(x\)</span> una variable <span class="math inline">\(P(x)\)</span> un <em>enunciado</em>, <span class="math inline">\(P(x)\)</span> es una <strong><em>función proposicional</em></strong> si al sustituir la variable con una constante este se convierte en una <em>proposición</em>.</p>
 </div>
-
-<p>Sea <span class="math inline">\(x\)</span> una variable <span class="math inline">\(P(x)\)</span> un <em>enunciado</em>, <span class="math inline">\(P(x)\)</span> es una <strong><em>función proposicional</em></strong> si al sustituir la variable con una constante este se convierte en una <em>proposición</em>.</p>
 <p>Por ejemplo <span class="math inline">\(P(x)\)</span>: <span class="math inline">\(x\)</span> es un numero par</p>
 <p>Al conjunto de todos lo valores de <span class="math inline">\(x\)</span> se denomina <em>domino de la variable</em></p>
 </div>
-<div id="cuantificadores" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Cuantificadores</h3>
-
+<div id="cuantificadores" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Cuantificadores</h3>
 <div class="definition">
-<span id="def:existencial" class="definition"><strong>Definición 2.4  (Cuantificador existencial)  </strong></span><span class="math display">\[\exists\]</span> Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de <span class="math inline">\(x\)</span> perteneciente al Dominio de <span class="math inline">\(A\)</span>, es Verdadero. Se denota; <span class="math inline">\(\exists x / P (x)\)</span> Se lee: “Existe al menos un <span class="math inline">\(x\)</span>”, “Algunos <span class="math inline">\(x\)</span>”," Hay <span class="math inline">\(x\)</span>“,”Existe un <span class="math inline">\(x\)</span>", etc.
+<p><span id="def:existencial" class="definition"><strong>Definición 2.4  (Cuantificador existencial) </strong></span>Este cuatificador
+<span class="math display">\[\exists\]</span>
+Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de <span class="math inline">\(x\)</span> perteneciente al Dominio de <span class="math inline">\(A\)</span>, es Verdadero. Se denota; <span class="math inline">\(\exists x / P (x)\)</span> Se lee: “Existe al menos un <span class="math inline">\(x\)</span>,” “Algunos <span class="math inline">\(x\)</span>,” “Hay <span class="math inline">\(x\)</span>,” “Existe un <span class="math inline">\(x\)</span>,” etc.</p>
 </div>
-
-<p><span class="math display">\[\exists\]</span> Es una generalización de la disyunción Inclusiva. Por ello, es verdadero cuando al menos un valor de <span class="math inline">\(x\)</span> perteneciente al Dominio de <span class="math inline">\(A\)</span>, es Verdadero. Se denota; <span class="math inline">\(\exists x / P (x)\)</span> Se lee: “Existe al menos un <span class="math inline">\(x\)</span>”, “Algunos <span class="math inline">\(x\)</span>”," Hay <span class="math inline">\(x\)</span>“,”Existe un <span class="math inline">\(x\)</span>", etc.</p>
-
 <div class="definition">
-<span id="def:universal" class="definition"><strong>Definición 2.5  (Cuantificador universal)  </strong></span><span class="math display">\[\forall\]</span> Es una generalización de la <em>conjunción</em>. Debido a esto es verdadero cuando todos los valores de <span class="math inline">\(x\)</span> que pertenecen al Dominio de <span class="math inline">\(A\)</span> son Verdaderos. Se denota: <span class="math inline">\(\forall x ; p(x)\)</span> Se lee: “Para Todo <span class="math inline">\(x\)</span>”, “Para cada <span class="math inline">\(x\)</span>”, “Todos (as) las <span class="math inline">\(x\)</span>”, “Todo <span class="math inline">\(x\)</span>”.
+<p><span id="def:universal" class="definition"><strong>Definición 2.5  (Cuantificador universal) </strong></span>Este cuatificador
+<span class="math display">\[\forall\]</span>
+Es una generalización de la <em>conjunción</em>. Debido a esto es verdadero cuando todos los valores de <span class="math inline">\(x\)</span> que pertenecen al Dominio de <span class="math inline">\(A\)</span> son Verdaderos. Se denota: <span class="math inline">\(\forall x ; p(x)\)</span> Se lee: “Para Todo <span class="math inline">\(x\)</span>,” “Para cada <span class="math inline">\(x\)</span>,” “Todos (as) las <span class="math inline">\(x\)</span>,” “Todo <span class="math inline">\(x\)</span>.”</p>
 </div>
-
-<p><span class="math display">\[\forall\]</span> Es una generalización de la <em>conjunción</em>. Debido a esto es verdadero cuando todos los valores de <span class="math inline">\(x\)</span> que pertenecen al Dominio de <span class="math inline">\(A\)</span> son Verdaderos. Se denota: <span class="math inline">\(\forall x ; p(x)\)</span> Se lee: “Para Todo <span class="math inline">\(x\)</span>”, “Para cada <span class="math inline">\(x\)</span>”, “Todos (as) las <span class="math inline">\(x\)</span>”, “Todo <span class="math inline">\(x\)</span>”.</p>
 <p>Sea <span class="math inline">\(A=\left\{1,2,3,4,5\right\}\)</span> y la función proposicional <span class="math inline">\(3x-2&lt;12\)</span> entonces las proposiciones</p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(\forall x\in A:3x-1&lt;14\)</span></li>
 <li><span class="math inline">\(\exists\; x\in A:3x-2&lt;12\)</span></li>
 </ol>
 <p>son falsa y verdadera respectivamente</p>
-
 <div class="definition">
-<p><span id="def:universal2" class="definition"><strong>Definición 2.6  (Proposición universal)  </strong></span>Una <em>proposición universal</em> es aquella que está provista de un <em>cuantificador universal</em>, y tiene la forma: <span class="math display">\[\forall x\in A:p(x)\]</span></p>
+<p><span id="def:universal2" class="definition"><strong>Definición 2.6  (Proposición universal) </strong></span>Una <em>proposición universal</em> es aquella que está provista de un <em>cuantificador universal</em>, y tiene la forma: <span class="math display">\[\forall x\in A:p(x)\]</span></p>
 </div>
-
-<p>Una <em>proposición universal</em> es aquella que está provista de un <em>cuantificador universal</em>, y tiene la forma: <span class="math display">\[\forall x\in A:p(x)
-\]</span></p>
-
 <div class="definition">
-<span id="def:existencial2" class="definition"><strong>Definición 2.7  (Proposición existencial)  </strong></span>Una <em>proposición existencial</em> es aquella que está provista de un <em>cuantificador existencial</em>, y tiene la forma: <span class="math display">\[\exists x\in A:p(x)\]</span>
+<p><span id="def:existencial2" class="definition"><strong>Definición 2.7  (Proposición existencial) </strong></span>Una <em>proposición existencial</em> es aquella que está provista de un <em>cuantificador existencial</em>, y tiene la forma: <span class="math display">\[\exists x\in A:p(x)\]</span></p>
 </div>
-
-<p>Una <em>proposición existencial</em> es aquella que está provista de un <em>cuantificador existencial</em>, y tiene la forma: <span class="math display">\[\exists x\in A:p(x)\]</span>
-### Negación de las proposiciones universal y existencial</p>
 <p>Cambiando el cuantificador universal por el cuantificador existencial, o viceversa, es decir <span class="math display">\[\sim[\exists x\in A; P(x)]\equiv\forall x\in A;\sim P(x)\]</span></p>
 <p><span class="math display">\[
 \sim\left[\forall  x\in A; P(x)\right]\equiv\exists\; x\in A;\sim P(x)
 \]</span></p>
 <p>La negación del <strong><em>cuantificador universal</em></strong> es equivalente a la <em>afirmación de un cuantificador existencial</em> respecto de la <strong><em>función proposicional negada</em>.</strong></p>
 <p>La negación de un <strong><em>cuantificador existencial</em></strong> es equivalente a la <em>afirmación de un cuantificador universal</em> respecto de la <strong><em>función proposicional negada</em></strong>.</p>
-
 <div class="example">
 <p><span id="exm:wwwwwwww" class="example"><strong>Ejemplo 2.1  </strong></span>Dada la proposición: “Si todos los números primos son impa­res, los números positivos son mayores que -1”</p>
 <ul>
@@ -225,56 +216,36 @@ A=\left\{a\right\}
 <li>Negar oracionalmente la proposición</li>
 </ul>
 </div>
-
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> 
-Sea <span class="math inline">\(p(x):\)</span> números primos son impares y <span class="math inline">\(q(x):\)</span> números positivos mayores que -1</p>
+<p><span id="unlabeled-div-1" class="solution"><em>Solución</em>. </span>Sea <span class="math inline">\(p(x):\)</span> números primos son impares y <span class="math inline">\(q(x):\)</span> números positivos mayores que -1</p>
 <ul>
 <li><p><span class="math inline">\(\forall x:[p(x)\rightarrow q(x)]\)</span></p></li>
-<li><p>Negando el item anterior</p>
-<p><span class="math display">\[
+<li><p>Negando el item anterior
+<span class="math display">\[
 \begin{aligned}
 \sim\left\{\forall x:[p(x)\rightarrow q(x)]\right\}
-&amp;\equiv \sim\left\{\forall x:p(x)\rightarrow \forall x:q(x)\right\}\\
-&amp;=\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
-&amp;\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
+\equiv&amp; \sim\left\{\forall x:p(x)\rightarrow \forall x:q(x)\right\}\\
+=&amp;\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
+\equiv&amp;\quad\forall x:p(x)\wedge \exists\; x:\sim q(x)
 \end{aligned}
-\]</span></p>
-que se lee: “Todos los números primos son impares y algunos números no son mayores que -1”</li>
+\]</span>
+que se lee: “Todos los números primos son impares y algunos números no son mayores que -1”</p></li>
 </ul>
 </div>
-
-<p>Sea <span class="math inline">\(p(x):\)</span> números primos son impares y <span class="math inline">\(q(x):\)</span> números positivos mayores que -1</p>
-<ul>
-<li><p><span class="math inline">\(\forall x:[p(x)\rightarrow q(x)]\)</span></p></li>
-<li><p>Negando el item anterior</p>
-<p><span class="math display">\[
-\begin{aligned}
-\sim\left\{\forall x:[p(x)\rightarrow q(x)]\right\}
-&amp;\equiv \sim\left\{\forall x:p(x)\rightarrow \forall x:q(x)\right\}\\
-&amp;=\sim\left\{\sim[\forall x:p(x)]\vee \forall x:q(x)\right\}\\
-&amp;\equiv\forall x:p(x)\wedge \exists\; x:\sim q(x)
-\end{aligned}
-\]</span></p>
-<p>que se lee: “Todos los números primos son impares y algunos números no son mayores que -1”</p></li>
-</ul>
-
 <div class="example">
-<span id="exm:wwwwwwwu" class="example"><strong>Ejemplo 2.2  </strong></span>Dado el conjunto <span class="math inline">\(A=\left\{x\in\mathbb{N}:-14&lt;x&lt;27\right\}\)</span>. Hallar el valor de verdad de <span class="math display">\[
-s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r) 
-\]</span> si <span class="math inline">\(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2&gt;y^2]\)</span>, <span class="math inline">\(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y&lt;-z]\)</span> y <span class="math inline">\(r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2&gt;y]\)</span>
+<p><span id="exm:wwwwwwwu" class="example"><strong>Ejemplo 2.2  </strong></span>Dado el conjunto <span class="math inline">\(A=\left\{x\in\mathbb{N}:-14&lt;x&lt;27\right\}\)</span>. Hallar el valor de verdad de
+<span class="math display">\[
+s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\vee r)
+\]</span>
+si
+<span class="math inline">\(p=(\forall x\in A, \exists y\in A, \forall z\in A)[x^2-z^2&gt;y^2]\)</span>, <span class="math inline">\(q=(\exists y\in A, \forall z\in A, \exists x \in A)[2x-4y&lt;-z]\)</span> y <span class="math inline">\(r=(\forall z\in A, \exists x\in A, \forall y \in A)[3x^2-z^2&gt;y]\)</span></p>
 </div>
-
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> <span class="math inline">\(A=\left\{1,2,3,\ldots,26\right\}\)</span> luego el valor de <span class="math inline">\(\text{V}(p)=F\)</span>, <span class="math inline">\(\text{V}(q)=V\)</span> y <span class="math inline">\(\text{V}(r)=V\)</span> pues</p>
+<p><span id="unlabeled-div-2" class="solution"><em>Solución</em>. </span><span class="math inline">\(A=\left\{1,2,3,\ldots,26\right\}\)</span> luego el valor de <span class="math inline">\(\text{V}(p)=F\)</span>, <span class="math inline">\(\text{V}(q)=V\)</span> y <span class="math inline">\(\text{V}(r)=V\)</span> pues</p>
 <ul>
 <li>Si <span class="math inline">\(y=1\)</span> entonces <span class="math inline">\(x^2-z^2&gt;y^2\equiv x^2&gt;1+z^2\)</span> lo cual no es valido <span class="math inline">\(\forall x,z\in A\)</span> entonces <span class="math inline">\(\text{V}(p)=F\)</span></li>
 <li>Si <span class="math inline">\(y=25\in A\)</span> y <span class="math inline">\(x=1\in A\)</span> entonces <span class="math inline">\(2x-4y&lt;-z\equiv 2+z&lt;100\)</span> lo cual es valido <span class="math inline">\(\forall z\in A\)</span> entonces <span class="math inline">\(\text{V}(q)=V\)</span></li>
-<li>Si <span class="math inline">\(x=26\in A\)</span> entonces <span class="math inline">\(3x^2-z^2&gt;y\equiv3(26)^2&gt;z^2+y\)</span> lo cual es valido <span class="math inline">\(\forall z,y\in A\)</span> entonces <span class="math inline">\(\text{V}(r)=V\)</span></li>
-</ul>
-<p>por lo tanto</p>
+<li>Si <span class="math inline">\(x=26\in A\)</span> entonces <span class="math inline">\(3x^2-z^2&gt;y\equiv3(26)^2&gt;z^2+y\)</span> lo cual es valido <span class="math inline">\(\forall z,y\in A\)</span> entonces <span class="math inline">\(\text{V}(r)=V\)</span> por lo tanto
 <span class="math display">\[
 \begin{aligned}
 \text{V}(s)&amp;=\text{V}[(\sim p\wedge \sim q)\Longrightarrow(\sim q\wedge \sim r)]\Longleftrightarrow(\sim p\vee r)\\
@@ -282,37 +253,36 @@ s=[(\sim p\wedge \sim q)\rightarrow(\sim q\wedge \sim r)]\leftrightarrow(\sim p\
 &amp;=[F\Longrightarrow F]\Longleftrightarrow V\\
 &amp;=V
 \end{aligned}
-\]</span>
+\]</span></li>
+</ul>
 </div>
-
-
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-3" class="exercise"><strong>Ejercicio 2.1  </strong></span>Dada la proposición: “Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso”</p>
+<p><span id="exr:unlabeled-div-3" class="exercise"><strong>Ejercicio 2.1  </strong></span>Dada la proposición: “Obtendré un puntaje aprobatorio si y solo si estudio concienzudamente el curso”</p>
 <ul>
 <li>Expresarla simbólicamente</li>
 <li>Negar oracionalmente la proposición</li>
 </ul>
 </div>
-
-
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-4" class="exercise"><strong>Ejercicio 2.2  </strong></span>Dado el conjunto <span class="math inline">\(G=\left\{x\in\mathbb{Z}^+:-14&lt;2x&lt;20\right\}\)</span>. Hallar el valor de verdad de <span class="math display">\[
-s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)] 
-\]</span> si <span class="math inline">\(p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]\)</span>, <span class="math inline">\(q=(\forall z\in A, \exists x \in A)[x\neq y]\)</span> y <span class="math inline">\(r=(\forall z\in A, \forall y \in A)[yx^2&gt;500]\)</span></p>
+<p><span id="exr:unlabeled-div-4" class="exercise"><strong>Ejercicio 2.2  </strong></span>Dado el conjunto <span class="math inline">\(G=\left\{x\in\mathbb{Z}^+:-14&lt;2x&lt;20\right\}\)</span>. Hallar el valor de verdad de
+<span class="math display">\[
+s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)]
+\]</span>
+si
+<span class="math inline">\(p=(\forall x\in A, z\in \mathbb{N_0})[xz\in \mathbb{Z}]\)</span>, <span class="math inline">\(q=(\forall z\in A,\exists x \in A)[x\neq y]\)</span> y <span class="math inline">\(r=(\forall z\in A, \forall y \in A)[yx^2&gt;500]\)</span></p>
 </div>
-
 </div>
 </div>
-<div id="conjuntos-iguales" class="section level2">
-<h2><span class="header-section-number">2.2</span> Conjuntos Iguales</h2>
+<div id="conjuntos-iguales" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Conjuntos Iguales</h2>
 <p><span class="math display">\[\begin{aligned}A=B&amp;\Longleftrightarrow \left\{(x\in A\rightarrow x\in B)\wedge(x\in B\rightarrow x\in A)\right\}\\
-&amp;\Longleftrightarrow x\in A \leftrightarrow x\in B 
+&amp;\Longleftrightarrow x\in A \leftrightarrow x\in B
 \end{aligned}\]</span></p>
 <p><span class="math display">\[\begin{aligned}A\neq B&amp;\Longleftrightarrow \left\{(\exists x\in A; x\notin B)\vee(\exists x\in B; x\notin A)\right\}\\
-&amp;\Longleftrightarrow x\in A \leftrightarrow x\in B 
+&amp;\Longleftrightarrow x\in A \leftrightarrow x\in B
 \end{aligned}\]</span></p>
-<div id="propiedades" class="section level3">
-<h3><span class="header-section-number">2.2.1</span> Propiedades</h3>
+<div id="propiedades" class="section level3" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Propiedades</h3>
 <ul>
 <li><span class="math inline">\(A=A\)</span></li>
 <li><span class="math inline">\(A=B\rightarrow B=A\)</span></li>
@@ -320,8 +290,8 @@ s=(p\wedge \sim q)\rightarrow[(\sim q\wedge \sim r)\leftrightarrow(\sim p\vee r)
 </ul>
 </div>
 </div>
-<div id="inclusión-y-subconjuntos" class="section level2">
-<h2><span class="header-section-number">2.3</span> Inclusión y subconjuntos</h2>
+<div id="inclusión-y-subconjuntos" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Inclusión y subconjuntos</h2>
 <p><span class="math display">\[
 \begin{aligned}
 A\subset B&amp;\leftrightarrow\left\{x\in A\rightarrow x\in B\right\}\\
@@ -331,8 +301,8 @@ A\subset B&amp;\leftrightarrow\left\{x\in A\rightarrow x\in B\right\}\\
 <p><span class="math display">\[
 A\not\subset B\leftrightarrow\exists x\in A\;|\; x\notin B
 \]</span></p>
-<div id="propiedades-1" class="section level3">
-<h3><span class="header-section-number">2.3.1</span> Propiedades</h3>
+<div id="propiedades-1" class="section level3" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> Propiedades</h3>
 <ul>
 <li><span class="math inline">\(A\subset A\)</span></li>
 <li><span class="math inline">\(A\subset B\wedge B\subset A\rightarrow A\subset B\)</span></li>
@@ -341,25 +311,25 @@ A\not\subset B\leftrightarrow\exists x\in A\;|\; x\notin B
 </ul>
 </div>
 </div>
-<div id="conjuntos-disjuntos" class="section level2">
-<h2><span class="header-section-number">2.4</span> Conjuntos disjuntos</h2>
+<div id="conjuntos-disjuntos" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Conjuntos disjuntos</h2>
 <p><span class="math display">\[
 A\text{ disjunto de } B\leftrightarrow\nexists x\;|\; x\in A\wedge x\in B  
 \]</span></p>
 </div>
-<div id="conjunto-potencia" class="section level2">
-<h2><span class="header-section-number">2.5</span> Conjunto potencia</h2>
+<div id="conjunto-potencia" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> Conjunto potencia</h2>
 <p><span class="math display">\[
 P(A)=\left\{X\;|\;X\subset A\right\}
 \]</span></p>
-
 <div class="remark">
-<p> <span class="remark"><em>Observación. </em></span> 
-* <span class="math inline">\(P(A)\)</span> tiene <span class="math inline">\(2^n\)</span> elementos
-* <span class="math inline">\(\emptyset\in P(A)\)</span>
-* <span class="math inline">\(A\in P(A)\)</span></p>
+<p><span id="potencia" class="remark"><em>Observación</em>. </span>Tiene las siguientes Propiedades</p>
+<ul>
+<li><span class="math inline">\(P(A)\)</span> tiene <span class="math inline">\(2^n\)</span> elementos</li>
+<li><span class="math inline">\(\emptyset\in P(A)\)</span></li>
+<li><span class="math inline">\(A\in P(A)\)</span></li>
+</ul>
 </div>
-
 <p>Propiedades</p>
 <ul>
 <li><span class="math inline">\(P(\emptyset)=\left\{\emptyset\right\}\)</span></li>
@@ -367,14 +337,14 @@ P(A)=\left\{X\;|\;X\subset A\right\}
 <li><span class="math inline">\(A= B\leftrightarrow P(A)= P(B)\)</span></li>
 </ul>
 </div>
-<div id="representación-gráfica-de-los-conjuntos" class="section level2">
-<h2><span class="header-section-number">2.6</span> Representación Gráfica de los Conjuntos</h2>
+<div id="representación-gráfica-de-los-conjuntos" class="section level2" number="2.8">
+<h2><span class="header-section-number">2.8</span> Representación Gráfica de los Conjuntos</h2>
 <p>Diagrama de euler</p>
 </div>
-<div id="operaciones-entre-conjuntos" class="section level2">
-<h2><span class="header-section-number">2.7</span> Operaciones entre conjuntos</h2>
-<div id="unión" class="section level3">
-<h3><span class="header-section-number">2.7.1</span> Unión</h3>
+<div id="operaciones-entre-conjuntos" class="section level2" number="2.9">
+<h2><span class="header-section-number">2.9</span> Operaciones entre conjuntos</h2>
+<div id="unión" class="section level3" number="2.9.1">
+<h3><span class="header-section-number">2.9.1</span> Unión</h3>
 <p><span class="math display">\[
 A\cup B
 =\left\{x/x\in A\vee x\in B\right\}
@@ -388,8 +358,8 @@ A\cup B
 <li><span class="math inline">\((A\cup B)\cup C=A\cup(B\cup C)\)</span></li>
 </ul>
 </div>
-<div id="intersección" class="section level3">
-<h3><span class="header-section-number">2.7.2</span> Intersección</h3>
+<div id="intersección" class="section level3" number="2.9.2">
+<h3><span class="header-section-number">2.9.2</span> Intersección</h3>
 <p><span class="math display">\[
 A\cap B=\left\{x/x\in A\wedge x\in B\right\}
 \]</span></p>
@@ -405,8 +375,8 @@ x\in A\cap B\leftrightarrow x\in A\wedge x\in B
 <li><span class="math inline">\((A\cap B)\cap C=A\cap(B\cap C)\)</span></li>
 </ul>
 </div>
-<div id="diferencia" class="section level3">
-<h3><span class="header-section-number">2.7.3</span> Diferencia</h3>
+<div id="diferencia" class="section level3" number="2.9.3">
+<h3><span class="header-section-number">2.9.3</span> Diferencia</h3>
 <p><span class="math display">\[
 A- B=\left\{x/x\in A\wedge x\notin B\right\}
 \]</span></p>
@@ -422,8 +392,8 @@ x\in A- B\leftrightarrow x\in A\wedge x\notin B
 <li><span class="math inline">\((A-B)=(A\cup B)-B)=A-(A\cap B)\)</span></li>
 </ul>
 </div>
-<div id="complemento" class="section level3">
-<h3><span class="header-section-number">2.7.4</span> Complemento</h3>
+<div id="complemento" class="section level3" number="2.9.4">
+<h3><span class="header-section-number">2.9.4</span> Complemento</h3>
 <p><span class="math display">\[
 \mathcal{C}_BA=B-A=\left\{x/x\in B\wedge x\notin A\right\}
 \]</span></p>
@@ -442,8 +412,8 @@ x\in \mathcal{C}_BA\leftrightarrow x\in B\vee x\notin W
 <li><span class="math inline">\(A-B=A\cap B&#39;\)</span> o <span class="math inline">\(A-B=A\cap \mathcal{C}_AB\)</span></li>
 </ul>
 </div>
-<div id="diferencia-simétrica" class="section level3">
-<h3><span class="header-section-number">2.7.5</span> Diferencia simétrica</h3>
+<div id="diferencia-simétrica" class="section level3" number="2.9.5">
+<h3><span class="header-section-number">2.9.5</span> Diferencia simétrica</h3>
 <p><span class="math display">\[
 A\Delta B=\left\{x/(x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)\right\}
 \]</span></p>
@@ -460,37 +430,40 @@ x\in A\Delta B\leftrightarrow (x\in A\wedge x\in B)\vee (x\in A\wedge x\in B)
 <li><span class="math inline">\((A\Delta B)\cup(B\Delta C)=(A\cup B\cup C)-(A\cap B\cap C)\)</span></li>
 </ul>
 </div>
-<div id="ejercicios" class="section level3">
-<h3><span class="header-section-number">2.7.6</span> Ejercicios</h3>
+</div>
+<div id="ejercicios" class="section level2" number="2.10">
+<h2><span class="header-section-number">2.10</span> Ejercicios</h2>
+<div class="exercise">
+<p><span id="exr:unlabeled-div-5" class="exercise"><strong>Ejercicio 2.3  </strong></span>Resuelva</p>
 <ol style="list-style-type: decimal">
-<li><p>Sea <span class="math inline">\(U=\left\{x\in\mathbb{N}|0&lt;x\leq 10\right\}\)</span> y los subconjuntos: <span class="math inline">\(A=\left\{x\in\mathbb{N}|x \text{ es primo}\right\}\)</span>, <span class="math inline">\(B=\left\{x\in\mathbb{N}| x\text{ es es un cuadrado perfecto}\right\}\)</span> y <span class="math inline">\(C=\left\{x\in\mathbb{N}|x\text{ es impar}\right\}\)</span>. Hallar</p>
+<li>Sea <span class="math inline">\(U=\left\{x\in\mathbb{N}|0&lt;x\leq 10\right\}\)</span> y los subconjuntos: <span class="math inline">\(A=\left\{x\in\mathbb{N}|x \text{ es primo}\right\}\)</span>, <span class="math inline">\(B=\left\{x\in\mathbb{N}| x\text{ es es un cuadrado perfecto}\right\}\)</span> y <span class="math inline">\(C=\left\{x\in\mathbb{N}|x\text{ es impar}\right\}\)</span>. Hallar
 <ul>
 <li><span class="math inline">\((A\cup B)&#39;-C\)</span></li>
 <li><span class="math inline">\((A-C)&#39;\cap B\)</span></li>
 <li><span class="math inline">\((A\Delta B)-(A\Delta C)\)</span></li>
 <li><span class="math inline">\((A\cap C)&#39;-(B\cup C)&#39;\)</span></li>
 </ul></li>
-<li><p>Dados los conjuntos <span class="math inline">\(A=\left\{x\in\mathbb{Z}|\sim[x\leq -2\vee x&gt;3]\right\}\)</span>, <span class="math inline">\(B=\left\{x\in\mathbb{N}|\sim[-1&lt;x\leq 3 \rightarrow x=5]\right\}\)</span> y <span class="math inline">\(C=\left\{x\in\mathbb{Z}|(x&lt; -2\vee x\geq 2)\rightarrow x&gt;1\right\}\)</span> Hallar el resultado de <span class="math inline">\((B\cap C)\Delta(A\cap B)\)</span></p></li>
+<li>Dados los conjuntos <span class="math inline">\(A=\left\{x\in\mathbb{Z}|\sim[x\leq -2\vee x&gt;3]\right\}\)</span>, <span class="math inline">\(B=\left\{x\in\mathbb{N}|\sim[-1&lt;x\leq 3 \rightarrow x=5]\right\}\)</span> y <span class="math inline">\(C=\left\{x\in\mathbb{Z}|(x&lt; -2\vee x\geq 2)\rightarrow x&gt;1\right\}\)</span> Hallar el resultado de <span class="math inline">\((B\cap C)\Delta(A\cap B)\)</span></li>
 </ol>
 </div>
-<div id="ejercicios-1" class="section level3">
-<h3><span class="header-section-number">2.7.7</span> Ejercicios</h3>
-<ol style="list-style-type: decimal">
-<li>Sombree las regiones correspondientes a los conjuntos</li>
-</ol>
+<div class="exercise">
+<p><span id="exr:unlabeled-div-6" class="exercise"><strong>Ejercicio 2.4  </strong></span>Sombree las regiones correspondientes a los conjuntos</p>
 <ul>
 <li><p><span class="math inline">\(\left\{ \left[ \left( A\cup B \right)&#39;\cap \left( C \Delta D \right) \right] \cap B \right\} \Delta C\)</span></p></li>
 <li><p><span class="math inline">\(\left[ \left( A\cup B \right)&#39;\cap \left( C \Delta D \right) \right]-\left( B\cap C \right)\)</span></p></li>
-<li><p><span class="math inline">\(\left\{ \left[ \left( A\cup B \right)&#39;\cap C \right] \Delta D \right\} -\left( A\cup B \right)\)</span></p></li>
+<li><p><span class="math inline">\(\left\{ \left[ \left( A\cup B \right)&#39;\cap C \right] \Delta D \right\} -\left( A\cup B \right)\)</span><br />
+</p></li>
 </ul>
-<div id="ejemplo" class="section level5">
-<h5><span class="header-section-number">2.7.7.0.1</span> Ejemplo</h5>
-<p><span class="math display">\[ \left\{  \left[ \left( A\cup B \right)&#39;\cap  C \right] \cap B \right\} \Delta C \]</span></p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-7" class="example"><strong>Ejemplo 2.3  </strong></span><span class="math display">\[ \left\{  \left[ \left( A\cup B \right)&#39;\cap  C \right] \cap B \right\} \Delta C \]</span></p>
 </div>
 </div>
+<div id="número-de-elementos-de-un-conjunto.-propiedades" class="section level2" number="2.11">
+<h2><span class="header-section-number">2.11</span> Número de elementos de un Conjunto. Propiedades</h2>
+<div class="definition">
+<p><span id="def:unlabeled-div-8" class="definition"><strong>Definición 2.8  </strong></span><span class="math display">\[ \left\{  \left[ \left( A\cup B \right)&#39;\cap  C \right] \cap B \right\} \Delta C \]</span></p>
 </div>
-<div id="número-de-elementos-de-un-conjunto.-propiedades" class="section level2">
-<h2><span class="header-section-number">2.8</span> Número de elementos de un Conjunto. Propiedades</h2>
 <p><span class="math display">\[
 n(A)
 \]</span></p>
@@ -507,7 +480,6 @@ n(A)
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -547,6 +519,10 @@ gitbook.start({
 "text": null
 },
 "download": ["z_1.pdf", "z_1.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "scroll_highlight": true

@@ -99,5 +99,5 @@ p {
 /* To do this, you can use teh below code instead */
 
 p:not(:first-of-type) {
-  text-indent: 3em;
+  text-indent: 1.8em;
 }

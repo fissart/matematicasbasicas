@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 1 Logica | Matemáticas básicas</title>
   <meta name="description" content="Capítulo 1 Logica | Matemáticas básicas" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 1 Logica | Matemáticas básicas" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Ricardo Michel MALLQUI BAÑOS" />
 
 
-<meta name="date" content="2021-07-14" />
+<meta name="date" content="2022-05-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,8 @@
   
 <link rel="prev" href="introducción.html"/>
 <link rel="next" href="conjuntos.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +41,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -69,37 +68,47 @@
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a></li>
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a></li>
-<li class="chapter" data-level="1" data-path="logica.html"><a href="logica.html"><i class="fa fa-check"></i><b>1</b> Logica</a></li>
-<li class="chapter" data-level="2" data-path="conjuntos.html"><a href="conjuntos.html"><i class="fa fa-check"></i><b>2</b> Conjuntos</a><ul>
-<li class="chapter" data-level="2.0.1" data-path="conjuntos.html"><a href="conjuntos.html#determincación-de-un-conjunto"><i class="fa fa-check"></i><b>2.0.1</b> Determincación de un conjunto</a></li>
-<li class="chapter" data-level="2.0.2" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-básicos"><i class="fa fa-check"></i><b>2.0.2</b> Conjuntos básicos</a></li>
-<li class="chapter" data-level="2.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional-y-cuantificadores"><i class="fa fa-check"></i><b>2.1</b> Función proposicional y cuantificadores</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional"><i class="fa fa-check"></i><b>2.1.1</b> Función proposicional</a></li>
-<li class="chapter" data-level="2.1.2" data-path="conjuntos.html"><a href="conjuntos.html#cuantificadores"><i class="fa fa-check"></i><b>2.1.2</b> Cuantificadores</a></li>
+<li class="chapter" data-level="1" data-path="logica.html"><a href="logica.html"><i class="fa fa-check"></i><b>1</b> Logica</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="logica.html"><a href="logica.html#conjunción"><i class="fa fa-check"></i><b>1.1</b> Conjunción</a></li>
+<li class="chapter" data-level="1.2" data-path="logica.html"><a href="logica.html#disyunción"><i class="fa fa-check"></i><b>1.2</b> Disyunción</a></li>
+<li class="chapter" data-level="1.3" data-path="logica.html"><a href="logica.html#implicación"><i class="fa fa-check"></i><b>1.3</b> Implicación</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-iguales"><i class="fa fa-check"></i><b>2.2</b> Conjuntos Iguales</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="conjuntos.html"><a href="conjuntos.html#propiedades"><i class="fa fa-check"></i><b>2.2.1</b> Propiedades</a></li>
+<li class="chapter" data-level="2" data-path="conjuntos.html"><a href="conjuntos.html"><i class="fa fa-check"></i><b>2</b> Conjuntos</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="conjuntos.html"><a href="conjuntos.html#determinación-de-un-conjunto"><i class="fa fa-check"></i><b>2.1</b> Determinación de un conjunto</a></li>
+<li class="chapter" data-level="2.2" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-básicos"><i class="fa fa-check"></i><b>2.2</b> Conjuntos básicos</a></li>
+<li class="chapter" data-level="2.3" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional-y-cuantificadores"><i class="fa fa-check"></i><b>2.3</b> Función proposicional y cuantificadores</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="conjuntos.html"><a href="conjuntos.html#función-proposicional"><i class="fa fa-check"></i><b>2.3.1</b> Función proposicional</a></li>
+<li class="chapter" data-level="2.3.2" data-path="conjuntos.html"><a href="conjuntos.html#cuantificadores"><i class="fa fa-check"></i><b>2.3.2</b> Cuantificadores</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="conjuntos.html"><a href="conjuntos.html#inclusión-y-subconjuntos"><i class="fa fa-check"></i><b>2.3</b> Inclusión y subconjuntos</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="conjuntos.html"><a href="conjuntos.html#propiedades-1"><i class="fa fa-check"></i><b>2.3.1</b> Propiedades</a></li>
+<li class="chapter" data-level="2.4" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-iguales"><i class="fa fa-check"></i><b>2.4</b> Conjuntos Iguales</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="conjuntos.html"><a href="conjuntos.html#propiedades"><i class="fa fa-check"></i><b>2.4.1</b> Propiedades</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-disjuntos"><i class="fa fa-check"></i><b>2.4</b> Conjuntos disjuntos</a></li>
-<li class="chapter" data-level="2.5" data-path="conjuntos.html"><a href="conjuntos.html#conjunto-potencia"><i class="fa fa-check"></i><b>2.5</b> Conjunto potencia</a></li>
-<li class="chapter" data-level="2.6" data-path="conjuntos.html"><a href="conjuntos.html#representación-gráfica-de-los-conjuntos"><i class="fa fa-check"></i><b>2.6</b> Representación Gráfica de los Conjuntos</a></li>
-<li class="chapter" data-level="2.7" data-path="conjuntos.html"><a href="conjuntos.html#operaciones-entre-conjuntos"><i class="fa fa-check"></i><b>2.7</b> Operaciones entre conjuntos</a><ul>
-<li class="chapter" data-level="2.7.1" data-path="conjuntos.html"><a href="conjuntos.html#unión"><i class="fa fa-check"></i><b>2.7.1</b> Unión</a></li>
-<li class="chapter" data-level="2.7.2" data-path="conjuntos.html"><a href="conjuntos.html#intersección"><i class="fa fa-check"></i><b>2.7.2</b> Intersección</a></li>
-<li class="chapter" data-level="2.7.3" data-path="conjuntos.html"><a href="conjuntos.html#diferencia"><i class="fa fa-check"></i><b>2.7.3</b> Diferencia</a></li>
-<li class="chapter" data-level="2.7.4" data-path="conjuntos.html"><a href="conjuntos.html#complemento"><i class="fa fa-check"></i><b>2.7.4</b> Complemento</a></li>
-<li class="chapter" data-level="2.7.5" data-path="conjuntos.html"><a href="conjuntos.html#diferencia-simétrica"><i class="fa fa-check"></i><b>2.7.5</b> Diferencia simétrica</a></li>
-<li class="chapter" data-level="2.7.6" data-path="conjuntos.html"><a href="conjuntos.html#ejercicios"><i class="fa fa-check"></i><b>2.7.6</b> Ejercicios</a></li>
-<li class="chapter" data-level="2.7.7" data-path="conjuntos.html"><a href="conjuntos.html#ejercicios-1"><i class="fa fa-check"></i><b>2.7.7</b> Ejercicios</a></li>
+<li class="chapter" data-level="2.5" data-path="conjuntos.html"><a href="conjuntos.html#inclusión-y-subconjuntos"><i class="fa fa-check"></i><b>2.5</b> Inclusión y subconjuntos</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="conjuntos.html"><a href="conjuntos.html#propiedades-1"><i class="fa fa-check"></i><b>2.5.1</b> Propiedades</a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="conjuntos.html"><a href="conjuntos.html#número-de-elementos-de-un-conjunto.-propiedades"><i class="fa fa-check"></i><b>2.8</b> Número de elementos de un Conjunto. Propiedades</a></li>
+<li class="chapter" data-level="2.6" data-path="conjuntos.html"><a href="conjuntos.html#conjuntos-disjuntos"><i class="fa fa-check"></i><b>2.6</b> Conjuntos disjuntos</a></li>
+<li class="chapter" data-level="2.7" data-path="conjuntos.html"><a href="conjuntos.html#conjunto-potencia"><i class="fa fa-check"></i><b>2.7</b> Conjunto potencia</a></li>
+<li class="chapter" data-level="2.8" data-path="conjuntos.html"><a href="conjuntos.html#representación-gráfica-de-los-conjuntos"><i class="fa fa-check"></i><b>2.8</b> Representación Gráfica de los Conjuntos</a></li>
+<li class="chapter" data-level="2.9" data-path="conjuntos.html"><a href="conjuntos.html#operaciones-entre-conjuntos"><i class="fa fa-check"></i><b>2.9</b> Operaciones entre conjuntos</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="conjuntos.html"><a href="conjuntos.html#unión"><i class="fa fa-check"></i><b>2.9.1</b> Unión</a></li>
+<li class="chapter" data-level="2.9.2" data-path="conjuntos.html"><a href="conjuntos.html#intersección"><i class="fa fa-check"></i><b>2.9.2</b> Intersección</a></li>
+<li class="chapter" data-level="2.9.3" data-path="conjuntos.html"><a href="conjuntos.html#diferencia"><i class="fa fa-check"></i><b>2.9.3</b> Diferencia</a></li>
+<li class="chapter" data-level="2.9.4" data-path="conjuntos.html"><a href="conjuntos.html#complemento"><i class="fa fa-check"></i><b>2.9.4</b> Complemento</a></li>
+<li class="chapter" data-level="2.9.5" data-path="conjuntos.html"><a href="conjuntos.html#diferencia-simétrica"><i class="fa fa-check"></i><b>2.9.5</b> Diferencia simétrica</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="conjuntos.html"><a href="conjuntos.html#ejercicios"><i class="fa fa-check"></i><b>2.10</b> Ejercicios</a></li>
+<li class="chapter" data-level="2.11" data-path="conjuntos.html"><a href="conjuntos.html#número-de-elementos-de-un-conjunto.-propiedades"><i class="fa fa-check"></i><b>2.11</b> Número de elementos de un Conjunto. Propiedades</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="funciones-y-relaciones.html"><a href="funciones-y-relaciones.html"><i class="fa fa-check"></i><b>3</b> Funciones y relaciones</a></li>
-<li class="chapter" data-level="4" data-path="numeros-reales.html"><a href="numeros-reales.html"><i class="fa fa-check"></i><b>4</b> Numeros reales</a><ul>
-<li class="chapter" data-level="4.0.1" data-path="numeros-reales.html"><a href="numeros-reales.html#ejercicios-2"><i class="fa fa-check"></i><b>4.0.1</b> Ejercicios</a></li>
+<li class="chapter" data-level="4" data-path="numeros-reales.html"><a href="numeros-reales.html"><i class="fa fa-check"></i><b>4</b> Numeros reales</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="numeros-reales.html"><a href="numeros-reales.html#ejercicios-1"><i class="fa fa-check"></i><b>4.0.1</b> Ejercicios</a></li>
 <li class="chapter" data-level="4.0.2" data-path="numeros-reales.html"><a href="numeros-reales.html#potenciación"><i class="fa fa-check"></i><b>4.0.2</b> Potenciación</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="funciones-exponenciales-logarítmicas.html"><a href="funciones-exponenciales-logarítmicas.html"><i class="fa fa-check"></i><b>5</b> Funciones exponenciales logarítmicas</a></li>
@@ -127,100 +136,135 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="logica" class="section level1">
+<div id="logica" class="section level1" number="1">
 <h1><span class="header-section-number">Capítulo 1</span> Logica</h1>
+<div class="theorem">
+<p><span id="thm:pyth" class="theorem"><strong>Teorema 1.1  (Pythagorean theorem) </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse
+and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
+<p><span class="math display">\[a^2 + b^2 = c^2\]</span></p>
+</div>
+<p><a href="logica.html#thm:pyth">1.1</a></p>
+<div id="conjunción" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Conjunción</h2>
+<table>
+<caption><span id="tab:ww">Tabla 1.1: </span> Conjunción.</caption>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\(p\)</span></th>
+<th align="center"><span class="math inline">\(q\)</span></th>
+<th align="center"><span class="math inline">\(p\wedge q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">V</td>
+</tr>
+<tr class="even">
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="disyunción" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Disyunción</h2>
 <table>
 <caption><span id="tab:ww">Tabla 1.1: </span> Sed.</caption>
 <thead>
 <tr class="header">
 <th align="center"><span class="math inline">\(p\)</span></th>
 <th align="center"><span class="math inline">\(q\)</span></th>
-<th align="center"><span class="math inline">\(w \rightarrow \left( \sim p \vee q\right)\)</span></th>
-<th><span class="math inline">\(w\)</span></th>
+<th align="center"><span class="math inline">\(p\wedge q\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="center">V</td>
 <td align="center">V</td>
-<td align="center">w</td>
-<td>w</td>
+<td align="center">V</td>
 </tr>
 <tr class="even">
 <td align="center">V</td>
 <td align="center">F</td>
-<td align="center">w</td>
-<td>w</td>
+<td align="center">F</td>
 </tr>
 <tr class="odd">
-<td align="center">F</td>
 <td align="center">V</td>
-<td align="center">w</td>
-<td>w</td>
+<td align="center">V</td>
+<td align="center">F</td>
 </tr>
 <tr class="even">
+<td align="center">V</td>
 <td align="center">F</td>
 <td align="center">F</td>
-<td align="center">w</td>
-<td>w</td>
 </tr>
 </tbody>
 </table>
-<p><span class="math display">\[ \Longrightarrow \Longleftrightarrow  \]</span></p>
-<p><span class="math display">\[ \Longleftrightarrow  \]</span>
-<span class="math display">\[ \Longleftrightarrow  \]</span>
-<span class="math display">\[ \Longleftrightarrow \vee \wedge \rightarrow \left( \int_{2}^{2} \right) \left[ \int_{3}^{2} \right]  \left\{ w,w,w,w,w,w,w/x \in W \right\}  \]</span></p>
-<p>Refiérase al cuadro <a href="logica.html#tab:regulares">1.2</a> <a href="logica.html#tab:ww">1.1</a></p>
+</div>
+<div id="implicación" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Implicación</h2>
 <table>
-<caption><span id="tab:regulares">Tabla 1.2: </span> Polígonos cerrados regulares.</caption>
+<caption><span id="tab:ww">Tabla 1.1: </span> Sed.</caption>
 <thead>
 <tr class="header">
-<th align="center">Tipo</th>
-<th align="center">Número de lados</th>
-<th align="center">Número de diagonales</th>
-<th align="center">Apotemas</th>
+<th align="center"><span class="math inline">\(p\)</span></th>
+<th align="center"><span class="math inline">\(q\)</span></th>
+<th align="center"><span class="math inline">\(p\rightarrow q\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center">Triángulo equilátero</td>
-<td align="center">3</td>
-<td align="center">0</td>
-<td align="center">3</td>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">V</td>
 </tr>
 <tr class="even">
-<td align="center">Cuadrado</td>
-<td align="center">4</td>
-<td align="center">2</td>
-<td align="center">4</td>
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">F</td>
 </tr>
 <tr class="odd">
-<td align="center">Pentágono</td>
-<td align="center">5</td>
-<td align="center">5</td>
-<td align="center">5</td>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">F</td>
 </tr>
 <tr class="even">
-<td align="center">Exagono</td>
-<td align="center">6</td>
-<td align="center">6</td>
-<td align="center">6</td>
-</tr>
-<tr class="odd">
-<td align="center">Heptagono</td>
-<td align="center">7</td>
-<td align="center">7</td>
-<td align="center">7</td>
-</tr>
-<tr class="even">
-<td align="center">…</td>
-<td align="center">…</td>
-<td align="center">…</td>
-<td align="center">…</td>
+<td align="center">V</td>
+<td align="center">F</td>
+<td align="center">F</td>
 </tr>
 </tbody>
 </table>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ww1"></span>
+<img src="aureo.svg" alt="wwwwwwwwww"  />
+<p class="caption">
+Figura 1.1: wwwwwwwwww
+</p>
+</div>
+<p><span class="math inline">\(\frac{\sqrt{5}-1}{2}AB\)</span>
+<span class="math display">\[\frac{\sqrt{5}-1}{2}AB\]</span></p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="z_1_files/figure-html/unnamed-chunk-1-1.pdf" alt="Some caption." width="90%" />
+<p class="caption">
+Figura 1.2: Some caption.
+</p>
+</div>
+<p>Refiérase al cuadro <a href="#tab:regulares"><strong>??</strong></a> <a href="logica.html#tab:ww">1.1</a></p>
 
+</div>
 </div>
             </section>
 
@@ -232,7 +276,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -272,6 +315,10 @@ gitbook.start({
 "text": null
 },
 "download": ["z_1.pdf", "z_1.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "scroll_highlight": true
