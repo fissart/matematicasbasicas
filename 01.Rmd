@@ -15,11 +15,11 @@ $$a^2 + b^2 = c^2$$
 ## Conjunción
 
 | $p$ | $q$ | $p\wedge q$ | $p\vee q$ | $p\Longrightarrow q$ | $p\Longleftrightarrow q$ | $p\Delta q\equiv \sim (p\Longleftrightarrow q)$ |
-|:---:|:---:|:-----------:|:---------:|:--------------------:|:------------------------:|:-----------:|
-|  V  |  V  |      V      |     V     |          V           |            V             |      F      |
-|  V  |  F  |      F      |     V     |          F           |            F             |      V      |
-|  F  |  V  |      F      |     V     |          V           |            F             |      V      |
-|  F  |  F  |      F      |     F     |          V           |            V             |      F      |
+| :--- | :--- | ---:| ---: | ---: | ---: | ---:|
+| V   | V   |           V | V         | V                    | V                        |                                               F |
+| V   | F   |           F | V         | F                    | F                        |                                               V |
+| F   | V   |           F | V         | V                    | F                        |                                               V |
+| F   | F   |           F | F         | V                    | V                        |                                               F |
 
 : (\#tab:ww) Conjunción.
 
