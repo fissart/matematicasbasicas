@@ -1,10 +1,7 @@
 tab:ww
 fig:ww1
-fig:unnamed-chunk-1
 logica
 conjunción
-disyunción
-implicación
 conjuntos
 determinación-de-un-conjunto
 conjuntos-básicos

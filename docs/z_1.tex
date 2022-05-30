@@ -212,60 +212,27 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 \hypertarget{conjunciuxf3n}{%
 \section{Conjunción}\label{conjunciuxf3n}}
 
-\begin{longtable}[]{@{}ccc@{}}
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.05}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.05}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.23}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.27}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}@{}}
 \caption{\label{tab:ww} Conjunción.}\tabularnewline
 \toprule
-\(p\) & \(q\) & \(p\wedge q\) \\
+\(p\) & \(q\) & \(p\wedge q\) & \(p\vee q\) & \(p\Longrightarrow q\) & \(p\Longleftrightarrow q\) & \(p\Delta q\equiv \sim (p\Longleftrightarrow q)\) \\
 \midrule
 \endfirsthead
 \toprule
-\(p\) & \(q\) & \(p\wedge q\) \\
+\(p\) & \(q\) & \(p\wedge q\) & \(p\vee q\) & \(p\Longrightarrow q\) & \(p\Longleftrightarrow q\) & \(p\Delta q\equiv \sim (p\Longleftrightarrow q)\) \\
 \midrule
 \endhead
-V & V & V \\
-V & F & F \\
-V & V & F \\
-V & F & F \\
-\bottomrule
-\end{longtable}
-
-\hypertarget{disyunciuxf3n}{%
-\section{Disyunción}\label{disyunciuxf3n}}
-
-\begin{longtable}[]{@{}ccc@{}}
-\caption{\label{tab:ww} Sed.}\tabularnewline
-\toprule
-\(p\) & \(q\) & \(p\wedge q\) \\
-\midrule
-\endfirsthead
-\toprule
-\(p\) & \(q\) & \(p\wedge q\) \\
-\midrule
-\endhead
-V & V & V \\
-V & F & F \\
-V & V & F \\
-V & F & F \\
-\bottomrule
-\end{longtable}
-
-\hypertarget{implicaciuxf3n}{%
-\section{Implicación}\label{implicaciuxf3n}}
-
-\begin{longtable}[]{@{}ccc@{}}
-\caption{\label{tab:ww} Sed.}\tabularnewline
-\toprule
-\(p\) & \(q\) & \(p\rightarrow q\) \\
-\midrule
-\endfirsthead
-\toprule
-\(p\) & \(q\) & \(p\rightarrow q\) \\
-\midrule
-\endhead
-V & V & V \\
-V & F & F \\
-V & V & F \\
-V & F & F \\
+V & V & V & V & V & V & F \\
+V & F & F & V & F & F & V \\
+F & V & F & V & V & F & V \\
+F & F & F & F & V & V & F \\
 \bottomrule
 \end{longtable}
 
@@ -281,11 +248,7 @@ V & F & F \\
 \(\frac{\sqrt{5}-1}{2}AB\)
 \[\frac{\sqrt{5}-1}{2}AB\]
 
-\begin{figure}
-\includegraphics[width=0.9\linewidth]{z_1_files/figure-latex/unnamed-chunk-1-1} \caption{Some caption.}\label{fig:unnamed-chunk-1}
-\end{figure}
-
-Refiérase al cuadro \ref{tab:regulares} \ref{tab:ww}
+Refiérase al cuadro \ref{tab:ww}
 
 \hypertarget{conjuntos}{%
 \chapter{Conjuntos}\label{conjuntos}}
