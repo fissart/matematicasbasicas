@@ -1,6 +1,6 @@
 tab:ww
 fig:ww1
-logica
+lógica
 conjunción
 conjuntos
 determinación-de-un-conjunto
