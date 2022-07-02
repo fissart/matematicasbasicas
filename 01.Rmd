@@ -3,11 +3,12 @@
 # Lógica
 
 La logica nos induce a interpretar la realidad de manera ordenada y estructura, con el objetivo de estructurar mejor, conocimientos y saberes.
+
 ::: {.theorem #pyth name="Pythagorean theorem"}
 For a right triangle, if $c$ denotes the length of the hypotenuse
 and $a$ and $b$ denote the lengths of the other two sides, we have
 
-$$a^2 + b^2 = c^2$$
+$$a^2 + b^2 = c^2=\int_1^2$$
 :::
 
 \@ref(thm:pyth)
@@ -26,7 +27,7 @@ $$a^2 + b^2 = c^2$$
 ```{r ww1, echo=FALSE, fig.align="center", fig.cap="wwwwwwwwww"}
 knitr::include_graphics('aureo.svg')
 ```
-$\frac{\sqrt{5}-1}{2}AB$
+$$\frac{\sqrt{5}-1}{2}AB=\int_1^2$$
 $$\frac{\sqrt{5}-1}{2}AB$$
 
 
