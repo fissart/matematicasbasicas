@@ -10,7 +10,8 @@ and $a$ and $b$ denote the lengths of the other two sides, we have
 
 $$a^2 + b^2 = c^2=\int_1^2$$
 :::
-[!vincze2014college]
+@vincze2014college
+
 \@ref(thm:pyth)
 
 ## Tabla de los operadores lógicos
