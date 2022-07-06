@@ -1,7 +1,8 @@
 tab:ww
 fig:ww1
 lógica
-conjunción
+tabla-de-los-operadores-lógicos
+wwwww
 conjuntos
 determinación-de-un-conjunto
 conjuntos-básicos
