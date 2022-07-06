@@ -1,5 +1,6 @@
 ---
 title: "Matemáticas básicas"
+subtitle: "Números reales y complejos"
 author: "Ricardo Michel MALLQUI BAÑOS"
 institute: "Universidad Nacional San Cristóbal De Huamanga"
 date: "`r Sys.Date()`"

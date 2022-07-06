@@ -12,6 +12,24 @@ $$a^2 + b^2 = c^2=\int_1^2$$
 :::
 @vincze2014college
 
+
+::: {.theorem #pyth1 name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
+
+$$a^2 + b^2 = c^2=\int_1^2$$
+:::
+@vincze2014college
+
+::: {.theorem #pyth2 name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
+
+$$a^2 + b^2 = c^2=\int_1^2$$
+:::
+@vincze2014college
+
+
 \@ref(thm:pyth)
 
 ## Tabla de los operadores lógicos
@@ -25,9 +43,28 @@ $$a^2 + b^2 = c^2=\int_1^2$$
 
 : (\#tab:ww) Conjunción.
 
+
+## Tabla de los operadores lógicos
+
+| $p$ | $q$ | $p\wedge q$ | $p\vee q$ | $p\Longrightarrow q$ | $p\Longleftrightarrow q$ | $p\Delta q\equiv \sim (p\Longleftrightarrow q)$ |
+| :--- | :--- | ---:| ---: | ---: | ---: | ---:|
+| V   | V   |           V | V         | V                    | V                        |                                               F |
+| V   | F   |           F | V         | F                    | F                        |                                               V |
+| F   | V   |           F | V         | V                    | F                        |                                               V |
+| F   | F   |           F | F         | V                    | V                        |                                               F |
+
+: (\#tab:www) Conjunción.
+
+
 ```{r ww1, echo=FALSE, fig.align="center", fig.cap="wwwwwwwwww"}
 knitr::include_graphics('aureo.svg')
 ```
+@xie2015
+
+```{r ww2, echo=FALSE, fig.align="center", fig.cap="wwwwwwwwww"}
+knitr::include_graphics('aureo.svg')
+```
+
 $$\frac{\sqrt{5}-1}{2}AB=\int_1^2$$
 $$\frac{\sqrt{5}-1}{2}AB$$
 

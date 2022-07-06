@@ -1,7 +1,10 @@
 tab:ww
+tab:www
 fig:ww1
+fig:ww2
 lógica
 tabla-de-los-operadores-lógicos
+tabla-de-los-operadores-lógicos-1
 wwwww
 conjuntos
 determinación-de-un-conjunto

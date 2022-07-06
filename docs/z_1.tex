@@ -115,6 +115,13 @@
 \bibliographystyle{apalike}
 
 \title{Matemáticas básicas}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Números reales y complejos}
 \author{Ricardo Michel MALLQUI BAÑOS}
 \date{2022-07-05}
 
@@ -229,6 +236,24 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 
 \citet{vincze2014college}
 
+\begin{theorem}[Pythagorean theorem]
+\protect\hypertarget{thm:pyth1}{}\label{thm:pyth1}For a right triangle, if \(c\) denotes the length of the hypotenuse
+and \(a\) and \(b\) denote the lengths of the other two sides, we have
+
+\[a^2 + b^2 = c^2=\int_1^2\]
+\end{theorem}
+
+\citet{vincze2014college}
+
+\begin{theorem}[Pythagorean theorem]
+\protect\hypertarget{thm:pyth2}{}\label{thm:pyth2}For a right triangle, if \(c\) denotes the length of the hypotenuse
+and \(a\) and \(b\) denote the lengths of the other two sides, we have
+
+\[a^2 + b^2 = c^2=\int_1^2\]
+\end{theorem}
+
+\citet{vincze2014college}
+
 \ref{thm:pyth}
 
 \hypertarget{tabla-de-los-operadores-luxf3gicos}{%
@@ -258,6 +283,33 @@ F & F & F & F & V & V & F \\
 \bottomrule
 \end{longtable}
 
+\hypertarget{tabla-de-los-operadores-luxf3gicos-1}{%
+\section{Tabla de los operadores lógicos}\label{tabla-de-los-operadores-luxf3gicos-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}@{}}
+\caption{\label{tab:www} Conjunción.}\tabularnewline
+\toprule
+\(p\) & \(q\) & \(p\wedge q\) & \(p\vee q\) & \(p\Longrightarrow q\) & \(p\Longleftrightarrow q\) & \(p\Delta q\equiv \sim (p\Longleftrightarrow q)\) \\
+\midrule
+\endfirsthead
+\toprule
+\(p\) & \(q\) & \(p\wedge q\) & \(p\vee q\) & \(p\Longrightarrow q\) & \(p\Longleftrightarrow q\) & \(p\Delta q\equiv \sim (p\Longleftrightarrow q)\) \\
+\midrule
+\endhead
+V & V & V & V & V & V & F \\
+V & F & F & V & F & F & V \\
+F & V & F & V & V & F & V \\
+F & F & F & F & V & V & F \\
+\bottomrule
+\end{longtable}
+
 \begin{figure}
 
 {\centering \includegraphics{aureo} 
@@ -265,6 +317,17 @@ F & F & F & F & V & V & F \\
 }
 
 \caption{wwwwwwwwww}\label{fig:ww1}
+\end{figure}
+
+\citet{xie2015}
+
+\begin{figure}
+
+{\centering \includegraphics{aureo} 
+
+}
+
+\caption{wwwwwwwwww}\label{fig:ww2}
 \end{figure}
 
 \[\frac{\sqrt{5}-1}{2}AB=\int_1^2\]
