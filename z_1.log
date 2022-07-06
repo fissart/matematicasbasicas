@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.25)  5 JUL 2022 22:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.25)  5 JUL 2022 22:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1253,17 +1253,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <aureo.pdf, id=182, 168.07047pt x 116.88377pt>
 File: aureo.pdf Graphic file (type pdf)
 <use aureo.pdf>
-Package pdftex.def Info: aureo.pdf  used on input line 315.
+Package pdftex.def Info: aureo.pdf  used on input line 308.
 (pdftex.def)             Requested size: 168.07004pt x 116.88347pt.
 File: aureo.pdf Graphic file (type pdf)
 <use aureo.pdf>
-Package pdftex.def Info: aureo.pdf  used on input line 326.
+Package pdftex.def Info: aureo.pdf  used on input line 319.
 (pdftex.def)             Requested size: 168.07004pt x 116.88347pt.
-LaTeX Info: Redefining \. on input line 334.
-LaTeX Info: Redefining \% on input line 334.
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
 [2 <./aureo.pdf>]
-LaTeX Info: Redefining \. on input line 342.
-LaTeX Info: Redefining \% on input line 342.
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
 [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1304,38 +1304,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [4
 
 ]
-Underfull \vbox (badness 10000) detected at line 342
+Underfull \vbox (badness 10000) detected at line 335
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 342
+Overfull \hbox (336.25pt too wide) detected at line 335
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 342
+Underfull \vbox (badness 10000) detected at line 335
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 342
+Overfull \hbox (336.25pt too wide) detected at line 335
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 342
+Underfull \vbox (badness 10000) detected at line 335
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 342
+Overfull \hbox (336.25pt too wide) detected at line 335
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 342
+Underfull \vbox (badness 10000) detected at line 335
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 342
+Overfull \hbox (336.25pt too wide) detected at line 335
 []
  []
 
@@ -1348,127 +1348,127 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [5
 
 ]
-Underfull \hbox (badness 10000) detected at line 418
+Underfull \hbox (badness 10000) detected at line 411
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 418
+Underfull \hbox (badness 10000) detected at line 411
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 420
+Underfull \hbox (badness 10000) detected at line 413
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 420
+Underfull \hbox (badness 10000) detected at line 413
 [][][]
  []
 
-LaTeX Info: Redefining \. on input line 433.
-LaTeX Info: Redefining \% on input line 433.
+LaTeX Info: Redefining \. on input line 426.
+LaTeX Info: Redefining \% on input line 426.
 [6
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-LaTeX Info: Redefining \. on input line 508.
-LaTeX Info: Redefining \% on input line 508.
+LaTeX Info: Redefining \. on input line 501.
+LaTeX Info: Redefining \% on input line 501.
 [7]
 Underfull \vbox (badness 2368) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 568.
-LaTeX Info: Redefining \% on input line 568.
+LaTeX Info: Redefining \. on input line 561.
+LaTeX Info: Redefining \% on input line 561.
 [8]
-LaTeX Info: Redefining \. on input line 637.
-LaTeX Info: Redefining \% on input line 637.
+LaTeX Info: Redefining \. on input line 630.
+LaTeX Info: Redefining \% on input line 630.
 [9]
-LaTeX Info: Redefining \. on input line 706.
-LaTeX Info: Redefining \% on input line 706.
+LaTeX Info: Redefining \. on input line 699.
+LaTeX Info: Redefining \% on input line 699.
 [10]
-LaTeX Info: Redefining \. on input line 790.
-LaTeX Info: Redefining \% on input line 790.
+LaTeX Info: Redefining \. on input line 783.
+LaTeX Info: Redefining \% on input line 783.
 [11]
-Underfull \hbox (badness 10000) detected at line 790
+Underfull \hbox (badness 10000) detected at line 783
  [][]
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 790--791
+Underfull \hbox (badness 3189) in paragraph at lines 783--784
 []\T1/ptm/m/n/10 (+20) Sea $\OML/lmm/m/it/10 U \OT1/lmr/m/n/10 = []$ \T1/ptm/m/
 n/10 (+20) y los sub-con-jun-tos: $\OML/lmm/m/it/10 A \OT1/lmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 10000) detected at line 804
+Underfull \hbox (badness 10000) detected at line 797
  [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--805
+Underfull \hbox (badness 10000) in paragraph at lines 797--798
 []\T1/ptm/m/n/10 (+20) Dados los con-jun-tos $\OML/lmm/m/it/10 A \OT1/lmr/m/n/1
 0 = []$\T1/ptm/m/n/10 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--805
+Underfull \hbox (badness 10000) in paragraph at lines 797--798
 \OML/lmm/m/it/10 B \OT1/lmr/m/n/10 = []$ \T1/ptm/m/n/10 (+20) y $\OML/lmm/m/it/
 10 C \OT1/lmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--805
+Underfull \hbox (badness 10000) in paragraph at lines 797--798
 []$ \T1/ptm/m/n/10 (+20) Ha-llar el re-sul-ta-do de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 819--820
+Underfull \hbox (badness 10000) in paragraph at lines 812--813
 
  []
 
-LaTeX Info: Redefining \. on input line 840.
-LaTeX Info: Redefining \% on input line 840.
+LaTeX Info: Redefining \. on input line 833.
+LaTeX Info: Redefining \% on input line 833.
 [12
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-Underfull \vbox (badness 10000) detected at line 840
+Underfull \vbox (badness 10000) detected at line 833
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 840
+Overfull \hbox (336.25pt too wide) detected at line 833
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 840
+Underfull \vbox (badness 10000) detected at line 833
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 840
+Overfull \hbox (336.25pt too wide) detected at line 833
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 840
+Underfull \vbox (badness 10000) detected at line 833
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 840
+Overfull \hbox (336.25pt too wide) detected at line 833
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 840
+Underfull \vbox (badness 10000) detected at line 833
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 840
+Overfull \hbox (336.25pt too wide) detected at line 833
 []
  []
 
@@ -1521,38 +1521,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [14
 
 ]
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 836
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 843
+Overfull \hbox (336.25pt too wide) detected at line 836
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 836
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 843
+Overfull \hbox (336.25pt too wide) detected at line 836
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 836
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 843
+Overfull \hbox (336.25pt too wide) detected at line 836
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 836
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 843
+Overfull \hbox (336.25pt too wide) detected at line 836
 []
  []
 
@@ -1565,53 +1565,53 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [15
 
 ]
-Underfull \hbox (badness 10000) detected at line 945
+Underfull \hbox (badness 10000) detected at line 938
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 945
+Underfull \hbox (badness 10000) detected at line 938
 [][][]
  []
 
-LaTeX Info: Redefining \. on input line 949.
-LaTeX Info: Redefining \% on input line 949.
+LaTeX Info: Redefining \. on input line 942.
+LaTeX Info: Redefining \% on input line 942.
 [16
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-Underfull \vbox (badness 10000) detected at line 949
+Underfull \vbox (badness 10000) detected at line 942
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 949
+Overfull \hbox (336.25pt too wide) detected at line 942
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 949
+Underfull \vbox (badness 10000) detected at line 942
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 949
+Overfull \hbox (336.25pt too wide) detected at line 942
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 949
+Underfull \vbox (badness 10000) detected at line 942
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 949
+Overfull \hbox (336.25pt too wide) detected at line 942
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 949
+Underfull \vbox (badness 10000) detected at line 942
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 949
+Overfull \hbox (336.25pt too wide) detected at line 942
 []
  []
 
@@ -1664,38 +1664,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [18
 
 ]
-Underfull \vbox (badness 10000) detected at line 952
+Underfull \vbox (badness 10000) detected at line 945
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 952
+Overfull \hbox (336.25pt too wide) detected at line 945
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 952
+Underfull \vbox (badness 10000) detected at line 945
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 952
+Overfull \hbox (336.25pt too wide) detected at line 945
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 952
+Underfull \vbox (badness 10000) detected at line 945
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 952
+Overfull \hbox (336.25pt too wide) detected at line 945
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 952
+Underfull \vbox (badness 10000) detected at line 945
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 952
+Overfull \hbox (336.25pt too wide) detected at line 945
 []
  []
 
@@ -1747,38 +1747,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [20
 
 ]
-Underfull \vbox (badness 10000) detected at line 955
+Underfull \vbox (badness 10000) detected at line 948
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 955
+Overfull \hbox (336.25pt too wide) detected at line 948
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 955
+Underfull \vbox (badness 10000) detected at line 948
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 955
+Overfull \hbox (336.25pt too wide) detected at line 948
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 955
+Underfull \vbox (badness 10000) detected at line 948
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 955
+Overfull \hbox (336.25pt too wide) detected at line 948
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 955
+Underfull \vbox (badness 10000) detected at line 948
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 955
+Overfull \hbox (336.25pt too wide) detected at line 948
 []
  []
 
@@ -1830,38 +1830,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [22
 
 ]
-Underfull \vbox (badness 10000) detected at line 958
+Underfull \vbox (badness 10000) detected at line 951
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 958
+Overfull \hbox (336.25pt too wide) detected at line 951
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 958
+Underfull \vbox (badness 10000) detected at line 951
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 958
+Overfull \hbox (336.25pt too wide) detected at line 951
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 958
+Underfull \vbox (badness 10000) detected at line 951
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 958
+Overfull \hbox (336.25pt too wide) detected at line 951
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 958
+Underfull \vbox (badness 10000) detected at line 951
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 958
+Overfull \hbox (336.25pt too wide) detected at line 951
 []
  []
 
@@ -1913,38 +1913,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [24
 
 ]
-Underfull \vbox (badness 10000) detected at line 961
+Underfull \vbox (badness 10000) detected at line 954
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 961
+Overfull \hbox (336.25pt too wide) detected at line 954
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 961
+Underfull \vbox (badness 10000) detected at line 954
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 961
+Overfull \hbox (336.25pt too wide) detected at line 954
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 961
+Underfull \vbox (badness 10000) detected at line 954
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 961
+Overfull \hbox (336.25pt too wide) detected at line 954
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 961
+Underfull \vbox (badness 10000) detected at line 954
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 961
+Overfull \hbox (336.25pt too wide) detected at line 954
 []
  []
 
@@ -1996,38 +1996,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [26
 
 ]
-Underfull \vbox (badness 10000) detected at line 970
+Underfull \vbox (badness 10000) detected at line 963
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 970
+Overfull \hbox (336.25pt too wide) detected at line 963
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 970
+Underfull \vbox (badness 10000) detected at line 963
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 970
+Overfull \hbox (336.25pt too wide) detected at line 963
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 970
+Underfull \vbox (badness 10000) detected at line 963
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 970
+Overfull \hbox (336.25pt too wide) detected at line 963
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 970
+Underfull \vbox (badness 10000) detected at line 963
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 970
+Overfull \hbox (336.25pt too wide) detected at line 963
 []
  []
 
@@ -2133,7 +2133,7 @@ LaTeX Info: Redefining \% on input line 27.
 Here is how much of TeX's memory you used:
  17011 strings out of 478599
  258732 string characters out of 5858101
- 639916 words of memory out of 5000000
+ 636911 words of memory out of 5000000
  34237 multiletter control sequences out of 15000+600000
  468116 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2155,7 +2155,7 @@ e1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmbi
 8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive
 /2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on z_1.pdf (41 pages, 403909 bytes).
+Output written on z_1.pdf (41 pages, 403874 bytes).
 PDF statistics:
  623 PDF objects out of 1000 (max. 8388607)
  539 compressed objects within 6 object streams
